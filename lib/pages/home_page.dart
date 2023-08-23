@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                               },
                               child: const Vehicles(
                                 icon: Icons.car_repair_sharp,
-                                vehicleName: 'Automobile', 
+                                vehicleName: 'Car', 
                                 vehiclesLeft: 16,
                                 color: greenColor,
                               ),
