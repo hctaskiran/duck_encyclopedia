@@ -6,8 +6,10 @@ class denemePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Center(
+      appBar: AppBar(
+        title: const Text('Deneme 1 Page'),
+      ),
+      body: const Center(
         child: Text('This Is Page 1, index 0')),
     );
   }

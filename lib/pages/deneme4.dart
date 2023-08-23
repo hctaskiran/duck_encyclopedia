@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
-class deneme3Page extends StatelessWidget {
-  const deneme3Page({super.key});
+class deneme4page extends StatelessWidget {
+  const deneme4page({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Deneme 3 Page'),
+        title: const Text('Settings'),
       ),
       body: const Center(
-        child: Text('This Is Page 3, index 2')),
+        child: Text('This is Settings page, index 4'),
+      ),
     );
   }
 }

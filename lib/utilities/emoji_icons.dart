@@ -15,11 +15,6 @@ class EmojiIcon extends StatefulWidget {
 }
 
 class _EmojiIconState extends State<EmojiIcon> {
-  bool isSelected = false;
-
-  void _isSelected() {
-    isSelected = !isSelected;
-  }
 
   @override
   Widget build(BuildContext context) {

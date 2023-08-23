@@ -7,6 +7,9 @@ import 'package:frontend_tutorial/pages/deneme.dart';
 import 'package:frontend_tutorial/utilities/bnb_icon_buttons.dart';
 import 'package:frontend_tutorial/utilities/emoji_icons.dart';
 import 'package:frontend_tutorial/utilities/vehicles.dart';
+import 'package:intl/intl.dart';
+
+import '../utilities/pages_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,11 +19,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
+  
   @override
   Widget build(BuildContext context) {
+    DateTime currentDate = DateTime.now();
+    String formattedDate = DateFormat('dd MMMM yyyy').format(currentDate);
+ 
     return Scaffold(
-
+      drawer: const Drawer(),
       backgroundColor: pinkColor,
       bottomNavigationBar: const BNBIconButtons(),
       appBar: AppBar(
@@ -43,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           Text(hiText, style: Theme.of(context).textTheme.titleSmall),
                           h5box,
-                          const Text(dateText, style: TextStyle(color: grey200color)),
+                          Text(formattedDate, style: const TextStyle(color: grey200color))
                         ],
                       ),
                       // icon
@@ -123,24 +129,39 @@ class _HomePageState extends State<HomePage> {
                       Expanded(
                         child: ListView(
                           physics: const ScrollPhysics(),
-                          children: const [
-                            Vehicles(
-                              icon: Icons.car_repair_sharp,
-                              vehicleName: 'Автомобилы', 
-                              vehiclesLeft: 16,
-                              color: greenColor,
+                          children: [
+                            InkWell(
+                              onTap: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => pages[0]));
+                              },
+                              child: const Vehicles(
+                                icon: Icons.car_repair_sharp,
+                                vehicleName: 'Automobile', 
+                                vehiclesLeft: 16,
+                                color: greenColor,
+                              ),
                             ),
-                            Vehicles(
-                              icon: Icons.fire_truck_rounded,
-                              vehicleName: 'Грузовики', 
-                              vehiclesLeft: 16,
-                              color: redColor,
+                            InkWell(
+                              onTap: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => pages[1]));
+                              },
+                              child: const Vehicles(
+                                icon: Icons.fire_truck_rounded,
+                                vehicleName: 'Trucks', 
+                                vehiclesLeft: 5,
+                                color: redColor,
+                              ),
                             ),
-                            Vehicles(
-                              icon: Icons.train_rounded,
-                              vehicleName: 'Поезды', 
-                              vehiclesLeft: 9,
-                              color: Colors.blue,
+                            InkWell(
+                              onTap: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => pages[2]));
+                              },
+                              child: const Vehicles(
+                                icon: Icons.train_rounded,
+                                vehicleName: 'Trains', 
+                                vehiclesLeft: 9,
+                                color: Colors.blue,
+                              ),
                             ),
                           ],
                         ),
@@ -158,13 +179,13 @@ class _HomePageState extends State<HomePage> {
 
   Row _emojiIcons() {
     return const Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Column(
           children: [
             EmojiIcon(
               emojiIcon: '😄',
-              emojiText: 'Весело',
+              emojiText: 'Cheerful',
             ),
             h5box,
           ],
@@ -173,7 +194,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             EmojiIcon(
               emojiIcon: '💞',
-              emojiText: 'Влюбленно',
+              emojiText: 'Lovely',
             ),
             h5box,
           ],
@@ -182,7 +203,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             EmojiIcon(
               emojiIcon: '😎',
-              emojiText: 'Круто',
+              emojiText: 'Emo',
             ),
             h5box,
           ],
@@ -191,7 +212,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             EmojiIcon(
               emojiIcon: '😡',
-              emojiText: 'Грустно',
+              emojiText: 'Angry',
             ),
             h5box,
           ],

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/pages/deneme3.dart';
+import 'package:frontend_tutorial/utilities/pages_list.dart';
 import '../pages/deneme.dart';
 import '../pages/deneme2.dart';
 
@@ -25,7 +26,7 @@ class _BNBIconButtonsState extends State<BNBIconButtons> {
             Navigator.push(context, MaterialPageRoute(builder: (context) => denemePage()));
           }, 
           icon: Icon(Icons.home)),
-          label: 'Главное'
+          label: 'Home'
         ),
       BottomNavigationBarItem(
         icon: IconButton(
@@ -33,15 +34,15 @@ class _BNBIconButtonsState extends State<BNBIconButtons> {
             Navigator.push(context, MaterialPageRoute(builder: (context) => deneme2Page()));
           }, 
           icon: Icon(Icons.message_rounded)),
-          label: 'Сообщения'
+          label: 'Message'
         ),
       BottomNavigationBarItem(
           icon: IconButton(
               icon: Icon(Icons.settings),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => deneme3Page()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => pages[3]));
               }),
-          label: 'Настройки')
+          label: 'Settings')
     ]);
   }
 }

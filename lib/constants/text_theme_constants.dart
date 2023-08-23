@@ -3,23 +3,20 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 // default texts
-const searchText = 'Поиск';
-const dateText = '06 Июля 2023';
-const carsText = 'Машины';
-const sixteenText = '16 осталось';
-const planesText = 'Самалёты';
-const tenText = '16 осталось';
+const searchText = 'Search';
+const dateText = '06 June 2023';
+const carsText = 'Vehicles';
+const planesText = 'Planes';
 const trainsText = 'Поезды';
-const sevenText = '16 осталось';
 
 // titleMedium
-const hiText = 'Приветик, Хактан!';
-const howText = 'Как сегодня чувствуешь??';
+const hiText = 'Hello, Hacktan!';
+const howText = 'How you feel today';
 const double tmSize = 24;
 const tmWeight = FontWeight.w500;
 
 // bodyMedium
-const excText = 'Упражнения';
+const excText = 'Events';
 const double bsSize = 18;
 const bsWeight = FontWeight.w500;
 

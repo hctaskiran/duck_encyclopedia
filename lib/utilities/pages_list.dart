@@ -1,5 +1,6 @@
 import 'package:frontend_tutorial/pages/deneme.dart';
 import 'package:frontend_tutorial/pages/deneme2.dart';
+import 'package:frontend_tutorial/pages/deneme4.dart';
 
 import '../pages/deneme3.dart';
 
@@ -7,6 +8,7 @@ List pages = [
   denemePage(),
   deneme2Page(),
   deneme3Page(),
+  deneme4page(),
 ];
 
 // children: const [
