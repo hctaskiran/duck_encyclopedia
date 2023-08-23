@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 
 import '../constants/colors.dart';
-import '../constants/sized_boxes.dart';
 
 class EmojiIcon extends StatefulWidget {
   final String emojiIcon;

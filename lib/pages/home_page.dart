@@ -5,6 +5,7 @@ import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/constants/text_theme_constants.dart';
 import 'package:frontend_tutorial/pages/deneme.dart';
 import 'package:frontend_tutorial/utilities/bnb_icon_buttons.dart';
+import 'package:frontend_tutorial/utilities/drawer.dart';
 import 'package:frontend_tutorial/utilities/emoji_icons.dart';
 import 'package:frontend_tutorial/utilities/vehicles.dart';
 import 'package:intl/intl.dart';
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     String formattedDate = DateFormat('dd MMMM yyyy').format(currentDate);
  
     return Scaffold(
-      drawer: const Drawer(),
+      drawer: const CustomDrawer(),
       backgroundColor: pinkColor,
       bottomNavigationBar: const BNBIconButtons(),
       appBar: AppBar(

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import '../constants/colors.dart';
 import '../constants/sized_boxes.dart';
-import '../constants/text_theme_constants.dart';
 
 class Vehicles extends StatelessWidget {
   const Vehicles({super.key, required this.icon, required this.vehicleName, required this.vehiclesLeft, required this.color});
@@ -39,7 +38,7 @@ class Vehicles extends StatelessWidget {
                     children: [
                       Text(vehicleName,
                           style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16, color: blackColor)),
-                      Text(vehiclesLeft.toString() + ' осталось',
+                      Text('$vehiclesLeft left',
                           style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 14, color: grey400color)),
                     ],
                   ),

@@ -23,7 +23,7 @@ class _BNBIconButtonsState extends State<BNBIconButtons> {
       BottomNavigationBarItem(
         icon: IconButton(
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => denemePage()));
+            // Navigator.push(context, MaterialPageRoute(builder: (context) => pages[5]));
           }, 
           icon: Icon(Icons.home)),
           label: 'Home'
@@ -31,7 +31,7 @@ class _BNBIconButtonsState extends State<BNBIconButtons> {
       BottomNavigationBarItem(
         icon: IconButton(
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => deneme2Page()));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => pages[4]));
           }, 
           icon: Icon(Icons.message_rounded)),
           label: 'Message'
