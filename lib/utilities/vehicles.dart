@@ -9,7 +9,7 @@ class Vehicles extends StatelessWidget {
   const Vehicles({super.key, required this.icon, required this.vehicleName, required this.vehiclesLeft, required this.color});
   final icon;
   final String vehicleName;
-  final int vehiclesLeft;
+  final String vehiclesLeft;
   final color;
 
   @override
@@ -38,8 +38,8 @@ class Vehicles extends StatelessWidget {
                     children: [
                       Text(vehicleName,
                           style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16, color: blackColor)),
-                      Text('$vehiclesLeft left',
-                          style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 14, color: grey400color)),
+                      Text('$vehiclesLeft',
+                          style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 12, color: grey400color)),
                     ],
                   ),
                 ],

@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/text_theme_constants.dart';
-import 'package:frontend_tutorial/pages/home_page.dart';
+import 'package:frontend_tutorial/pages/page_organizer.dart';
 import 'constants/app_bar_constants.dart';
 
-void main() {
+Future <void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
   runApp(const MyApp());
 }
 
@@ -20,6 +25,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        textButtonTheme: TextButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(grey400color),
+            padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 70, vertical: 10)
+            ),
+          )
+        ),
         textTheme: TextTheme(
           titleSmall: CustomTextStyles().titleSmall(),
           bodySmall: CustomTextStyles().bodySmall()
@@ -28,7 +40,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const PageOrganizer(),
     );
   }
 

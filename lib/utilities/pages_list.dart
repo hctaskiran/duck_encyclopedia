@@ -1,16 +1,20 @@
-import 'package:frontend_tutorial/pages/deneme.dart';
-import 'package:frontend_tutorial/pages/deneme2.dart';
-import 'package:frontend_tutorial/pages/deneme4.dart';
+import 'package:flutter/material.dart';
+import 'package:frontend_tutorial/pages/tab_pages/encyclopedia_page.dart';
+import 'package:frontend_tutorial/pages/vehicles/cars.dart';
+import '../pages/home_button.dart';
+import '../pages/tab_pages/real_home_page.dart';
+import '../pages/tab_pages/settings.dart';
+import '../pages/vehicles/trains.dart';
+import '../pages/vehicles/trucks.dart';
 
-import '../pages/deneme3.dart';
-import '../pages/deneme5.dart';
-
-List pages = [
-  const denemePage(),
-  const deneme2Page(),
-  const deneme3Page(),
-  const deneme4page(),
-  const deneme5page(),
+final List<Widget> pages = [
+  const REALHomePage(),
+  const EncyclopediaPage(),
+  const SettingsPage(),
+  const CarsPage(),
+  const TrucksPage(),
+  const TrainsPage(),
+  const HomeButtonPage(),
 ];
 
 // children: const [

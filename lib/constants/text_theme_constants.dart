@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-
 import 'colors.dart';
 
 // default texts
-const searchText = 'Search';
-const dateText = '06 June 2023';
-const carsText = 'Vehicles';
-const planesText = 'Planes';
-const trainsText = 'Поезды';
+const whatText = 'What is this application?';
+const whatText2 = 'What is this application?';
+const whyText = 'Why does it exists?';
+const whyText2 = 'Why does it exists?';
+const photoText = 'Inspiration of the app';
+const photoText2 = '''
+You can see this picture everywhere 
+in this application''';
 
 // titleMedium
 const hiText = 'Hello, Hacktan!';
-const howText = 'How you feel today';
+const howText = 'Time to learn much about ducks!';
 const double tmSize = 24;
 const tmWeight = FontWeight.w500;
 
