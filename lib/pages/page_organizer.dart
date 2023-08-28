@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/app_bar_constants.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
+import 'package:frontend_tutorial/constants/text_theme_constants.dart';
 import 'package:frontend_tutorial/utilities/drawer.dart';
-import '../utilities/pages_list.dart';
+import '../utilities/lists.dart';
 
 class PageOrganizer extends StatefulWidget {
   const PageOrganizer({super.key});
@@ -14,80 +15,42 @@ class PageOrganizer extends StatefulWidget {
 class _PageOrganizerState extends State<PageOrganizer> {
   int activeIndex = 0;
 
+  final List<IconData> _icons = [
+    Icons.home,
+    Icons.menu_book_rounded,
+    Icons.settings,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        titleTextStyle: abttStyle,
+        title: Text(abTitle, style: abStyle),
+      ),
+      body: pages[activeIndex],
       drawer: const CustomDrawer(),
       backgroundColor: pinkColor,
-      
       bottomNavigationBar: BottomNavigationBar(
       backgroundColor: grey200color,
-      items: const [
+      items:  [
       BottomNavigationBarItem(
-        label: 'Home',
-        icon: Icon(Icons.home)),    
+        icon: Icon(_icons[0]), label: ev),    
       BottomNavigationBarItem(
-          icon: Icon(Icons.menu_book_rounded), label: 'Encyclopedia'),
+          icon: Icon(_icons[1]), label: ansiklopedi),
       BottomNavigationBarItem(
-          icon: Icon(Icons.settings), label: 'Settings'),
+          icon: Icon(_icons[2]), label: ayarlar),
     ],
+    currentIndex: activeIndex,
+    selectedIconTheme: const IconThemeData(color: greenColor),
+    unselectedIconTheme: const IconThemeData(color: grey600color),
     onTap: (index) {
       setState(() {
         activeIndex = index;
       });
     },
     ),
-      appBar: AppBar(
-        titleTextStyle: abttStyle,
-        title: Text(abTitle, style: abStyle),
-      ),
-      body: pages[activeIndex],
+      
     );
   }
-/*
-  Row _emojiIcons() {
-    return const Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        Column(
-          children: [
-            EmojiIcon(
-              emojiIcon: '😄',
-              emojiText: 'Cheerful',
-            ),
-            h5box,
-          ],
-        ),
-        Column(
-          children: [
-            EmojiIcon(
-              emojiIcon: '💞',
-              emojiText: 'Lovely',
-            ),
-            h5box,
-          ],
-        ),
-        Column(
-          children: [
-            EmojiIcon(
-              emojiIcon: '😎',
-              emojiText: 'Emo',
-            ),
-            h5box,
-          ],
-        ),
-        Column(
-          children: [
-            EmojiIcon(
-              emojiIcon: '😡',
-              emojiText: 'Angry',
-            ),
-            h5box,
-          ],
-        ),
-      ],
-    );
-  }
-  */
 }
-

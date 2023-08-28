@@ -1,0 +1,27 @@
+{
+"ducks" :[
+        
+    {
+        "duckName": "Fulvous whistling duck",
+        "duckImage": "assets/img/islik.jpeg",
+        "duckGif" : "assets/img/islik.jpeg",
+        "duckOrigin": "Central / South America",
+        "duckDescription": "duck"
+
+    },
+    {
+        "duckName": "Peking Duck",
+        "duckImage": "assets/img/white_duck.jpeg",
+        "duckGif" : "assets/img/white_duck.jpeg",
+        "duckOrigin": "China",
+        "duckDescription": "duck"
+    },
+    {
+        "duckName": "Mallard",
+        "duckImage": "assets/img/mallard.jpg",
+        "duckGif" : "assets/gif/yesilbas_loop.gif",
+        "duckOrigin": "Europe, Asia, North America",
+        "duckDescription": "duck"
+    }
+]
+}

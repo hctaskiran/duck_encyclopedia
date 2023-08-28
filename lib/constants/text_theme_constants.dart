@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'colors.dart';
 
+// bottom nav bar
+const ev = 'Home';
+const ansiklopedi = 'Encyclopedia';
+const ayarlar = 'Settings';
+
 // default texts
 const whatText = 'What is this application?';
 const whatText2 = 'What is this application?';
@@ -10,6 +15,9 @@ const photoText = 'Inspiration of the app';
 const photoText2 = '''
 You can see this picture everywhere 
 in this application''';
+
+// Kahverengi Islıkçı Ördek
+const String kahveDuckText = 'Kahverengi Islıkçı Ördek';
 
 // titleMedium
 const hiText = 'Hello, Hacktan!';

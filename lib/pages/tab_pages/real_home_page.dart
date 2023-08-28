@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/constants/text_theme_constants.dart';
-import 'package:frontend_tutorial/utilities/pages_list.dart';
+import 'package:frontend_tutorial/utilities/lists.dart';
 import 'package:frontend_tutorial/utilities/vehicles.dart';
 import 'package:intl/intl.dart';
 
@@ -19,7 +19,6 @@ class REALHomePage extends StatelessWidget {
  
     return Column(
       children: [
-
            Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(

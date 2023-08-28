@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/text_theme_constants.dart';
+import 'package:frontend_tutorial/init/app_cache.dart';
 import 'package:frontend_tutorial/pages/page_organizer.dart';
+import 'package:frontend_tutorial/settings/app_settings.dart';
+import 'package:provider/provider.dart';
 import 'constants/app_bar_constants.dart';
 
 Future <void> main() async {
@@ -10,7 +13,10 @@ Future <void> main() async {
   await SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
     ]);
-  runApp(const MyApp());
+  await AppCache.instance.setup();
+  runApp(ChangeNotifierProvider(
+    create:(context) => AppSettings(),
+    child: const MyApp()));
 }
 
 class MyApp extends StatefulWidget {
@@ -20,9 +26,12 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
+
 class _MyAppState extends State<MyApp> {
+@override
   @override
   Widget build(BuildContext context) {
+  Provider.of<AppSettings>(context,listen: false).loadGifSetting();
     return MaterialApp(
       theme: ThemeData(
         textButtonTheme: TextButtonThemeData(
