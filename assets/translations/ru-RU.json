@@ -1,0 +1,48 @@
+{
+    "hiText": "Приветик, Ördekcıs",
+    "aboutApp": "Давай узнаем больше об утках!",
+    "subAboutApp": "Про Приложение:",
+    "appGoal": "Зачем такое приложение?",
+    "subAppGoal": "Давай-ка узнаем причину =)",
+    "whyText": "Почему существует?",
+    "subWhyText": "Вам 13 причин на этот вопрос!",
+    "inspText": "Моё вдохновение...",
+    "subInspText": "В некоторых вкладках приложения такое вдохновение отображается.",
+
+    "appName": "Утиная Анциклопедия",
+    "bottomNavigationBar": {
+        "realHomePage": "Главное",
+        "encyclopediaPage": "Анциклопедия",
+        "settings": "Настройки"
+    },
+    "whistleDuck": {
+        "duckName": "Свистящая Утка",
+        "duckOrigin": "Центрально-Южная Америка",
+        "duckDescription": "Только свистит."
+    },
+    "whiteDuck": {
+        "duckName": "Пекинская Утка",
+        "duckOrigin": "Китая",
+        "duckDescription": "Простая утка белого цвета."
+    },
+    "greenHead": {
+        "duckName": "Кряква",
+        "duckOrigin": "Европа, Азия, Северная Америка",
+        "duckDescription": "У нее голова желёного цвета."
+    },
+    "spoonMouth": {
+        "duckName": "Широконоска",
+        "duckOrigin": "Евразия, Северная Америка",
+        "duckDescription": "Ее клюв словно похож на ложку."
+    },
+    "straightTail": {
+        "duckName": "Савка",
+        "duckOrigin": "Испания, Северная Африка, Западно-Восточная Азия",
+        "duckDescription": "Имеет прямой хвост."
+    },
+    "outchinDuck": {
+        "duckName": "Чирок-Трескунок",
+        "duckOrigin": "Северная Америка, ВБ, Индия, Юговосточная Азия, Южная Африка",
+        "duckDescription": "Имеет странное имя, не так ли?"
+    }
+}

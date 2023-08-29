@@ -38,31 +38,31 @@ class _DuckCardState extends State<DuckCard> {
     return SizedBox.expand(
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 200, 
-            childAspectRatio: 1, 
-            crossAxisSpacing: 20, 
-            mainAxisSpacing: 20),
+            maxCrossAxisExtent: 200, childAspectRatio: 1, crossAxisSpacing: 20, mainAxisSpacing: 20),
         itemCount: _ducks.length,
         itemBuilder: (context, index) {
           return Row(
             children: [
               Card(
-                color: Colors.brown.shade100,
+                margin: const EdgeInsets.only(left: 3),
+                color: Colors.transparent,
                 child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: Column(
                     children: <Widget>[
                       Text(
                         _ducks[index]["duckName"],
-                        style: const TextStyle(color: blackColor, fontSize: 12, fontStyle: FontStyle.italic),
+                        style: const TextStyle(color: Colors.yellow, fontSize: 14, fontStyle: FontStyle.italic),
                       ),
                       h10box,
                       SizedBox(
                           width: 150,
-                          height: 130,
+                          height: 125,
                           child: Provider.of<AppSettings>(context).isGif == true
                               ? Image.asset(_ducks[index]["duckGif"])
-                              : Image.asset(_ducks[index]["duckImage"]))
+                              : ClipRRect(
+                                  borderRadius: BorderRadius.circular(25),
+                                  child: Image.asset(_ducks[index]["duckImage"])))
                     ],
                   ),
                 ),

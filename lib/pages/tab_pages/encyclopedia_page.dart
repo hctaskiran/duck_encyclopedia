@@ -12,6 +12,9 @@ class EncyclopediaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
         backgroundColor: pinkColor,
-        body: DuckCard());
+        body: Padding(
+          padding: EdgeInsets.only(top: 15, left: 4),
+          child: DuckCard(),
+        ));
   }
 }

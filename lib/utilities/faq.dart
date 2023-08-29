@@ -1,15 +1,16 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/colors.dart';
 import '../constants/sized_boxes.dart';
 
-class Vehicles extends StatelessWidget {
-  const Vehicles({super.key, required this.icon, required this.vehicleName, required this.vehiclesLeft, required this.color});
+class CustomFAQ extends StatelessWidget {
+  const CustomFAQ({super.key, required this.icon, required this.questions, required this.subQuestion, required this.color});
   final icon;
-  final String vehicleName;
-  final String vehiclesLeft;
+  final String questions;
+  final String subQuestion;
   final color;
 
   @override
@@ -36,15 +37,15 @@ class Vehicles extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(vehicleName,
+                      AutoSizeText(questions,
                           style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16, color: blackColor)),
-                      Text('$vehiclesLeft',
+                      AutoSizeText(subQuestion,
+                      maxLines: 3,
                           style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 12, color: grey400color)),
                     ],
                   ),
                 ],
               ),
-              const Icon(Icons.more_horiz)
             ],
           )),
     );

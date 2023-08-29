@@ -1,10 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
-import 'package:frontend_tutorial/constants/text_theme_constants.dart';
+import 'package:frontend_tutorial/init/locale_keys.g.dart';
 import 'package:frontend_tutorial/utilities/lists.dart';
-import 'package:frontend_tutorial/utilities/vehicles.dart';
-import 'package:intl/intl.dart';
+import 'package:frontend_tutorial/utilities/faq.dart';
 
 class REALHomePage extends StatelessWidget {
   const REALHomePage({
@@ -15,7 +15,7 @@ class REALHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
       DateTime currentDate = DateTime.now();
-    String formattedDate = DateFormat('dd MMMM yyyy | hh:ss').format(currentDate);
+    String formattedDate = DateFormat('dd MMMM yyyy').format(currentDate);
  
     return Column(
       children: [
@@ -30,7 +30,7 @@ class REALHomePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       h20box,
-                      Text(hiText, style: Theme.of(context).textTheme.titleSmall),
+                      Text(LocaleKeys.hiText.tr(), style: Theme.of(context).textTheme.titleSmall),
                       h5box,
                       Text(formattedDate, style: const TextStyle(color: grey200color))
                     ],
@@ -70,7 +70,7 @@ class REALHomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(howText, style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18)),
+                  Text(LocaleKeys.aboutApp.tr(), style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18)),
                 ],
               ),
         
@@ -97,7 +97,7 @@ class REALHomePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(excText, style: Theme.of(context).textTheme.bodySmall,),
+                      Text(LocaleKeys.subAboutApp.tr(), style: Theme.of(context).textTheme.bodySmall,),
                     ],
                   ),
         
@@ -111,10 +111,10 @@ class REALHomePage extends StatelessWidget {
                           onTap: () {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => pages[3]));
                           },
-                          child: const Vehicles(
+                          child: CustomFAQ(
                             icon: Icons.question_mark_rounded,
-                            vehicleName: whatText, 
-                            vehiclesLeft: 'See the main point of the application.',
+                            questions: LocaleKeys.appGoal.tr(), 
+                            subQuestion: LocaleKeys.subAppGoal.tr(),
                             color: greenColor,
                           ),
                         ),
@@ -122,10 +122,10 @@ class REALHomePage extends StatelessWidget {
                           onTap: () {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => pages[4]));
                           },
-                          child: const Vehicles(
+                          child: CustomFAQ(
                             icon: Icons.fact_check_rounded,
-                            vehicleName: whyText, 
-                            vehiclesLeft: '13 reasons why it does.',
+                            questions: LocaleKeys.whyText.tr(), 
+                            subQuestion: LocaleKeys.subWhyText.tr(),
                             color: redColor,
                           ),
                         ),
@@ -133,10 +133,10 @@ class REALHomePage extends StatelessWidget {
                           onTap: () {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => pages[5]));
                           },
-                          child: const Vehicles(
+                          child: CustomFAQ(
                             icon: Icons.admin_panel_settings_rounded,
-                            vehicleName: photoText, 
-                            vehiclesLeft: photoText2,
+                            questions: LocaleKeys.inspText.tr(), 
+                            subQuestion: LocaleKeys.subInspText.tr(),
                             color: Colors.blue,
                           ),
                         ),

@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/app_bar_constants.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/text_theme_constants.dart';
+import 'package:frontend_tutorial/init/locale_keys.g.dart';
 import 'package:frontend_tutorial/utilities/drawer.dart';
 import '../utilities/lists.dart';
 
@@ -35,11 +37,11 @@ class _PageOrganizerState extends State<PageOrganizer> {
       backgroundColor: grey200color,
       items:  [
       BottomNavigationBarItem(
-        icon: Icon(_icons[0]), label: ev),    
+        icon: Icon(_icons[0]), label: LocaleKeys.bottomNavigationBar_realHomePage.tr()),    
       BottomNavigationBarItem(
-          icon: Icon(_icons[1]), label: ansiklopedi),
+          icon: Icon(_icons[1]), label: LocaleKeys.bottomNavigationBar_encyclopediaPage.tr()),
       BottomNavigationBarItem(
-          icon: Icon(_icons[2]), label: ayarlar),
+          icon: Icon(_icons[2]), label: LocaleKeys.bottomNavigationBar_settings.tr()),
     ],
     currentIndex: activeIndex,
     selectedIconTheme: const IconThemeData(color: greenColor),

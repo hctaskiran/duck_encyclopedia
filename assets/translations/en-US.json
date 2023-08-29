@@ -1,0 +1,48 @@
+{
+    "hiText": "Hi, Ördekcıs",
+    "aboutApp": "Time to learn much about ducks!",
+    "subAboutApp": "About the App:",
+    "appGoal": "What is this for?",
+    "subAppGoal": "Learn the main point of the application.",
+    "whyText": "Why does it exists?",
+    "subWhyText": "13 reasons why it does!",
+    "inspText": "My inspiration...",
+    "subInspText": "You can see this inspiration almost everywhere in this app.",
+
+    "appName": "Duck Encyclopedia",
+    "bottomNavigationBar": {
+        "realHomePage": "Home",
+        "encyclopediaPage": "Encyclopedia",
+        "settings": "Settings"
+    },
+    "whistleDuck": {
+        "duckName": "Fulvous Whistling Duck",
+        "duckOrigin": "Central & South America",
+        "duckDescription": "Whistler Duck"
+    },
+    "whiteDuck": {
+        "duckName": "Peking Duck",
+        "duckOrigin": "China",
+        "duckDescription": "White Duck"
+    },
+    "greenHead": {
+        "duckName": "Mallard",
+        "duckOrigin": "Europe, Asia, North America",
+        "duckDescription": "Green Head Duck"
+    },
+    "spoonMouth": {
+        "duckName": "Northern Shoveler",
+        "duckOrigin": "Eurasia, North America",
+        "duckDescription": "Has a mouth that looks like a spoon."
+    },
+    "straightTail": {
+        "duckName": "White Headed Duck",
+        "duckOrigin": "Spain, North Africa, West & East Asia",
+        "duckDescription": "Has a straight tail."
+    },
+    "outchinDuck": {
+        "duckName": "Garganey",
+        "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
+        "duckDescription": "IDK what kind of that duck is"
+    }
+}

@@ -2,10 +2,10 @@
 "ducks" :[
         
     {
-        "duckName": "Fulvous whistling duck",
+        "duckName": "Fulvous Whistling Duck",
         "duckImage": "assets/img/islik.jpeg",
         "duckGif" : "assets/img/islik.jpeg",
-        "duckOrigin": "Central / South America",
+        "duckOrigin": "Central & South America",
         "duckDescription": "duck"
 
     },
@@ -21,6 +21,27 @@
         "duckImage": "assets/img/mallard.jpg",
         "duckGif" : "assets/gif/yesilbas_loop.gif",
         "duckOrigin": "Europe, Asia, North America",
+        "duckDescription": "duck"
+    },
+    {
+        "duckName": "Northern Shoveler",
+        "duckImage": "assets/img/northern_shoveler.jpg",
+        "duckGif" : "assets/img/northern_shoveler.jpg",
+        "duckOrigin": "Eurasia, North America",
+        "duckDescription": "duck"
+    },
+    {
+        "duckName": "White Headed Duck",
+        "duckImage": "assets/img/dikkuyruk.jpeg",
+        "duckGif" : "assets/img/dikkuyruk.jpeg",
+        "duckOrigin": "Spain, North Africa, West & East Asia",
+        "duckDescription": "duck"
+    },
+    {
+        "duckName": "Garganey",
+        "duckImage": "assets/img/garganey.jpg",
+        "duckGif" : "assets/img/garganey.jpg",
+        "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
         "duckDescription": "duck"
     }
 ]

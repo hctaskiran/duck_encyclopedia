@@ -1,0 +1,48 @@
+{
+    "hiText": "Merhaba, Ördekcıs",
+    "aboutApp": "Ördekler hakkında daha fazlasını öğrenelim!",
+    "subAboutApp": "Uygulama Hakkında:",
+    "appGoal": "Bu uygulama ne için?",
+    "subAppGoal": "Uygulamanın amacını neymiş bakalım.",
+    "whyText": "Böyle bir uygulama neden var?",
+    "subWhyText": "İşte size 13 sebep!",
+    "inspText": "İlham kaynağım...",
+    "subInspText": "Uygulamanın çeşitli yerlerinde bu ilham kaynağını görebilirsiniz.",
+
+    "appName": "Ördek Ansiklopedi",
+    "bottomNavigationBar": {
+        "realHomePage": "Gerçek Ev Sayfası",
+        "encyclopediaPage": "Ansiklopedi",
+        "settings": "Ayarlar"
+    },
+    "whistleDuck": {
+        "duckName": "Kahverengi Islıkçı Ördek",
+        "duckOrigin": "Orta & Güney Amerika",
+        "duckDescription": "Islık çalan ördek."
+    },
+    "whiteDuck": {
+        "duckName": "Pekin Ördeği",
+        "duckOrigin": "Çin",
+        "duckDescription": "Beyaz ördek."
+    },
+    "greenHead": {
+        "duckName": "Yeşilbaş Ördek",
+        "duckOrigin": "Avrupa, Asya, Kuzey Amerika",
+        "duckDescription": "Yeşil renkli ördek."
+    },
+    "spoonMouth": {
+        "duckName": "Kaşıkgaga Ördek",
+        "duckOrigin": "Avrasya, Kuzey Amerika",
+        "duckDescription": "Ağzı kaşığa benziyor."
+    },
+    "straightTail": {
+        "duckName": "Dikkuyruk Ördek",
+        "duckOrigin": "İspanya, Kuzey Afrika, Batı & Doğu Asya",
+        "duckDescription": "Kuyruğu dimdik."
+    },
+    "outchinDuck": {
+        "duckName": "Çıkrıkçın Ördeği",
+        "duckOrigin": "Kuzey Amerika, BK, Hindistan, Güneydoğu Asya, Güney Afrika",
+        "duckDescription": "Garip bir ismi var."
+    }
+}

@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:frontend_tutorial/constants/app_languages.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/text_theme_constants.dart';
 import 'package:frontend_tutorial/init/app_cache.dart';
@@ -14,9 +16,13 @@ Future <void> main() async {
       DeviceOrientation.portraitUp,
     ]);
   await AppCache.instance.setup();
+  await EasyLocalization.ensureInitialized();
   runApp(ChangeNotifierProvider(
     create:(context) => AppSettings(),
-    child: const MyApp()));
+    child: EasyLocalization(
+      supportedLocales: AppLanguages.supportedLanguages,
+      path: AppLanguages.LANG_PATH,
+      child: const MyApp())));
 }
 
 class MyApp extends StatefulWidget {
@@ -33,6 +39,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
   Provider.of<AppSettings>(context,listen: false).loadGifSetting();
     return MaterialApp(
+      locale: context.locale,
+      supportedLocales: context.supportedLocales,
+      localizationsDelegates: context.localizationDelegates,
       theme: ThemeData(
         textButtonTheme: TextButtonThemeData(
           style: ButtonStyle(
