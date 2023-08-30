@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_tutorial/components/cards/duck_card.dart';
 import 'package:frontend_tutorial/pages/tab_pages/encyclopedia_page.dart';
 import 'package:frontend_tutorial/pages/vehicles/cars.dart';
 import '../pages/home_button.dart';

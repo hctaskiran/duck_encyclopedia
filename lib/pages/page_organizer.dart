@@ -2,7 +2,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/app_bar_constants.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
-import 'package:frontend_tutorial/constants/text_theme_constants.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
 import 'package:frontend_tutorial/utilities/drawer.dart';
 import '../utilities/pages_list.dart';

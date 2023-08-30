@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
-import 'package:frontend_tutorial/init/app_cache.dart';
 import 'package:frontend_tutorial/settings/app_settings.dart';
 import 'package:provider/provider.dart';
-import '../init/app_cache_items.dart';
 import '../pages/home_button.dart';
 
 class CustomDrawer extends StatefulWidget {
@@ -44,7 +42,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 ],
               )),
         ),
-        Spacer(),
+        const Spacer(),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
