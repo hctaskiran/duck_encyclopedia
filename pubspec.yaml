@@ -68,7 +68,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
-    - assets/data/duck.json
+    - assets/data/duck-en.json
+    - assets/data/duck-tr.json
+    - assets/data/duck-ru.json
     - assets/gif/
     - assets/img/
     - assets/translations/

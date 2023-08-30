@@ -13,8 +13,10 @@ abstract class  LocaleKeys {
   static const appName = 'appName';
   static const bottomNavigationBar_realHomePage = 'bottomNavigationBar.realHomePage';
   static const bottomNavigationBar_encyclopediaPage = 'bottomNavigationBar.encyclopediaPage';
-  static const bottomNavigationBar_settings = 'bottomNavigationBar.settings';
+  static const bottomNavigationBar_settingsPage_settings = 'bottomNavigationBar.settingsPage.settings';
+  static const bottomNavigationBar_settingsPage_languages = 'bottomNavigationBar.settingsPage.languages';
+  static const bottomNavigationBar_settingsPage_special = 'bottomNavigationBar.settingsPage.special';
+  static const bottomNavigationBar_settingsPage = 'bottomNavigationBar.settingsPage';
   static const bottomNavigationBar = 'bottomNavigationBar';
-  static const duckPage = 'duckPage';
 
 }

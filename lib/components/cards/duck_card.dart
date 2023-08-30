@@ -16,9 +16,9 @@ class DuckCard extends StatefulWidget {
 }
 
 class _DuckCardState extends State<DuckCard> {
-  late List _ducks = [];
+  List _ducks = [];
   Future<void> readJson() async {
-    final String response = await rootBundle.loadString('assets/data/duck.json');
+    final String response = await rootBundle.loadString('assets/data/duck-en.json');
     final data = json.decode(response);
     setState(() {
       _ducks = data["ducks"];

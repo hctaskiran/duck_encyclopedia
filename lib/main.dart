@@ -45,11 +45,20 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         textButtonTheme: TextButtonThemeData(
           style: ButtonStyle(
+            padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 20)))
+        ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: grey200color,
+          selectedIconTheme: IconThemeData(color: pinkColor),
+          unselectedIconTheme: IconThemeData(color: grey600color)
+        ),
+        /*textButtonTheme: TextButtonThemeData(
+          style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(grey400color),
             padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 70, vertical: 10)
             ),
           )
-        ),
+        ),*/
         textTheme: TextTheme(
           titleSmall: CustomTextStyles().titleSmall(),
           bodySmall: CustomTextStyles().bodySmall()

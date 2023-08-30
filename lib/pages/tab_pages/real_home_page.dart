@@ -1,9 +1,12 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/app_languages.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
+import 'package:frontend_tutorial/pages/page_organizer.dart';
 import 'package:frontend_tutorial/utilities/pages_list.dart';
 import 'package:frontend_tutorial/utilities/faq.dart';
 
@@ -37,9 +40,15 @@ class REALHomePage extends StatelessWidget {
                   ),
                   // icon
                   Container(
-                      decoration: BoxDecoration(color: abPinkColor, borderRadius: BorderRadius.circular(12)),
-                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(color: abPinkColor, borderRadius: BorderRadius.circular(10)),
                       child: DropdownButton(
+                        padding: const EdgeInsets.all(5),
+                        isDense: true,
+                        hint: const Icon(
+                          Icons.language_rounded,
+                          color: whiteColor,
+                        ),
+                        underline: const SizedBox(),
                         items: AppLanguages.Languages.asMap()
                             .map((index, value) => MapEntry(
                                 index,
@@ -52,33 +61,13 @@ class REALHomePage extends StatelessWidget {
                         onChanged: (newValue) {
                           int selectedIndex = AppLanguages.Languages.indexOf(newValue as String);
                           context.locale = AppLanguages.supportedLanguages[selectedIndex];
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const PageOrganizer()));
                         },
-                        icon: const Icon(
-                          Icons.language_rounded,
-                          color: whiteColor,
-                        ),
                       )),
                 ],
               ),
 
               h20box,
-
-              // search bar
-              // Container(
-              //   decoration: BoxDecoration(color: abPinkColor, borderRadius: BorderRadius.circular(15)),
-              //   padding: const EdgeInsets.all(12),
-              //   child: const Row(
-              //     children: [
-              //       Icon(
-              //         Icons.search_outlined,
-              //         color: whiteColor,
-              //       ),
-              //       w5box,
-              //       Text(searchText, style: TextStyle(color: whiteColor))
-              //     ],
-              //   ),
-              // ),
-
               h20box,
 
               Row(

@@ -6,7 +6,7 @@
         "duckImage": "assets/img/islik.jpeg",
         "duckGif" : "assets/img/islik.jpeg",
         "duckOrigin": "Central & South America",
-        "duckDescription": "Whistler duck"
+        "duckDescription": "Whistler duck."
 
     },
     {
@@ -14,14 +14,14 @@
         "duckImage": "assets/img/white_duck.jpeg",
         "duckGif" : "assets/img/white_duck.jpeg",
         "duckOrigin": "China",
-        "duckDescription": "White duck"
+        "duckDescription": "A default white duck."
     },
     {
         "duckName": "Mallard",
         "duckImage": "assets/img/mallard.jpg",
         "duckGif" : "assets/gif/yesilbas_loop.gif",
         "duckOrigin": "Europe, Asia, North America",
-        "duckDescription": "Green head duck"
+        "duckDescription": "Green head duck."
     },
     {
         "duckName": "Northern Shoveler",

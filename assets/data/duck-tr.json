@@ -13,14 +13,14 @@
             "duckImage": "assets/img/white_duck.jpeg",
             "duckGif" : "assets/img/white_duck.jpeg",
             "duckOrigin": "Çin",
-            "duckDescription": "Beyaz ördek"
+            "duckDescription": "Beyaz ördek."
         },
         {
             "duckName": "Yeşilbaş Ördek",
             "duckImage": "assets/img/mallard.jpg",
             "duckGif" : "assets/gif/yesilbas_loop.gif",
             "duckOrigin": "Avrupa, Asya, Kuzey Amerika",
-            "duckDescription": "Yeşil kafalı ördek"
+            "duckDescription": "Yeşil kafalı ördek."
         },
         {
             "duckName": "Kaşıkgaga Ördek",

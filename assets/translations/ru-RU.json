@@ -13,6 +13,10 @@
     "bottomNavigationBar": {
         "realHomePage": "Главное",
         "encyclopediaPage": "Анциклопедия",
-        "settings": "Настройки"
+        "settingsPage": {
+            "settings": "Настройки",
+            "languages": "Языки",
+            "special": "Специальная Кнопка"
+        }
     }
 }

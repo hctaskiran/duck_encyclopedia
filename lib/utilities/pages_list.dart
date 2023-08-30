@@ -16,3 +16,12 @@ final List<Widget> pages = [
   const TrainsPage(),
   const HomeButtonPage(),
 ];
+
+final List<IconData> bnbicons = [
+    Icons.home_outlined,
+    Icons.book_outlined,
+    Icons.settings_suggest_outlined,
+    Icons.home,
+    Icons.book,
+    Icons.settings_suggest_rounded,
+  ];

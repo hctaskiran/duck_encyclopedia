@@ -28,46 +28,12 @@ class CodegenLoader extends AssetLoader{
   "bottomNavigationBar": {
     "realHomePage": "Anasayfa",
     "encyclopediaPage": "Ansiklopedi",
-    "settings": "Ayarlar"
-  },
-  "duckPage": [
-    {
-      "id": 0,
-      "duckName": "Kahverengi Islıkçı Ördek",
-      "duckOrigin": "Orta & Güney Amerika",
-      "duckDescription": "Islık çalan ördek."
-    },
-    {
-      "id": 1,
-      "duckName": "Pekin Ördeği",
-      "duckOrigin": "Çin",
-      "duckDescription": "Beyaz ördek."
-    },
-    {
-      "id": 2,
-      "duckName": "Yeşilbaş Ördek",
-      "duckOrigin": "Avrupa, Asya, Kuzey Amerika",
-      "duckDescription": "Yeşil renkli ördek."
-    },
-    {
-      "id": 3,
-      "duckName": "Kaşıkgaga Ördek",
-      "duckOrigin": "Avrasya, Kuzey Amerika",
-      "duckDescription": "Ağzı kaşığa benziyor."
-    },
-    {
-      "id": 4,
-      "duckName": "Dikkuyruk Ördek",
-      "duckOrigin": "İspanya, Kuzey Afrika, Batı & Doğu Asya",
-      "duckDescription": "Kuyruğu dimdik."
-    },
-    {
-      "id": 5,
-      "duckName": "Çıkrıkçın Ördeği",
-      "duckOrigin": "Kuzey Amerika, BK, Hindistan, Güneydoğu Asya, Güney Afrika",
-      "duckDescription": "Garip bir ismi var."
+    "settingsPage": {
+      "settings": "Ayarlar",
+      "languages": "Dil Seçenekleri",
+      "special": "Özel Ayar"
     }
-  ]
+  }
 };
 static const Map<String,dynamic> ru_RU = {
   "hiText": "Приветик, Ördekcıs",
@@ -83,46 +49,12 @@ static const Map<String,dynamic> ru_RU = {
   "bottomNavigationBar": {
     "realHomePage": "Главное",
     "encyclopediaPage": "Анциклопедия",
-    "settings": "Настройки"
-  },
-  "duckPage": [
-    {
-      "id": 0,
-      "duckName": "Свистящая Утка",
-      "duckOrigin": "Центрально-Южная Америка",
-      "duckDescription": "Только свистит."
-    },
-    {
-      "id": 1,
-      "duckName": "Пекинская Утка",
-      "duckOrigin": "Китая",
-      "duckDescription": "Простая утка белого цвета."
-    },
-    {
-      "id": 2,
-      "duckName": "Кряква",
-      "duckOrigin": "Европа, Азия, Северная Америка",
-      "duckDescription": "У нее голова желёного цвета."
-    },
-    {
-      "id": 3,
-      "duckName": "Широконоска",
-      "duckOrigin": "Евразия, Северная Америка",
-      "duckDescription": "Ее клюв словно похож на ложку."
-    },
-    {
-      "id": 4,
-      "duckName": "Савка",
-      "duckOrigin": "Испания, Северная Африка, Западно-Восточная Азия",
-      "duckDescription": "Имеет прямой хвост."
-    },
-    {
-      "id": 5,
-      "duckName": "Чирок-Трескунок",
-      "duckOrigin": "Северная Америка, ВБ, Индия, Юговосточная Азия, Южная Африка",
-      "duckDescription": "Имеет странное имя, не так ли?"
+    "settingsPage": {
+      "settings": "Настройки",
+      "languages": "Языки",
+      "special": "Специальная Кнопка"
     }
-  ]
+  }
 };
 static const Map<String,dynamic> en_US = {
   "hiText": "Hi, Ördekcıs",
@@ -138,46 +70,12 @@ static const Map<String,dynamic> en_US = {
   "bottomNavigationBar": {
     "realHomePage": "Home",
     "encyclopediaPage": "Encyclopedia",
-    "settings": "Settings"
-  },
-  "duckPage": [
-    {
-      "id": 0,
-      "duckName": "Fulvous Whistling Duck",
-      "duckOrigin": "Central & South America",
-      "duckDescription": "Whistler Duck"
-    },
-    {
-      "id": 1,
-      "duckName": "Peking Duck",
-      "duckOrigin": "China",
-      "duckDescription": "White Duck"
-    },
-    {
-      "id": 2,
-      "duckName": "Mallard",
-      "duckOrigin": "Europe, Asia, North America",
-      "duckDescription": "Green Head Duck"
-    },
-    {
-      "id": 3,
-      "duckName": "Northern Shoveler",
-      "duckOrigin": "Eurasia, North America",
-      "duckDescription": "Has a mouth that looks like a spoon."
-    },
-    {
-      "id": 4,
-      "duckName": "White Headed Duck",
-      "duckOrigin": "Spain, North Africa, West & East Asia",
-      "duckDescription": "Has a straight tail."
-    },
-    {
-      "id": 5,
-      "duckName": "Garganey",
-      "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
-      "duckDescription": "IDK what kind of that duck is"
+    "settingsPage": {
+      "settings": "Settings",
+      "languages": "Languages",
+      "special": "Special Button"
     }
-  ]
+  }
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"tr_TR": tr_TR, "ru_RU": ru_RU, "en_US": en_US};
 }

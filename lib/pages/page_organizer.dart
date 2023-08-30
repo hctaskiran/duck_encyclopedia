@@ -16,12 +16,6 @@ class PageOrganizer extends StatefulWidget {
 class _PageOrganizerState extends State<PageOrganizer> {
   int activeIndex = 0;
 
-  final List<IconData> _icons = [
-    Icons.home,
-    Icons.menu_book_rounded,
-    Icons.settings,
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,25 +27,28 @@ class _PageOrganizerState extends State<PageOrganizer> {
       drawer: const CustomDrawer(),
       backgroundColor: pinkColor,
       bottomNavigationBar: BottomNavigationBar(
-      backgroundColor: grey200color,
-      items:  [
-      BottomNavigationBarItem(
-        icon: Icon(_icons[0]), label: LocaleKeys.bottomNavigationBar_realHomePage.tr()),    
-      BottomNavigationBarItem(
-          icon: Icon(_icons[1]), label: LocaleKeys.bottomNavigationBar_encyclopediaPage.tr()),
-      BottomNavigationBarItem(
-          icon: Icon(_icons[2]), label: LocaleKeys.bottomNavigationBar_settings.tr()),
-    ],
-    currentIndex: activeIndex,
-    selectedIconTheme: const IconThemeData(color: greenColor),
-    unselectedIconTheme: const IconThemeData(color: grey600color),
-    onTap: (index) {
-      setState(() {
-        activeIndex = index;
-      });
-    },
-    ),
-      
+        fixedColor: pinkColor,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(bnbicons[0]),
+            activeIcon: Icon(bnbicons[3]), 
+            label: LocaleKeys.bottomNavigationBar_realHomePage.tr()),
+          BottomNavigationBarItem(
+            icon: Icon(bnbicons[1]),
+            activeIcon: Icon(bnbicons[4]), 
+            label: LocaleKeys.bottomNavigationBar_encyclopediaPage.tr()),
+          BottomNavigationBarItem(
+            icon: Icon(bnbicons[2]),
+            activeIcon: Icon(bnbicons[5]),
+            label: LocaleKeys.bottomNavigationBar_settingsPage_settings.tr()),
+        ],
+        currentIndex: activeIndex,
+        onTap: (index) {
+          setState(() {
+            activeIndex = index;
+          });
+        },
+      ),
     );
   }
 }

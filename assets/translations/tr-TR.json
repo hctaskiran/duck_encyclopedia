@@ -13,6 +13,11 @@
     "bottomNavigationBar": {
         "realHomePage": "Anasayfa",
         "encyclopediaPage": "Ansiklopedi",
-        "settings": "Ayarlar"
+        "settingsPage": {
+            "settings": "Ayarlar",
+            "languages": "Dil Seçenekleri",
+            "special": "Özel Ayar"
+        }
     }
+    
 }
