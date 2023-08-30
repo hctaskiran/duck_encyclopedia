@@ -1,0 +1,48 @@
+{
+    "ducks" :[
+            
+        {
+            "duckName": "Свистящая Утка",
+            "duckImage": "assets/img/islik.jpeg",
+            "duckGif" : "assets/img/islik.jpeg",
+            "duckOrigin": "Центрально-Южная Америка",
+            "duckDescription": "Только свистит."
+    
+        },
+        {
+            "duckName": "Пекинская Утка",
+            "duckImage": "assets/img/white_duck.jpeg",
+            "duckGif" : "assets/img/white_duck.jpeg",
+            "duckOrigin": "Китая",
+            "duckDescription": "Обычная утка белого цвета."
+        },
+        {
+            "duckName": "Кряква",
+            "duckImage": "assets/img/mallard.jpg",
+            "duckGif" : "assets/gif/yesilbas_loop.gif",
+            "duckOrigin": "Европа, Азия, Северная Америка",
+            "duckDescription": "У неё голова желёного цвета."
+        },
+        {
+            "duckName": "Широконоска",
+            "duckImage": "assets/img/northern_shoveler.jpg",
+            "duckGif" : "assets/img/northern_shoveler.jpg",
+            "duckOrigin": "Евразия, Северная Америка",
+            "duckDescription": "Ее клюв словно похож на ложку."
+        },
+        {
+            "duckName": "Савка",
+            "duckImage": "assets/img/dikkuyruk.jpeg",
+            "duckGif" : "assets/img/dikkuyruk.jpeg",
+            "duckOrigin": "Испания, Северная Африка, Западно-Восточная Азия",
+            "duckDescription": "Имеет прямой хвост."
+        },
+        {
+            "duckName": "Чирок-Трескунок",
+            "duckImage": "assets/img/garganey.jpg",
+            "duckGif" : "assets/img/garganey.jpg",
+            "duckOrigin": "Северная Америка, ВБ, Индия, Юговосточная Азия, Южная Африка",
+            "duckDescription": "Имеет странное имя, не так ли?"
+        }
+    ]
+    }

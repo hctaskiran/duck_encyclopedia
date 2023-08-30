@@ -52,8 +52,7 @@ class _DuckCardState extends State<DuckCard> {
                   child: Column(
                     children: <Widget>[
                       Text(
-                        LocaleKeys.duckPage[index],
-                        //_ducks[index]["duckName"],
+                        _ducks[index]["duckName"],
                         style: const TextStyle(color: Colors.yellow, fontSize: 14, fontStyle: FontStyle.italic),
                       ),
                       h10box,

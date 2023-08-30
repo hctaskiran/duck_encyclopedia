@@ -3,7 +3,7 @@ import 'package:frontend_tutorial/components/cards/duck_card.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/text_theme_constants.dart';
 
-import '../../utilities/lists.dart';
+import '../../utilities/pages_list.dart';
 
 class EncyclopediaPage extends StatelessWidget {
   const EncyclopediaPage({super.key});

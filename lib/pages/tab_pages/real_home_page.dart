@@ -4,7 +4,7 @@ import 'package:frontend_tutorial/constants/app_languages.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
-import 'package:frontend_tutorial/utilities/lists.dart';
+import 'package:frontend_tutorial/utilities/pages_list.dart';
 import 'package:frontend_tutorial/utilities/faq.dart';
 
 class REALHomePage extends StatelessWidget {

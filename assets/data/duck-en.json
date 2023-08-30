@@ -6,7 +6,7 @@
         "duckImage": "assets/img/islik.jpeg",
         "duckGif" : "assets/img/islik.jpeg",
         "duckOrigin": "Central & South America",
-        "duckDescription": "duck"
+        "duckDescription": "Whistler duck"
 
     },
     {
@@ -14,35 +14,35 @@
         "duckImage": "assets/img/white_duck.jpeg",
         "duckGif" : "assets/img/white_duck.jpeg",
         "duckOrigin": "China",
-        "duckDescription": "duck"
+        "duckDescription": "White duck"
     },
     {
         "duckName": "Mallard",
         "duckImage": "assets/img/mallard.jpg",
         "duckGif" : "assets/gif/yesilbas_loop.gif",
         "duckOrigin": "Europe, Asia, North America",
-        "duckDescription": "duck"
+        "duckDescription": "Green head duck"
     },
     {
         "duckName": "Northern Shoveler",
         "duckImage": "assets/img/northern_shoveler.jpg",
         "duckGif" : "assets/img/northern_shoveler.jpg",
         "duckOrigin": "Eurasia, North America",
-        "duckDescription": "duck"
+        "duckDescription": "Has a mouth that looks like a spoon."
     },
     {
         "duckName": "White Headed Duck",
         "duckImage": "assets/img/dikkuyruk.jpeg",
         "duckGif" : "assets/img/dikkuyruk.jpeg",
         "duckOrigin": "Spain, North Africa, West & East Asia",
-        "duckDescription": "duck"
+        "duckDescription": "Has a straight tail."
     },
     {
         "duckName": "Garganey",
         "duckImage": "assets/img/garganey.jpg",
         "duckGif" : "assets/img/garganey.jpg",
         "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
-        "duckDescription": "duck"
+        "duckDescription": "IDK what kind of that duck is."
     }
 ]
 }
