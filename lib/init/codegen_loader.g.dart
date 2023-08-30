@@ -18,7 +18,7 @@ class CodegenLoader extends AssetLoader{
   "hiText": "Merhaba, Ördekcıs",
   "aboutApp": "Ördekler hakkında daha fazlasını öğrenelim!",
   "subAboutApp": "Uygulama Hakkında:",
-  "appGoal": "Bu uygulama ne için?",
+  "appGoal": "Bu uygulamanın amacı nedir?",
   "subAppGoal": "Uygulamanın amacını neymiş bakalım.",
   "whyText": "Böyle bir uygulama neden var?",
   "subWhyText": "İşte size 13 sebep!",
@@ -26,40 +26,48 @@ class CodegenLoader extends AssetLoader{
   "subInspText": "Uygulamanın çeşitli yerlerinde bu ilham kaynağını görebilirsiniz.",
   "appName": "Ördek Ansiklopedi",
   "bottomNavigationBar": {
-    "realHomePage": "Gerçek Ev Sayfası",
+    "realHomePage": "Anasayfa",
     "encyclopediaPage": "Ansiklopedi",
     "settings": "Ayarlar"
   },
-  "whistleDuck": {
-    "duckName": "Kahverengi Islıkçı Ördek",
-    "duckOrigin": "Orta & Güney Amerika",
-    "duckDescription": "Islık çalan ördek."
-  },
-  "whiteDuck": {
-    "duckName": "Pekin Ördeği",
-    "duckOrigin": "Çin",
-    "duckDescription": "Beyaz ördek."
-  },
-  "greenHead": {
-    "duckName": "Yeşilbaş Ördek",
-    "duckOrigin": "Avrupa, Asya, Kuzey Amerika",
-    "duckDescription": "Yeşil renkli ördek."
-  },
-  "spoonMouth": {
-    "duckName": "Kaşıkgaga Ördek",
-    "duckOrigin": "Avrasya, Kuzey Amerika",
-    "duckDescription": "Ağzı kaşığa benziyor."
-  },
-  "straightTail": {
-    "duckName": "Dikkuyruk Ördek",
-    "duckOrigin": "İspanya, Kuzey Afrika, Batı & Doğu Asya",
-    "duckDescription": "Kuyruğu dimdik."
-  },
-  "outchinDuck": {
-    "duckName": "Çıkrıkçın Ördeği",
-    "duckOrigin": "Kuzey Amerika, BK, Hindistan, Güneydoğu Asya, Güney Afrika",
-    "duckDescription": "Garip bir ismi var."
-  }
+  "duckPage": [
+    {
+      "id": 0,
+      "duckName": "Kahverengi Islıkçı Ördek",
+      "duckOrigin": "Orta & Güney Amerika",
+      "duckDescription": "Islık çalan ördek."
+    },
+    {
+      "id": 1,
+      "duckName": "Pekin Ördeği",
+      "duckOrigin": "Çin",
+      "duckDescription": "Beyaz ördek."
+    },
+    {
+      "id": 2,
+      "duckName": "Yeşilbaş Ördek",
+      "duckOrigin": "Avrupa, Asya, Kuzey Amerika",
+      "duckDescription": "Yeşil renkli ördek."
+    },
+    {
+      "id": 3,
+      "duckName": "Kaşıkgaga Ördek",
+      "duckOrigin": "Avrasya, Kuzey Amerika",
+      "duckDescription": "Ağzı kaşığa benziyor."
+    },
+    {
+      "id": 4,
+      "duckName": "Dikkuyruk Ördek",
+      "duckOrigin": "İspanya, Kuzey Afrika, Batı & Doğu Asya",
+      "duckDescription": "Kuyruğu dimdik."
+    },
+    {
+      "id": 5,
+      "duckName": "Çıkrıkçın Ördeği",
+      "duckOrigin": "Kuzey Amerika, BK, Hindistan, Güneydoğu Asya, Güney Afrika",
+      "duckDescription": "Garip bir ismi var."
+    }
+  ]
 };
 static const Map<String,dynamic> ru_RU = {
   "hiText": "Приветик, Ördekcıs",
@@ -77,36 +85,44 @@ static const Map<String,dynamic> ru_RU = {
     "encyclopediaPage": "Анциклопедия",
     "settings": "Настройки"
   },
-  "whistleDuck": {
-    "duckName": "Свистящая Утка",
-    "duckOrigin": "Центрально-Южная Америка",
-    "duckDescription": "Только свистит."
-  },
-  "whiteDuck": {
-    "duckName": "Пекинская Утка",
-    "duckOrigin": "Китая",
-    "duckDescription": "Простая утка белого цвета."
-  },
-  "greenHead": {
-    "duckName": "Кряква",
-    "duckOrigin": "Европа, Азия, Северная Америка",
-    "duckDescription": "У нее голова желёного цвета."
-  },
-  "spoonMouth": {
-    "duckName": "Широконоска",
-    "duckOrigin": "Евразия, Северная Америка",
-    "duckDescription": "Ее клюв словно похож на ложку."
-  },
-  "straightTail": {
-    "duckName": "Савка",
-    "duckOrigin": "Испания, Северная Африка, Западно-Восточная Азия",
-    "duckDescription": "Имеет прямой хвост."
-  },
-  "outchinDuck": {
-    "duckName": "Чирок-Трескунок",
-    "duckOrigin": "Северная Америка, ВБ, Индия, Юговосточная Азия, Южная Африка",
-    "duckDescription": "Имеет странное имя, не так ли?"
-  }
+  "duckPage": [
+    {
+      "id": 0,
+      "duckName": "Свистящая Утка",
+      "duckOrigin": "Центрально-Южная Америка",
+      "duckDescription": "Только свистит."
+    },
+    {
+      "id": 1,
+      "duckName": "Пекинская Утка",
+      "duckOrigin": "Китая",
+      "duckDescription": "Простая утка белого цвета."
+    },
+    {
+      "id": 2,
+      "duckName": "Кряква",
+      "duckOrigin": "Европа, Азия, Северная Америка",
+      "duckDescription": "У нее голова желёного цвета."
+    },
+    {
+      "id": 3,
+      "duckName": "Широконоска",
+      "duckOrigin": "Евразия, Северная Америка",
+      "duckDescription": "Ее клюв словно похож на ложку."
+    },
+    {
+      "id": 4,
+      "duckName": "Савка",
+      "duckOrigin": "Испания, Северная Африка, Западно-Восточная Азия",
+      "duckDescription": "Имеет прямой хвост."
+    },
+    {
+      "id": 5,
+      "duckName": "Чирок-Трескунок",
+      "duckOrigin": "Северная Америка, ВБ, Индия, Юговосточная Азия, Южная Африка",
+      "duckDescription": "Имеет странное имя, не так ли?"
+    }
+  ]
 };
 static const Map<String,dynamic> en_US = {
   "hiText": "Hi, Ördekcıs",
@@ -124,36 +140,44 @@ static const Map<String,dynamic> en_US = {
     "encyclopediaPage": "Encyclopedia",
     "settings": "Settings"
   },
-  "whistleDuck": {
-    "duckName": "Fulvous Whistling Duck",
-    "duckOrigin": "Central & South America",
-    "duckDescription": "Whistler Duck"
-  },
-  "whiteDuck": {
-    "duckName": "Peking Duck",
-    "duckOrigin": "China",
-    "duckDescription": "White Duck"
-  },
-  "greenHead": {
-    "duckName": "Mallard",
-    "duckOrigin": "Europe, Asia, North America",
-    "duckDescription": "Green Head Duck"
-  },
-  "spoonMouth": {
-    "duckName": "Northern Shoveler",
-    "duckOrigin": "Eurasia, North America",
-    "duckDescription": "Has a mouth that looks like a spoon."
-  },
-  "straightTail": {
-    "duckName": "White Headed Duck",
-    "duckOrigin": "Spain, North Africa, West & East Asia",
-    "duckDescription": "Has a straight tail."
-  },
-  "outchinDuck": {
-    "duckName": "Garganey",
-    "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
-    "duckDescription": "IDK what kind of that duck is"
-  }
+  "duckPage": [
+    {
+      "id": 0,
+      "duckName": "Fulvous Whistling Duck",
+      "duckOrigin": "Central & South America",
+      "duckDescription": "Whistler Duck"
+    },
+    {
+      "id": 1,
+      "duckName": "Peking Duck",
+      "duckOrigin": "China",
+      "duckDescription": "White Duck"
+    },
+    {
+      "id": 2,
+      "duckName": "Mallard",
+      "duckOrigin": "Europe, Asia, North America",
+      "duckDescription": "Green Head Duck"
+    },
+    {
+      "id": 3,
+      "duckName": "Northern Shoveler",
+      "duckOrigin": "Eurasia, North America",
+      "duckDescription": "Has a mouth that looks like a spoon."
+    },
+    {
+      "id": 4,
+      "duckName": "White Headed Duck",
+      "duckOrigin": "Spain, North Africa, West & East Asia",
+      "duckDescription": "Has a straight tail."
+    },
+    {
+      "id": 5,
+      "duckName": "Garganey",
+      "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
+      "duckDescription": "IDK what kind of that duck is"
+    }
+  ]
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"tr_TR": tr_TR, "ru_RU": ru_RU, "en_US": en_US};
 }

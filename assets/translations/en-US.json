@@ -15,34 +15,43 @@
         "encyclopediaPage": "Encyclopedia",
         "settings": "Settings"
     },
-    "whistleDuck": {
-        "duckName": "Fulvous Whistling Duck",
-        "duckOrigin": "Central & South America",
-        "duckDescription": "Whistler Duck"
-    },
-    "whiteDuck": {
-        "duckName": "Peking Duck",
-        "duckOrigin": "China",
-        "duckDescription": "White Duck"
-    },
-    "greenHead": {
-        "duckName": "Mallard",
-        "duckOrigin": "Europe, Asia, North America",
-        "duckDescription": "Green Head Duck"
-    },
-    "spoonMouth": {
-        "duckName": "Northern Shoveler",
-        "duckOrigin": "Eurasia, North America",
-        "duckDescription": "Has a mouth that looks like a spoon."
-    },
-    "straightTail": {
-        "duckName": "White Headed Duck",
-        "duckOrigin": "Spain, North Africa, West & East Asia",
-        "duckDescription": "Has a straight tail."
-    },
-    "outchinDuck": {
-        "duckName": "Garganey",
-        "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
-        "duckDescription": "IDK what kind of that duck is"
+    "duckPage": [
+
+        {
+            "id": 0,
+            "duckName": "Fulvous Whistling Duck",
+            "duckOrigin": "Central & South America",
+            "duckDescription": "Whistler Duck"
+        },
+         {
+            "id": 1,
+            "duckName": "Peking Duck",
+            "duckOrigin": "China",
+            "duckDescription": "White Duck"
+        },
+         {
+            "id": 2,
+            "duckName": "Mallard",
+            "duckOrigin": "Europe, Asia, North America",
+            "duckDescription": "Green Head Duck"
+        },
+        {
+            "id": 3,
+            "duckName": "Northern Shoveler",
+            "duckOrigin": "Eurasia, North America",
+            "duckDescription": "Has a mouth that looks like a spoon."
+        },
+         {
+            "id": 4,
+            "duckName": "White Headed Duck",
+            "duckOrigin": "Spain, North Africa, West & East Asia",
+            "duckDescription": "Has a straight tail."
+        },
+        {
+            "id": 5,
+            "duckName": "Garganey",
+            "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
+            "duckDescription": "IDK what kind of that duck is"
+        }
+    ]
     }
-}

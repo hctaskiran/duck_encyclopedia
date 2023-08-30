@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:frontend_tutorial/constants/app_languages.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
@@ -11,15 +12,14 @@ class REALHomePage extends StatelessWidget {
     super.key,
   });
 
-
   @override
   Widget build(BuildContext context) {
-      DateTime currentDate = DateTime.now();
+    DateTime currentDate = DateTime.now();
     String formattedDate = DateFormat('dd MMMM yyyy').format(currentDate);
- 
+
     return Column(
       children: [
-           Padding(
+        Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
@@ -37,18 +37,32 @@ class REALHomePage extends StatelessWidget {
                   ),
                   // icon
                   Container(
-                    decoration: BoxDecoration(color: abPinkColor, borderRadius: BorderRadius.circular(12)),
-                    padding: const EdgeInsets.all(12),
-                    child: const Icon(
-                      Icons.notifications_active,
-                      color: whiteColor,
-                    ),
-                  ),
+                      decoration: BoxDecoration(color: abPinkColor, borderRadius: BorderRadius.circular(12)),
+                      padding: const EdgeInsets.all(12),
+                      child: DropdownButton(
+                        items: AppLanguages.Languages.asMap()
+                            .map((index, value) => MapEntry(
+                                index,
+                                DropdownMenuItem(
+                                  value: value,
+                                  child: Text(value),
+                                )))
+                            .values
+                            .toList(),
+                        onChanged: (newValue) {
+                          int selectedIndex = AppLanguages.Languages.indexOf(newValue as String);
+                          context.locale = AppLanguages.supportedLanguages[selectedIndex];
+                        },
+                        icon: const Icon(
+                          Icons.language_rounded,
+                          color: whiteColor,
+                        ),
+                      )),
                 ],
               ),
-        
+
               h20box,
-        
+
               // search bar
               // Container(
               //   decoration: BoxDecoration(color: abPinkColor, borderRadius: BorderRadius.circular(15)),
@@ -64,25 +78,27 @@ class REALHomePage extends StatelessWidget {
               //     ],
               //   ),
               // ),
-        
+
               h20box,
-        
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(LocaleKeys.aboutApp.tr(), style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18)),
+                  Expanded(
+                      child: Text(LocaleKeys.aboutApp.tr(),
+                          style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18))),
                 ],
               ),
-        
+
               h20box,
-        
-           //   _emojiIcons(),
+
+              //   _emojiIcons(),
             ],
           ),
         ),
-        
-    //    h20box,
-        
+
+        //    h20box,
+
         Expanded(
           child: Container(
             decoration: const BoxDecoration(
@@ -97,12 +113,15 @@ class REALHomePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(LocaleKeys.subAboutApp.tr(), style: Theme.of(context).textTheme.bodySmall,),
+                      Text(
+                        LocaleKeys.subAboutApp.tr(),
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
                     ],
                   ),
-        
+
                   h20box,
-        
+
                   // exercise listview
                   Expanded(
                     child: ListView(
@@ -113,7 +132,7 @@ class REALHomePage extends StatelessWidget {
                           },
                           child: CustomFAQ(
                             icon: Icons.question_mark_rounded,
-                            questions: LocaleKeys.appGoal.tr(), 
+                            questions: LocaleKeys.appGoal.tr(),
                             subQuestion: LocaleKeys.subAppGoal.tr(),
                             color: greenColor,
                           ),
@@ -124,7 +143,7 @@ class REALHomePage extends StatelessWidget {
                           },
                           child: CustomFAQ(
                             icon: Icons.fact_check_rounded,
-                            questions: LocaleKeys.whyText.tr(), 
+                            questions: LocaleKeys.whyText.tr(),
                             subQuestion: LocaleKeys.subWhyText.tr(),
                             color: redColor,
                           ),
@@ -135,7 +154,7 @@ class REALHomePage extends StatelessWidget {
                           },
                           child: CustomFAQ(
                             icon: Icons.admin_panel_settings_rounded,
-                            questions: LocaleKeys.inspText.tr(), 
+                            questions: LocaleKeys.inspText.tr(),
                             subQuestion: LocaleKeys.subInspText.tr(),
                             color: Colors.blue,
                           ),

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
+import 'package:frontend_tutorial/init/locale_keys.g.dart';
 import 'package:frontend_tutorial/settings/app_settings.dart';
 import 'package:provider/provider.dart';
 
@@ -51,7 +52,8 @@ class _DuckCardState extends State<DuckCard> {
                   child: Column(
                     children: <Widget>[
                       Text(
-                        _ducks[index]["duckName"],
+                        LocaleKeys.duckPage[index],
+                        //_ducks[index]["duckName"],
                         style: const TextStyle(color: Colors.yellow, fontSize: 14, fontStyle: FontStyle.italic),
                       ),
                       h10box,

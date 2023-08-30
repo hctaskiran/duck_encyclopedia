@@ -15,34 +15,44 @@
         "encyclopediaPage": "Анциклопедия",
         "settings": "Настройки"
     },
-    "whistleDuck": {
-        "duckName": "Свистящая Утка",
-        "duckOrigin": "Центрально-Южная Америка",
-        "duckDescription": "Только свистит."
-    },
-    "whiteDuck": {
-        "duckName": "Пекинская Утка",
-        "duckOrigin": "Китая",
-        "duckDescription": "Простая утка белого цвета."
-    },
-    "greenHead": {
-        "duckName": "Кряква",
-        "duckOrigin": "Европа, Азия, Северная Америка",
-        "duckDescription": "У нее голова желёного цвета."
-    },
-    "spoonMouth": {
-        "duckName": "Широконоска",
-        "duckOrigin": "Евразия, Северная Америка",
-        "duckDescription": "Ее клюв словно похож на ложку."
-    },
-    "straightTail": {
-        "duckName": "Савка",
-        "duckOrigin": "Испания, Северная Африка, Западно-Восточная Азия",
-        "duckDescription": "Имеет прямой хвост."
-    },
-    "outchinDuck": {
-        "duckName": "Чирок-Трескунок",
-        "duckOrigin": "Северная Америка, ВБ, Индия, Юговосточная Азия, Южная Африка",
-        "duckDescription": "Имеет странное имя, не так ли?"
+    "duckPage": [
+        {
+            "id": 0,
+            "duckName": "Свистящая Утка",
+            "duckOrigin": "Центрально-Южная Америка",
+            "duckDescription": "Только свистит."
+        },
+        {
+            "id": 1,
+            "duckName": "Пекинская Утка",
+            "duckOrigin": "Китая",
+            "duckDescription": "Простая утка белого цвета."
+        },
+        {
+            "id": 2,
+            "duckName": "Кряква",
+            "duckOrigin": "Европа, Азия, Северная Америка",
+            "duckDescription": "У нее голова желёного цвета."
+        },
+        {
+            "id": 3,
+            "duckName": "Широконоска",
+            "duckOrigin": "Евразия, Северная Америка",
+            "duckDescription": "Ее клюв словно похож на ложку."
+        },
+        {
+            "id": 4,
+            "duckName": "Савка",
+            "duckOrigin": "Испания, Северная Африка, Западно-Восточная Азия",
+            "duckDescription": "Имеет прямой хвост."
+        },
+        {
+            "id": 5,
+            "duckName": "Чирок-Трескунок",
+            "duckOrigin": "Северная Америка, ВБ, Индия, Юговосточная Азия, Южная Африка",
+            "duckDescription": "Имеет странное имя, не так ли?"
+        }
+    ]
+    
     }
-}
+
