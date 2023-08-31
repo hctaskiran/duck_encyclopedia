@@ -32,15 +32,30 @@ class _SpecialSettingState extends State<SpecialSetting> {
               child: Image.asset('assets/img/duck.png', fit: BoxFit.fill,)),
             h10box,
             const Center(child: Text('ördek')),
-            Text("aaaaaAAAAAAAs?"),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
-              child: Switch(
-                activeColor: blueColor,
-                value: Provider.of<AppSettings>(context).isGif,
-                onChanged: (_) {
-                 Provider.of<AppSettings>(context,listen: false).toggleGif();               
-                }
+            h50box,
+            Container(
+              height: 200,
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(70)),
+                color: grey300color
+              ),
+              child: Column(
+                children: [
+                  h50box,
+                  Center(
+                    child: Text(
+                      LocaleKeys.bottomNavigationBar_settingsPage_sureText.tr()
+                    ),
+                  ),
+                  h20box,
+                  Switch(
+                    activeColor: blueColor,
+                    value: Provider.of<AppSettings>(context).isGif,
+                    onChanged: (_) {
+                     Provider.of<AppSettings>(context,listen: false).toggleGif();               
+                    }
+                  ),
+                ],
               ),
             ),
           ]

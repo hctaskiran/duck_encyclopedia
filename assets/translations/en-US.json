@@ -16,7 +16,8 @@
         "settingsPage": {
             "settings": "Settings",
             "languages": "Languages",
-            "special": "Special Button"
+            "special": "Special Button",
+            "sureText": "Are you really sure that you want to switch this button?"
         }
     }
 }

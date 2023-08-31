@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
@@ -17,19 +18,25 @@ class DuckCard extends StatefulWidget {
 
 class _DuckCardState extends State<DuckCard> {
   List _ducks = [];
+  late String? currentLang;
   Future<void> readJson() async {
-    final String response = await rootBundle.loadString('assets/data/duck-en.json');
+    final String response = await rootBundle.loadString('assets/data/duck-$currentLang.json');
     final data = json.decode(response);
     setState(() {
       _ducks = data["ducks"];
     });
   }
-
   @override
   void initState() {
-    readJson();
     super.initState();
   }
+    @override
+  void didChangeDependencies() {
+    currentLang = context.locale.countryCode?.toLowerCase();
+    readJson();
+    super.didChangeDependencies();
+  }
+
 
   @override
   Widget build(BuildContext context) {

@@ -31,7 +31,8 @@ class CodegenLoader extends AssetLoader{
     "settingsPage": {
       "settings": "Ayarlar",
       "languages": "Dil Seçenekleri",
-      "special": "Özel Ayar"
+      "special": "Özel Ayar",
+      "sureText": "Bu tuşu aktif etmek istediğine emin misin?"
     }
   }
 };
@@ -52,7 +53,8 @@ static const Map<String,dynamic> ru_RU = {
     "settingsPage": {
       "settings": "Настройки",
       "languages": "Языки",
-      "special": "Специальная Кнопка"
+      "special": "Специальная Кнопка",
+      "sureText": "Уверен, что хочешь включить эту кнопку?"
     }
   }
 };
@@ -73,7 +75,8 @@ static const Map<String,dynamic> en_US = {
     "settingsPage": {
       "settings": "Settings",
       "languages": "Languages",
-      "special": "Special Button"
+      "special": "Special Button",
+      "sureText": "Are you really sure that you want to switch this button?"
     }
   }
 };

@@ -16,6 +16,7 @@ abstract class  LocaleKeys {
   static const bottomNavigationBar_settingsPage_settings = 'bottomNavigationBar.settingsPage.settings';
   static const bottomNavigationBar_settingsPage_languages = 'bottomNavigationBar.settingsPage.languages';
   static const bottomNavigationBar_settingsPage_special = 'bottomNavigationBar.settingsPage.special';
+  static const bottomNavigationBar_settingsPage_sureText = 'bottomNavigationBar.settingsPage.sureText';
   static const bottomNavigationBar_settingsPage = 'bottomNavigationBar.settingsPage';
   static const bottomNavigationBar = 'bottomNavigationBar';
 
