@@ -1,4 +1,5 @@
 // ignore_for_file: deprecated_member_use
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
@@ -25,6 +26,7 @@ void closeApp() {
 }
 
 class _REALHomePageState extends State<REALHomePage> {
+  
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -43,7 +45,9 @@ class _REALHomePageState extends State<REALHomePage> {
                       Text(LocaleKeys.hiText.tr(), style: Theme.of(context).textTheme.titleSmall),
                       h5box,
                       Text(
-                        DateFormat("dd.MM.yyyy" + " |").add_Hm().format(DateTime.now()), // Format the current date and time
+                        DateFormat("dd.MM.yyyy" + " |")
+                            .add_Hm()
+                            .format(DateTime.now()), // Format the current date and time
                         style: TextStyle(color: grey200color),
                       )
                     ],
@@ -116,7 +120,13 @@ class _REALHomePageState extends State<REALHomePage> {
                       children: [
                         InkWell(
                           onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => pages[3]));
+                            showDialog(
+                              context: context, 
+                              builder: (_) => AlertDialog(
+                                title: Text(LocaleKeys.goalTitleText.tr()),
+                                content: Text(LocaleKeys.goalText.tr()),
+                              ),
+                            );
                           },
                           child: CustomFAQ(
                             icon: Icons.question_mark_rounded,
@@ -127,7 +137,13 @@ class _REALHomePageState extends State<REALHomePage> {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => pages[4]));
+                            showDialog(
+                              context: context, 
+                              builder: (_) => AlertDialog(
+                                title: Text(LocaleKeys.explainTitleText.tr()),
+                                content: Text(LocaleKeys.explainText.tr()),
+                              ),
+                            );
                           },
                           child: CustomFAQ(
                             icon: Icons.fact_check_rounded,
@@ -138,61 +154,7 @@ class _REALHomePageState extends State<REALHomePage> {
                         ),
                         InkWell(
                           onTap: () {
-                            showDialog(
-                              barrierDismissible: false,
-                              context: context,
-                              builder: (_) => Stack(
-                                alignment: Alignment.topCenter,
-                                children: <Widget>[
-                                  Image.asset(
-                                    'assets/img/duck.png',
-                                    height: 200,
-                                    fit: BoxFit.cover,
-                                  ),
-                                  AlertDialog(
-                                    title: Text(LocaleKeys.hereInspText.tr()),
-                                    content: Text(LocaleKeys.inspirationDuck.tr()),
-                                    actions: [
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                        children: [
-                                          TextButton(
-                                              onPressed: () {
-                                                Navigator.pop(context);
-                                                // Show a text for 3 seconds
-                                                ScaffoldMessenger.of(context).showSnackBar(
-                                                  SnackBar(
-                                                    backgroundColor: red700color,
-                                                    content: Text(LocaleKeys.thinkMessage.tr()),
-                                                    duration: const Duration(seconds: 2),
-                                                  ),
-                                                );
-                                                // Close the app after 3 seconds
-                                                Future.delayed(const Duration(seconds: 2), () {
-                                                  closeApp();
-                                                });
-                                              },
-                                              child: Text(LocaleKeys.yesButton.tr())),
-                                          TextButton(
-                                              onPressed: () {
-                                                Navigator.pop(context);
-                                                // Show a text for 3 seconds
-                                                ScaffoldMessenger.of(context).showSnackBar(
-                                                  SnackBar(
-                                                    backgroundColor: green700color,
-                                                    content: Text(LocaleKeys.thankMessage.tr()),
-                                                    duration: const Duration(seconds: 2),
-                                                  ),
-                                                );
-                                              },
-                                              child: Text(LocaleKeys.ofcButton.tr()))
-                                        ],
-                                      )
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            );
+                            inspirationShowDialog(context);
                           },
                           child: CustomFAQ(
                             icon: Icons.admin_panel_settings_rounded,
@@ -210,6 +172,64 @@ class _REALHomePageState extends State<REALHomePage> {
           ),
         )
       ],
+    );
+  }
+
+  Future<dynamic> inspirationShowDialog(BuildContext context) {
+    return showDialog(
+      barrierDismissible: false,
+      context: context,
+      builder: (_) => Stack(
+        alignment: Alignment.topCenter,
+        children: <Widget>[
+          Image.asset(
+            'assets/img/duck.png',
+            height: 200,
+            fit: BoxFit.cover,
+          ),
+          AlertDialog(
+            title: Text(LocaleKeys.hereInspText.tr()),
+            content: Text(LocaleKeys.inspirationDuck.tr()),
+            actions: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  TextButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                        // Show a text for 3 seconds
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            backgroundColor: red700color,
+                            content: Text(LocaleKeys.thinkMessage.tr()),
+                            duration: const Duration(seconds: 2),
+                          ),
+                        );
+                        // Close the app after 3 seconds
+                        Future.delayed(const Duration(seconds: 2), () {
+                          closeApp();
+                        });
+                      },
+                      child: Text(LocaleKeys.yesButton.tr())),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                        // Show a text for 3 seconds
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            backgroundColor: green700color,
+                            content: Text(LocaleKeys.thankMessage.tr()),
+                            duration: const Duration(seconds: 2),
+                          ),
+                        );
+                      },
+                      child: Text(LocaleKeys.ofcButton.tr()))
+                ],
+              )
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

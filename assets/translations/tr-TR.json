@@ -1,16 +1,15 @@
 {
-    "date": {
-        "day": "Gün",
-        "month": "Ay",
-        "year": "Yıl"
-    },
     "hiText": "Merhaba, Ördekcıs",
     "aboutApp": "Ördekler hakkında daha fazlasını öğren!",
     "subAboutApp": "Uygulama Hakkında:",
     "appGoal": "Bu uygulamanın amacı nedir?",
     "subAppGoal": "Uygulamanın amacını neymiş bakalım.",
+    "goalTitleText": "Ne ola ki?",
+    "goalText": "Öncelikle uygulama büyük-küçük her yaştan insana hitap etmekte. Özellikle ördekleri seviyorsan, ördekler hakkında ilginç bilgiler öğrenmek istiyorsan bu uygulamayı kullanabilirsin. Ha internette bu bilgiler yok mu, tabiki var. Fakat bu uygulamada hepsi derlendi!",
     "whyText": "Böyle bir uygulama neden var?",
     "subWhyText": "İşte sana 13 sebep!",
+    "explainTitleText": "İşte nedeni!",
+    "explainText": "",
     "inspText": "İlham kaynağım ise...",
     "hereInspText": "İşte ilham kaynağım!",
     "inspirationDuck": "EVET! İşte bu uygulamanın ilham kaynağı tam olarak bu ördek. Nedenini bilmemekle birlikte ördek benim bile değil, ama olsun yine de çok güzel. Ördeği sevdin mi?",
@@ -31,5 +30,4 @@
             "sureText": "Bu tuşu aktif etmek istediğine emin misin?"
         }
     }
-    
 }

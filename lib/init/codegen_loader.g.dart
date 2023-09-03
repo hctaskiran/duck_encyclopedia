@@ -15,14 +15,17 @@ class CodegenLoader extends AssetLoader{
   }
 
   static const Map<String,dynamic> tr_TR = {
-  "dateFormat": "dd MMMM yyyy",
   "hiText": "Merhaba, Ördekcıs",
   "aboutApp": "Ördekler hakkında daha fazlasını öğren!",
   "subAboutApp": "Uygulama Hakkında:",
   "appGoal": "Bu uygulamanın amacı nedir?",
   "subAppGoal": "Uygulamanın amacını neymiş bakalım.",
+  "goalTitleText": "Ne ola ki?",
+  "goalText": "Öncelikle uygulama büyük-küçük her yaştan insana hitap etmekte. Özellikle ördekleri seviyorsan, ördekler hakkında ilginç bilgiler öğrenmek istiyorsan bu uygulamayı kullanabilirsin. Ha internette bu bilgiler yok mu, tabiki var. Fakat bu uygulamada hepsi derlendi!",
   "whyText": "Böyle bir uygulama neden var?",
   "subWhyText": "İşte sana 13 sebep!",
+  "explainTitleText": "İşte nedeni!",
+  "explainText": "",
   "inspText": "İlham kaynağım ise...",
   "hereInspText": "İşte ilham kaynağım!",
   "inspirationDuck": "EVET! İşte bu uygulamanın ilham kaynağı tam olarak bu ördek. Nedenini bilmemekle birlikte ördek benim bile değil, ama olsun yine de çok güzel. Ördeği sevdin mi?",
@@ -44,14 +47,17 @@ class CodegenLoader extends AssetLoader{
   }
 };
 static const Map<String,dynamic> ru_RU = {
-  "dateFormat": "dd MMMM yyyy",
   "hiText": "Приветик, Ördekcıs",
   "aboutApp": "Давай узнаем больше об утках!",
   "subAboutApp": "Про Приложение:",
   "appGoal": "Зачем такое приложение?",
   "subAppGoal": "Давай-ка узнаем причину =)",
+  "goalTitleText": "Что за цель?",
+  "goalText": "Во первых, приложение понравится людям всех возрастов. Если вам нравятся утки, вы можете использовать это приложение, если хотите узнать больше интересных фактов об утках. Информации также существуют в интернете, но в этом приложении вся она собрана.",
   "whyText": "Почему существует?",
   "subWhyText": "Вам 13 причин на этот вопрос!",
+  "explainTitleText": "Вот причина!",
+  "explainText": "",
   "inspText": "Моё вдохновление...",
   "hereInspText": "Вот вдохновление!",
   "inspirationDuck": "ДА! Приложение было вдохновлено этой уткой. Сам даже совсем не знаю почему так. даже хотя она не принадлежит мне. Зато её обожаю. Нравится ли она тебе?",
@@ -73,14 +79,17 @@ static const Map<String,dynamic> ru_RU = {
   }
 };
 static const Map<String,dynamic> en_US = {
-  "dateFormat": "dd MMMM yyyy",
   "hiText": "Hi, Ördekcıs",
   "aboutApp": "Time to learn much about ducks!",
   "subAboutApp": "About the App:",
   "appGoal": "What is this for?",
   "subAppGoal": "Learn the main point of the application.",
+  "goalTitleText": "Let's see..",
+  "goalText": "First of all, the application appeals to people of all ages. Especially if you like ducks, you can use this application if you want to learn more interested facts about ducks. These informations also exist on the internet, but in this app, all of these are compiled.",
   "whyText": "Why does it exists?",
   "subWhyText": "13 reasons why it does!",
+  "explainTitleText": "Here is the reason!",
+  "explainText": "",
   "inspText": "My inspiration...",
   "hereInspText": "Here it is!",
   "inspirationDuck": "YES! This duck is the inspiration of this app. I don't even know why it is, It doesn't even belong to me. But anyway, I like it. Did you like it?",

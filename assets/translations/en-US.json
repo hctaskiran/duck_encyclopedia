@@ -1,16 +1,15 @@
 {   
-    "date": {
-        "day": "Day",
-        "month": "Month",
-        "year": "Year"
-    },
     "hiText": "Hi, Ördekcıs",
     "aboutApp": "Time to learn much about ducks!",
     "subAboutApp": "About the App:",
     "appGoal": "What is this for?",
     "subAppGoal": "Learn the main point of the application.",
+    "goalTitleText": "Let's see..",
+    "goalText": "First of all, the application appeals to people of all ages. Especially if you like ducks, you can use this application if you want to learn more interested facts about ducks. These informations also exist on the internet, but in this app, all of these are compiled.",
     "whyText": "Why does it exists?",
     "subWhyText": "13 reasons why it does!",
+    "explainTitleText": "Here is the reason!",
+    "explainText": "",
     "inspText": "My inspiration...",
     "hereInspText": "Here it is!",
     "inspirationDuck": "YES! This duck is the inspiration of this app. I don't even know why it is, It doesn't even belong to me. But anyway, I like it. Did you like it?",
