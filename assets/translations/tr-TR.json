@@ -1,4 +1,9 @@
 {
+    "date": {
+        "day": "Gün",
+        "month": "Ay",
+        "year": "Yıl"
+    },
     "hiText": "Merhaba, Ördekcıs",
     "aboutApp": "Ördekler hakkında daha fazlasını öğren!",
     "subAboutApp": "Uygulama Hakkında:",

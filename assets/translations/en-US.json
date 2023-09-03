@@ -1,4 +1,9 @@
-{
+{   
+    "date": {
+        "day": "Day",
+        "month": "Month",
+        "year": "Year"
+    },
     "hiText": "Hi, Ördekcıs",
     "aboutApp": "Time to learn much about ducks!",
     "subAboutApp": "About the App:",

@@ -27,8 +27,6 @@ void closeApp() {
 class _REALHomePageState extends State<REALHomePage> {
   @override
   Widget build(BuildContext context) {
-    DateTime currentDate = DateTime.now();
-    String formattedDate = DateFormat('dd MMMM yyyy').format(currentDate);
     return Column(
       children: [
         Padding(
@@ -44,7 +42,10 @@ class _REALHomePageState extends State<REALHomePage> {
                       h20box,
                       Text(LocaleKeys.hiText.tr(), style: Theme.of(context).textTheme.titleSmall),
                       h5box,
-                      Text(formattedDate, style: const TextStyle(color: grey200color))
+                      Text(
+                        DateFormat("dd.MM.yyyy" + " |").add_Hm().format(DateTime.now()), // Format the current date and time
+                        style: TextStyle(color: grey200color),
+                      )
                     ],
                   ),
                   // icon

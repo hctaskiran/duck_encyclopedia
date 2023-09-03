@@ -15,6 +15,7 @@ class CodegenLoader extends AssetLoader{
   }
 
   static const Map<String,dynamic> tr_TR = {
+  "dateFormat": "dd MMMM yyyy",
   "hiText": "Merhaba, Ördekcıs",
   "aboutApp": "Ördekler hakkında daha fazlasını öğren!",
   "subAboutApp": "Uygulama Hakkında:",
@@ -43,6 +44,7 @@ class CodegenLoader extends AssetLoader{
   }
 };
 static const Map<String,dynamic> ru_RU = {
+  "dateFormat": "dd MMMM yyyy",
   "hiText": "Приветик, Ördekcıs",
   "aboutApp": "Давай узнаем больше об утках!",
   "subAboutApp": "Про Приложение:",
@@ -71,6 +73,7 @@ static const Map<String,dynamic> ru_RU = {
   }
 };
 static const Map<String,dynamic> en_US = {
+  "dateFormat": "dd MMMM yyyy",
   "hiText": "Hi, Ördekcıs",
   "aboutApp": "Time to learn much about ducks!",
   "subAboutApp": "About the App:",
