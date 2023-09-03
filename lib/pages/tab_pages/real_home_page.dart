@@ -3,14 +3,12 @@ import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:frontend_tutorial/constants/app_languages.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
-import 'package:frontend_tutorial/pages/page_organizer.dart';
-import 'package:frontend_tutorial/pages/vehicles/inspiration_dialog.dart';
 import 'package:frontend_tutorial/utilities/pages_list.dart';
+import 'package:frontend_tutorial/pages/page_organizer.dart';
 import 'package:frontend_tutorial/utilities/faq.dart';
 
 class REALHomePage extends StatefulWidget {
@@ -22,14 +20,15 @@ class REALHomePage extends StatefulWidget {
   State<REALHomePage> createState() => _REALHomePageState();
 }
 
-class _REALHomePageState extends State<REALHomePage> {
+void closeApp() {
+  exit(0);
+}
 
-  
+class _REALHomePageState extends State<REALHomePage> {
   @override
   Widget build(BuildContext context) {
     DateTime currentDate = DateTime.now();
     String formattedDate = DateFormat('dd MMMM yyyy').format(currentDate);
-
     return Column(
       children: [
         Padding(
@@ -156,9 +155,22 @@ class _REALHomePageState extends State<REALHomePage> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                          TextButton(onPressed: () {
-
-                                          }, child: Text(LocaleKeys.yesButton.tr())),
+                                          TextButton(
+                                              onPressed: () {
+                                                Navigator.pop(context);
+                                                // Show a text for 3 seconds
+                                                ScaffoldMessenger.of(context).showSnackBar(
+                                                  SnackBar(
+                                                    content: Text(LocaleKeys.thinkMessage.tr()),
+                                                    duration: const Duration(seconds: 3),
+                                                  ),
+                                                );
+                                                // Close the app after 3 seconds
+                                                Future.delayed(const Duration(seconds: 3), () {
+                                                  closeApp();
+                                                });
+                                              },
+                                              child: Text(LocaleKeys.yesButton.tr())),
                                           TextButton(
                                               onPressed: () {
                                                 Navigator.pop(context);

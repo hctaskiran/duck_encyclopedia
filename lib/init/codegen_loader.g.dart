@@ -16,17 +16,18 @@ class CodegenLoader extends AssetLoader{
 
   static const Map<String,dynamic> tr_TR = {
   "hiText": "Merhaba, Ördekcıs",
-  "aboutApp": "Ördekler hakkında daha fazlasını öğrenelim!",
+  "aboutApp": "Ördekler hakkında daha fazlasını öğren!",
   "subAboutApp": "Uygulama Hakkında:",
   "appGoal": "Bu uygulamanın amacı nedir?",
   "subAppGoal": "Uygulamanın amacını neymiş bakalım.",
   "whyText": "Böyle bir uygulama neden var?",
-  "subWhyText": "İşte size 13 sebep!",
-  "inspText": "İlham kaynağım...",
+  "subWhyText": "İşte sana 13 sebep!",
+  "inspText": "İlham kaynağım ise...",
   "hereInspText": "İşte ilham kaynağım!",
   "inspirationDuck": "EVET! İşte bu uygulamanın ilham kaynağı tam olarak bu ördek. Nedenini bilmemekle birlikte ördek benim bile değil, ama olsun yine de çok güzel. Ördeği sevdin mi?",
   "yesButton": "Evet",
   "ofcButton": "Kesinlikle!",
+  "thinkMessage": "Bence cevabı tekrar düşün.",
   "subInspText": "Uygulamanın çeşitli yerlerinde bu ilham kaynağını görebilirsiniz.",
   "appName": "Ördek Ansiklopedisi",
   "bottomNavigationBar": {
@@ -50,9 +51,10 @@ static const Map<String,dynamic> ru_RU = {
   "subWhyText": "Вам 13 причин на этот вопрос!",
   "inspText": "Моё вдохновление...",
   "hereInspText": "Вот вдохновление!",
-  "inspirationDuck": "ДА! Приложение вдохновлено этой уткой. Сам даже совсем не знаю почему так. даже хотя она не принадлежит мне. Зато её обожаю. Нравится ли она тебе?",
+  "inspirationDuck": "ДА! Приложение было вдохновлено этой уткой. Сам даже совсем не знаю почему так. даже хотя она не принадлежит мне. Зато её обожаю. Нравится ли она тебе?",
   "yesButton": "Да",
   "ofcButton": "Конечно же!",
+  "thinkMessage": "Надумай над ответом ещё раз.",
   "subInspText": "В некоторых вкладках приложения такое вдохновение отображается.",
   "appName": "Утиная Анциклопедия",
   "bottomNavigationBar": {
@@ -79,6 +81,7 @@ static const Map<String,dynamic> en_US = {
   "inspirationDuck": "YES! This duck is the inspiration of this app. I don't even know why it is, It doesn't even belong to me. But anyway, I like it. Did you like it?",
   "yesButton": "Yes",
   "ofcButton": "Definitely!",
+  "thinkMessage": "Think about the answer again.",
   "subInspText": "You can see this inspiration almost everywhere in this app.",
   "appName": "Duck Encyclopedia",
   "bottomNavigationBar": {

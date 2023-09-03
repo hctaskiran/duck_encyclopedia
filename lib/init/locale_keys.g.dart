@@ -13,6 +13,7 @@ abstract class  LocaleKeys {
   static const inspirationDuck = 'inspirationDuck';
   static const yesButton = 'yesButton';
   static const ofcButton = 'ofcButton';
+  static const thinkMessage = 'thinkMessage';
   static const subInspText = 'subInspText';
   static const appName = 'appName';
   static const bottomNavigationBar_realHomePage = 'bottomNavigationBar.realHomePage';
