@@ -9,6 +9,8 @@ abstract class  LocaleKeys {
   static const whyText = 'whyText';
   static const subWhyText = 'subWhyText';
   static const inspText = 'inspText';
+  static const hereInspText = 'hereInspText';
+  static const inspirationDuck = 'inspirationDuck';
   static const subInspText = 'subInspText';
   static const appName = 'appName';
   static const bottomNavigationBar_realHomePage = 'bottomNavigationBar.realHomePage';

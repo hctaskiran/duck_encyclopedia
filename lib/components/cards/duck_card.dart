@@ -43,13 +43,13 @@ class _DuckCardState extends State<DuckCard> {
     return SizedBox.expand(
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 200, childAspectRatio: 1, crossAxisSpacing: 20, mainAxisSpacing: 20),
+            maxCrossAxisExtent: 200, childAspectRatio: 1, crossAxisSpacing: 20, mainAxisSpacing:20),
         itemCount: _ducks.length,
         itemBuilder: (context, index) {
           return Row(
             children: [
               Card(
-                margin: const EdgeInsets.only(left: 3),
+                margin: const EdgeInsets.only(left: 5),
                 color: Colors.transparent,
                 child: Padding(
                   padding: const EdgeInsets.all(10),
@@ -57,7 +57,7 @@ class _DuckCardState extends State<DuckCard> {
                     children: <Widget>[
                       Text(
                         _ducks[index]["duckName"],
-                        style: const TextStyle(color: Colors.yellow, fontSize: 14, fontStyle: FontStyle.italic),
+                        style: const TextStyle(color: Colors.yellow, fontSize: 13, fontStyle: FontStyle.italic),
                       ),
                       h10box,
                       SizedBox(

@@ -4,7 +4,7 @@ import 'package:frontend_tutorial/pages/vehicles/cars.dart';
 import '../pages/home_button.dart';
 import '../pages/tab_pages/real_home_page.dart';
 import '../pages/tab_pages/settings.dart';
-import '../pages/vehicles/trains.dart';
+import '../pages/vehicles/inspiration_dialog.dart';
 import '../pages/vehicles/trucks.dart';
 
 final List<Widget> pages = [
@@ -13,7 +13,7 @@ final List<Widget> pages = [
   const SettingsPage(),
   const CarsPage(),
   const TrucksPage(),
-  const TrainsPage(),
+  const InspirationDialog(),
   const HomeButtonPage(),
 ];
 

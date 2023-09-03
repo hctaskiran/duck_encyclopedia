@@ -7,14 +7,20 @@ import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
 import 'package:frontend_tutorial/pages/page_organizer.dart';
+import 'package:frontend_tutorial/pages/vehicles/inspiration_dialog.dart';
 import 'package:frontend_tutorial/utilities/pages_list.dart';
 import 'package:frontend_tutorial/utilities/faq.dart';
 
-class REALHomePage extends StatelessWidget {
+class REALHomePage extends StatefulWidget {
   const REALHomePage({
     super.key,
   });
 
+  @override
+  State<REALHomePage> createState() => _REALHomePageState();
+}
+
+class _REALHomePageState extends State<REALHomePage> {
   @override
   Widget build(BuildContext context) {
     DateTime currentDate = DateTime.now();
@@ -139,7 +145,13 @@ class REALHomePage extends StatelessWidget {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => pages[5]));
+                            showDialog(
+                              context: context,
+                              builder: (_) => AlertDialog(
+                                  title: Text(LocaleKeys.hereInspText.tr()),
+                                  content: Text(LocaleKeys.inspirationDuck.tr()),
+                                ),
+                              );
                           },
                           child: CustomFAQ(
                             icon: Icons.admin_panel_settings_rounded,

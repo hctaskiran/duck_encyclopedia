@@ -23,8 +23,10 @@ class CodegenLoader extends AssetLoader{
   "whyText": "Böyle bir uygulama neden var?",
   "subWhyText": "İşte size 13 sebep!",
   "inspText": "İlham kaynağım...",
+  "hereInspText": "İşte ilham kaynağım!",
+  "inspirationDuck": "EVET! İşte bu uygulamanın ilham kaynağı tam olarak bu ördek. Nedenini bilmemekle birlikte ördek benim bile değil, ama olsun yine de çok güzel. Ördeği sevdin mi?",
   "subInspText": "Uygulamanın çeşitli yerlerinde bu ilham kaynağını görebilirsiniz.",
-  "appName": "Ördek Ansiklopedi",
+  "appName": "Ördek Ansiklopedisi",
   "bottomNavigationBar": {
     "realHomePage": "Anasayfa",
     "encyclopediaPage": "Ansiklopedi",
@@ -44,7 +46,9 @@ static const Map<String,dynamic> ru_RU = {
   "subAppGoal": "Давай-ка узнаем причину =)",
   "whyText": "Почему существует?",
   "subWhyText": "Вам 13 причин на этот вопрос!",
-  "inspText": "Моё вдохновение...",
+  "inspText": "Моё вдохновление...",
+  "hereInspText": "Вот вдохновление!",
+  "inspirationDuck": "ДА! Приложение вдохновлено этой уткой. Сам даже совсем не знаю почему так. даже хотя она не принадлежит мне. Зато её обожаю. Нравится ли она тебе?",
   "subInspText": "В некоторых вкладках приложения такое вдохновение отображается.",
   "appName": "Утиная Анциклопедия",
   "bottomNavigationBar": {
@@ -67,6 +71,8 @@ static const Map<String,dynamic> en_US = {
   "whyText": "Why does it exists?",
   "subWhyText": "13 reasons why it does!",
   "inspText": "My inspiration...",
+  "hereInspText": "Here it is!",
+  "inspirationDuck": "YES! This duck is the inpsiration of this app. I don't even know why it is, It doesn't even belong to me. But anyway, I like it. Did you like it?",
   "subInspText": "You can see this inspiration almost everywhere in this app.",
   "appName": "Duck Encyclopedia",
   "bottomNavigationBar": {
