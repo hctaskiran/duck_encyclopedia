@@ -1,7 +1,9 @@
 // ignore_for_file: deprecated_member_use
+import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:frontend_tutorial/constants/app_languages.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
@@ -21,6 +23,8 @@ class REALHomePage extends StatefulWidget {
 }
 
 class _REALHomePageState extends State<REALHomePage> {
+
+  
   @override
   Widget build(BuildContext context) {
     DateTime currentDate = DateTime.now();
@@ -67,15 +71,14 @@ class _REALHomePageState extends State<REALHomePage> {
                         onChanged: (newValue) {
                           int selectedIndex = AppLanguages.Languages.indexOf(newValue as String);
                           context.locale = AppLanguages.supportedLanguages[selectedIndex];
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const PageOrganizer()));
+                          Navigator.pushReplacement(
+                              context, MaterialPageRoute(builder: (context) => const PageOrganizer()));
                         },
                       )),
                 ],
               ),
-
               h20box,
               h20box,
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -84,16 +87,10 @@ class _REALHomePageState extends State<REALHomePage> {
                           style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18))),
                 ],
               ),
-
-              h20box,
-
-              //   _emojiIcons(),
+              h20box
             ],
           ),
         ),
-
-        //    h20box,
-
         Expanded(
           child: Container(
             decoration: const BoxDecoration(
@@ -104,7 +101,6 @@ class _REALHomePageState extends State<REALHomePage> {
             child: Center(
               child: Column(
                 children: [
-                  // exercise heading
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -114,10 +110,7 @@ class _REALHomePageState extends State<REALHomePage> {
                       ),
                     ],
                   ),
-
                   h20box,
-
-                  // exercise listview
                   Expanded(
                     child: ListView(
                       children: [
@@ -146,12 +139,38 @@ class _REALHomePageState extends State<REALHomePage> {
                         InkWell(
                           onTap: () {
                             showDialog(
+                              barrierDismissible: false,
                               context: context,
-                              builder: (_) => AlertDialog(
-                                  title: Text(LocaleKeys.hereInspText.tr()),
-                                  content: Text(LocaleKeys.inspirationDuck.tr()),
-                                ),
-                              );
+                              builder: (_) => Stack(
+                                alignment: Alignment.topCenter,
+                                children: <Widget>[
+                                  Image.asset(
+                                    'assets/img/duck.png',
+                                    height: 200,
+                                    fit: BoxFit.cover,
+                                  ),
+                                  AlertDialog(
+                                    title: Text(LocaleKeys.hereInspText.tr()),
+                                    content: Text(LocaleKeys.inspirationDuck.tr()),
+                                    actions: [
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          TextButton(onPressed: () {
+
+                                          }, child: Text(LocaleKeys.yesButton.tr())),
+                                          TextButton(
+                                              onPressed: () {
+                                                Navigator.pop(context);
+                                              },
+                                              child: Text(LocaleKeys.ofcButton.tr()))
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            );
                           },
                           child: CustomFAQ(
                             icon: Icons.admin_panel_settings_rounded,

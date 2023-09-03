@@ -11,6 +11,8 @@ abstract class  LocaleKeys {
   static const inspText = 'inspText';
   static const hereInspText = 'hereInspText';
   static const inspirationDuck = 'inspirationDuck';
+  static const yesButton = 'yesButton';
+  static const ofcButton = 'ofcButton';
   static const subInspText = 'subInspText';
   static const appName = 'appName';
   static const bottomNavigationBar_realHomePage = 'bottomNavigationBar.realHomePage';

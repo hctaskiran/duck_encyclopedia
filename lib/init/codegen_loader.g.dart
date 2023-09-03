@@ -25,6 +25,8 @@ class CodegenLoader extends AssetLoader{
   "inspText": "İlham kaynağım...",
   "hereInspText": "İşte ilham kaynağım!",
   "inspirationDuck": "EVET! İşte bu uygulamanın ilham kaynağı tam olarak bu ördek. Nedenini bilmemekle birlikte ördek benim bile değil, ama olsun yine de çok güzel. Ördeği sevdin mi?",
+  "yesButton": "Evet",
+  "ofcButton": "Kesinlikle!",
   "subInspText": "Uygulamanın çeşitli yerlerinde bu ilham kaynağını görebilirsiniz.",
   "appName": "Ördek Ansiklopedisi",
   "bottomNavigationBar": {
@@ -49,6 +51,8 @@ static const Map<String,dynamic> ru_RU = {
   "inspText": "Моё вдохновление...",
   "hereInspText": "Вот вдохновление!",
   "inspirationDuck": "ДА! Приложение вдохновлено этой уткой. Сам даже совсем не знаю почему так. даже хотя она не принадлежит мне. Зато её обожаю. Нравится ли она тебе?",
+  "yesButton": "Да",
+  "ofcButton": "Конечно же!",
   "subInspText": "В некоторых вкладках приложения такое вдохновение отображается.",
   "appName": "Утиная Анциклопедия",
   "bottomNavigationBar": {
@@ -72,7 +76,9 @@ static const Map<String,dynamic> en_US = {
   "subWhyText": "13 reasons why it does!",
   "inspText": "My inspiration...",
   "hereInspText": "Here it is!",
-  "inspirationDuck": "YES! This duck is the inpsiration of this app. I don't even know why it is, It doesn't even belong to me. But anyway, I like it. Did you like it?",
+  "inspirationDuck": "YES! This duck is the inspiration of this app. I don't even know why it is, It doesn't even belong to me. But anyway, I like it. Did you like it?",
+  "yesButton": "Yes",
+  "ofcButton": "Definitely!",
   "subInspText": "You can see this inspiration almost everywhere in this app.",
   "appName": "Duck Encyclopedia",
   "bottomNavigationBar": {
