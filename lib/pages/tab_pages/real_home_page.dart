@@ -1,14 +1,11 @@
 // ignore_for_file: deprecated_member_use
-import 'dart:convert';
 import 'dart:io';
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/app_languages.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
-import 'package:frontend_tutorial/utilities/pages_list.dart';
 import 'package:frontend_tutorial/pages/page_organizer.dart';
 import 'package:frontend_tutorial/utilities/faq.dart';
 
@@ -182,10 +179,13 @@ class _REALHomePageState extends State<REALHomePage> {
       builder: (_) => Stack(
         alignment: Alignment.topCenter,
         children: <Widget>[
-          Image.asset(
-            'assets/img/duck.png',
-            height: 200,
-            fit: BoxFit.cover,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: Image.asset(
+              'assets/img/duck.png',
+              height: 200,
+              fit: BoxFit.cover,
+            ),
           ),
           AlertDialog(
             title: Text(LocaleKeys.hereInspText.tr()),
