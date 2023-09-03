@@ -161,12 +161,13 @@ class _REALHomePageState extends State<REALHomePage> {
                                                 // Show a text for 3 seconds
                                                 ScaffoldMessenger.of(context).showSnackBar(
                                                   SnackBar(
+                                                    backgroundColor: red700color,
                                                     content: Text(LocaleKeys.thinkMessage.tr()),
-                                                    duration: const Duration(seconds: 3),
+                                                    duration: const Duration(seconds: 2),
                                                   ),
                                                 );
                                                 // Close the app after 3 seconds
-                                                Future.delayed(const Duration(seconds: 3), () {
+                                                Future.delayed(const Duration(seconds: 2), () {
                                                   closeApp();
                                                 });
                                               },
@@ -174,6 +175,14 @@ class _REALHomePageState extends State<REALHomePage> {
                                           TextButton(
                                               onPressed: () {
                                                 Navigator.pop(context);
+                                                // Show a text for 3 seconds
+                                                ScaffoldMessenger.of(context).showSnackBar(
+                                                  SnackBar(
+                                                    backgroundColor: green700color,
+                                                    content: Text(LocaleKeys.thankMessage.tr()),
+                                                    duration: const Duration(seconds: 2),
+                                                  ),
+                                                );
                                               },
                                               child: Text(LocaleKeys.ofcButton.tr()))
                                         ],

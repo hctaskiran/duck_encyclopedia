@@ -28,6 +28,7 @@ class CodegenLoader extends AssetLoader{
   "yesButton": "Evet",
   "ofcButton": "Kesinlikle!",
   "thinkMessage": "Bence cevabı tekrar düşün.",
+  "thankMessage": "Doğru cevap için teşekkürler =)",
   "subInspText": "Uygulamanın çeşitli yerlerinde bu ilham kaynağını görebilirsiniz.",
   "appName": "Ördek Ansiklopedisi",
   "bottomNavigationBar": {
@@ -54,7 +55,8 @@ static const Map<String,dynamic> ru_RU = {
   "inspirationDuck": "ДА! Приложение было вдохновлено этой уткой. Сам даже совсем не знаю почему так. даже хотя она не принадлежит мне. Зато её обожаю. Нравится ли она тебе?",
   "yesButton": "Да",
   "ofcButton": "Конечно же!",
-  "thinkMessage": "Надумай над ответом ещё раз.",
+  "thinkMessage": "Подумай над ответом ещё раз.",
+  "thankMessage": "Спасибочке за правильный ответ =)",
   "subInspText": "В некоторых вкладках приложения такое вдохновение отображается.",
   "appName": "Утиная Анциклопедия",
   "bottomNavigationBar": {
@@ -82,6 +84,7 @@ static const Map<String,dynamic> en_US = {
   "yesButton": "Yes",
   "ofcButton": "Definitely!",
   "thinkMessage": "Think about the answer again.",
+  "thankMessage": "Thanks for the correct answer =)",
   "subInspText": "You can see this inspiration almost everywhere in this app.",
   "appName": "Duck Encyclopedia",
   "bottomNavigationBar": {

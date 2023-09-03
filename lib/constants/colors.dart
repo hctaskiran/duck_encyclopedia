@@ -9,7 +9,9 @@ const grey300color =Color.fromRGBO(224, 224, 224, 1);
 const grey400color =Color.fromRGBO(189, 189, 189, 1);
 const grey600color = Color.fromRGBO(117, 117, 117, 1);
 const greenColor = Colors.green;
+const green700color = Color.fromRGBO(56, 142, 60, 1);
 const redColor = Colors.red;
+const red700color = Color.fromRGBO(211, 47, 47, 1);
 const blueColor = Colors.blue;
 const blackColor = Colors.black;
 
