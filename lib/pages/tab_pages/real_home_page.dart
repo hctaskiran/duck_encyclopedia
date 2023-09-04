@@ -42,10 +42,10 @@ class _REALHomePageState extends State<REALHomePage> {
                       Text(LocaleKeys.hiText.tr(), style: Theme.of(context).textTheme.titleSmall),
                       h5box,
                       Text(
-                        DateFormat("dd.MM.yyyy" + " |")
+                        DateFormat("dd.MM.yyyy"  " |")
                             .add_Hm()
                             .format(DateTime.now()), // Format the current date and time
-                        style: TextStyle(color: grey200color),
+                        style: const TextStyle(color: grey200color),
                       )
                     ],
                   ),
@@ -223,7 +223,9 @@ class _REALHomePageState extends State<REALHomePage> {
                           ),
                         );
                       },
-                      child: Text(LocaleKeys.ofcButton.tr()))
+                      child: Text(LocaleKeys.ofcButton.tr()
+                    )
+                  )
                 ],
               )
             ],
