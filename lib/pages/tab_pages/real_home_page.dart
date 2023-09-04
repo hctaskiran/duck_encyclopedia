@@ -193,7 +193,7 @@ class _REALHomePageState extends State<REALHomePage> {
             actions: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
+                children: [ 
                   TextButton(
                       onPressed: () {
                         Navigator.pop(context);
