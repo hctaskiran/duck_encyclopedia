@@ -15,50 +15,51 @@ class CustomDrawer extends StatefulWidget {
 class _CustomDrawerState extends State<CustomDrawer> {
   @override
   Widget build(BuildContext context) {
- Provider.of<AppSettings>(context,listen: false).loadGifSetting();
+    Provider.of<AppSettings>(context, listen: false).loadGifSetting();
     return Drawer(
+      backgroundColor: pinkColor,
         child: Column(
       children: [
-        Image.asset('assets/img/duck.png', fit: BoxFit.fitWidth),
+        Image.asset('assets/img/duck.png'),
         h20box,
-        const Text('ördek'),
         h20box,
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: TextButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeButtonPage()));
-              },
-              child: Row(
-                children: [
-                  const Icon(
-                    Icons.arrow_forward_ios,
-                    size: 30,
-                  ),
-                  Text(
-                    'H O M E',
-                    style: Theme.of(context).textTheme.titleSmall,
-                  ),
-                ],
-              )),
-        ),
-        const Spacer(),
         Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
-              child: Switch(
-                activeColor: pinkColor,
-                value: Provider.of<AppSettings>(context).isGif,
-                onChanged: (_) {
-                 Provider.of<AppSettings>(context,listen: false).toggleGif();               
-                }
-              ),
+            _arrowIcon(),
+            _drawerText(
+              text: 'H O M E',
             ),
           ],
         ),
+        Switch(
+            activeColor: blueColor,
+            value: Provider.of<AppSettings>(context).isGif,
+            onChanged: (_) {
+              Provider.of<AppSettings>(context, listen: false).toggleGif();
+            }),
       ],
     ));
+  }
+
+  Icon _arrowIcon() {
+    return const Icon(
+            Icons.arrow_forward_ios,
+            size: 30,
+          );
+  }
+}
+
+class _drawerText extends StatelessWidget {
+  const _drawerText({
+    super.key, required this.text,
+  });
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: Theme.of(context).textTheme.titleSmall,
+    );
   }
 }

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/settings/app_settings.dart';
 import 'package:provider/provider.dart';
@@ -42,22 +43,30 @@ class _DuckCardState extends State<DuckCard> {
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 200, childAspectRatio: 1, crossAxisSpacing: 20, mainAxisSpacing:20),
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+            maxCrossAxisExtent: _CustomInts().cross200extent, 
+            childAspectRatio: _CustomInts().aRatio1, 
+            crossAxisSpacing: _CustomInts().space20, 
+            mainAxisSpacing: _CustomInts().space20
+          ),
         itemCount: _ducks.length,
         itemBuilder: (context, index) {
           return Row(
             children: [
               Card(
-                margin: const EdgeInsets.only(left: 5),
-                color: Colors.transparent,
+                margin: _CustomPadding().leftOnly5,
+                color: transColor,
                 child: Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: _CustomPadding().all10,
                   child: Column(
                     children: <Widget>[
                       Text(
                         _ducks[index]["duckName"],
-                        style: const TextStyle(color: Colors.yellow, fontSize: 13, fontStyle: FontStyle.italic),
+                        style: TextStyle(
+                          color: yellowColor, 
+                          fontSize: _CustomInts().size13, 
+                          fontStyle: FontStyle.italic
+                        ),
                       ),
                       h10box,
                       SizedBox(
@@ -66,7 +75,7 @@ class _DuckCardState extends State<DuckCard> {
                           child: Provider.of<AppSettings>(context).isGif == true
                               ? Image.asset(_ducks[index]["duckGif"])
                               : ClipRRect(
-                                  borderRadius: BorderRadius.circular(25),
+                                  borderRadius: _CustomBorderRadius().circular25,
                                   child: Image.asset(_ducks[index]["duckImage"])))
                     ],
                   ),
@@ -78,4 +87,20 @@ class _DuckCardState extends State<DuckCard> {
       ),
     );
   }
+}
+
+class _CustomInts {
+  final double space20 = 20;
+  final double cross200extent = 200;
+  final double aRatio1 = 1;
+  final double size13 = 13;
+}
+
+class _CustomPadding {
+  final leftOnly5 = const EdgeInsets.only(left: 5);
+  final all10 = const EdgeInsets.all(10);
+}
+
+class _CustomBorderRadius {
+  final circular25 = BorderRadius.circular(25);
 }

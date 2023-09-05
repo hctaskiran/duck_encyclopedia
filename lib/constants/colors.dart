@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 const whiteColor = Colors.white;
+const transColor = Colors.transparent;
+const yellowColor = Colors.yellow;
 const pinkColor = Color.fromARGB(255, 228, 129, 162);
 const abPinkColor = Color.fromARGB(255, 224, 59, 114);
 const grey100color = Color.fromRGBO(245, 245, 245, 1);

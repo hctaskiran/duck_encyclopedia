@@ -32,15 +32,13 @@ class _PageOrganizerState extends State<PageOrganizer> {
           BottomNavigationBarItem(
             icon: Icon(bnbicons[0]),
             activeIcon: Icon(bnbicons[3]), 
-            label: LocaleKeys.bottomNavigationBar_realHomePage.tr()),
+            label: LocaleKeys.bottomNavigationBar_realHomePage.tr()
+          ),
           BottomNavigationBarItem(
             icon: Icon(bnbicons[1]),
             activeIcon: Icon(bnbicons[4]), 
-            label: LocaleKeys.bottomNavigationBar_encyclopediaPage.tr()),
-          BottomNavigationBarItem(
-            icon: Icon(bnbicons[2]),
-            activeIcon: Icon(bnbicons[5]),
-            label: LocaleKeys.bottomNavigationBar_settingsPage_settings.tr()),
+            label: LocaleKeys.bottomNavigationBar_encyclopediaPage.tr()
+          ),
         ],
         currentIndex: activeIndex,
         onTap: (index) {
