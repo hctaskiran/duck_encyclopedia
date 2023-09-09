@@ -42,7 +42,10 @@ class CodegenLoader extends AssetLoader{
       "settings": "Ayarlar",
       "languages": "Dil Seçenekleri",
       "special": "Özel Ayar",
-      "sureText": "Bu tuşu aktif etmek istediğine emin misin?"
+      "sureText": "Bu tuşu aktif edince ne olacak acaba?",
+      "credits": "Yapımcı",
+      "whoText": "Geliştirici",
+      "whoSubText": "Uygulama geliştirme aşamasında yardımcı olanlar:\n\n papalsa: Küçük detaylar + gözden geçirme.\n nythel: Hata düzeltmeleri."
     }
   }
 };
@@ -74,7 +77,10 @@ static const Map<String,dynamic> ru_RU = {
       "settings": "Настройки",
       "languages": "Языки",
       "special": "Специальная Кнопка",
-      "sureText": "Уверен, что хочешь включить эту кнопку?"
+      "sureText": "Что будет случиться если включаешь кнопку?",
+      "credits": "Титры",
+      "whoText": "Разработник",
+      "whoSubText": "Помогающие при разработке приложения:\n\n papalsa: Мелкие детали + рассмот.\n nythel: Исправление ошибок."
     }
   }
 };
@@ -106,7 +112,10 @@ static const Map<String,dynamic> en_US = {
       "settings": "Settings",
       "languages": "Languages",
       "special": "Special Button",
-      "sureText": "Are you really sure that you want to switch this button?"
+      "sureText": "Who knows what's going to happen when you switch this button?",
+      "credits": "Credits",
+      "whoText": "Developer",
+      "whoSubText": "Those who helped me in the developing progress of the app: \n\n papalsa: smol details + reviewing the app.\n nythel: bug fixes"
     }
   }
 };

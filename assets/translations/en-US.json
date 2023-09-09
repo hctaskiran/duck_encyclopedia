@@ -27,7 +27,10 @@
             "settings": "Settings",
             "languages": "Languages",
             "special": "Special Button",
-            "sureText": "Who knows what's going to happen when you switch this button?"
+            "sureText": "Who knows what's going to happen when you switch this button?",
+            "credits": "Credits",
+            "whoText": "Developer",
+            "whoSubText": "Those who helped me in the developing progress of the app: \n\n papalsa: smol details + reviewing the app.\n nythel: bug fixes"
         }
     }
 }

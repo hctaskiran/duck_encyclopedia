@@ -27,6 +27,9 @@ abstract class  LocaleKeys {
   static const bottomNavigationBar_settingsPage_languages = 'bottomNavigationBar.settingsPage.languages';
   static const bottomNavigationBar_settingsPage_special = 'bottomNavigationBar.settingsPage.special';
   static const bottomNavigationBar_settingsPage_sureText = 'bottomNavigationBar.settingsPage.sureText';
+  static const bottomNavigationBar_settingsPage_credits = 'bottomNavigationBar.settingsPage.credits';
+  static const bottomNavigationBar_settingsPage_whoText = 'bottomNavigationBar.settingsPage.whoText';
+  static const bottomNavigationBar_settingsPage_whoSubText = 'bottomNavigationBar.settingsPage.whoSubText';
   static const bottomNavigationBar_settingsPage = 'bottomNavigationBar.settingsPage';
   static const bottomNavigationBar = 'bottomNavigationBar';
 

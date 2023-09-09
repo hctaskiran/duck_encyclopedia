@@ -43,6 +43,10 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: context.supportedLocales,
       localizationsDelegates: context.localizationDelegates,
       theme: ThemeData(
+        drawerTheme: const DrawerThemeData(
+          backgroundColor: pinkColor,
+          shadowColor: whiteColor
+        ),
         textButtonTheme: TextButtonThemeData(
           style: ButtonStyle(
             padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 20)))
@@ -73,6 +77,7 @@ class _MyAppState extends State<MyApp> {
 
   AppBarTheme _customAppBar() {
     return AppBarTheme(
+      iconTheme: const IconThemeData(color: whiteColor),
         centerTitle: true,
         shape: abShape,
         backgroundColor: abPinkColor,

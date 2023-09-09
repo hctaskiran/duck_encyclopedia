@@ -27,7 +27,11 @@
             "settings": "Ayarlar",
             "languages": "Dil Seçenekleri",
             "special": "Özel Ayar",
-            "sureText": "Bu tuşu aktif edince ne olacak acaba?"
+            "sureText": "Bu tuşu aktif edince ne olacak acaba?",
+            "credits": "Yapımcı",
+            "whoText":"Geliştirici",
+            "whoSubText": "Uygulama geliştirme aşamasında yardımcı olanlar:\n\n papalsa: Küçük detaylar + gözden geçirme.\n nythel: Hata düzeltmeleri."
+            
         }
     }
 }

@@ -24,7 +24,7 @@ class _PageOrganizerState extends State<PageOrganizer> {
         title: Text(abTitle, style: abStyle),
       ),
       body: pages[activeIndex],
-      drawer: const CustomDrawer(),
+      drawer: CustomDrawer(),
       backgroundColor: pinkColor,
       bottomNavigationBar: BottomNavigationBar(
         fixedColor: pinkColor,
