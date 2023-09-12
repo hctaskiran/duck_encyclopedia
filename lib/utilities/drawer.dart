@@ -44,21 +44,7 @@ class CustomDrawer extends StatelessWidget {
         h20box,
         InkWell(
           onTap: () {
-            showDialog(
-                context: context,
-                builder: (_) => Column(
-                      mainAxisAlignment: centerMA,
-                      children: [
-                        Column(
-                          children: [
-                            AlertDialog(
-                              title: Text(LocaleKeys.bottomNavigationBar_settingsPage_whoText.tr()),
-                              content: Text(LocaleKeys.bottomNavigationBar_settingsPage_whoSubText.tr()),
-                            )
-                          ],
-                        )
-                      ],
-                    ));
+            creditShowDialog(context);
           },
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -73,6 +59,24 @@ class CustomDrawer extends StatelessWidget {
         )
       ],
     ));
+  }
+
+  Future<dynamic> creditShowDialog(BuildContext context) {
+    return showDialog(
+              context: context,
+              builder: (_) => Column(
+                    mainAxisAlignment: centerMA,
+                    children: [
+                      Column(
+                        children: [
+                          AlertDialog(
+                            title: Text(LocaleKeys.bottomNavigationBar_settingsPage_whoText.tr()),
+                            content: Text(LocaleKeys.bottomNavigationBar_settingsPage_whoSubText.tr()),
+                          )
+                        ],
+                      )
+                    ],
+                  ));
   }
 
   Future<dynamic> specialShowDialog(BuildContext context) {
@@ -104,8 +108,8 @@ class CustomDrawer extends StatelessWidget {
             ));
   }
 }
-
 class customTextButton extends StatelessWidget {
+
   customTextButton({super.key, required this.text});
   final String text;
 

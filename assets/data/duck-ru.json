@@ -6,7 +6,9 @@
             "duckImage": "assets/img/islik.jpeg",
             "duckGif" : "assets/img/islik.jpeg",
             "duckOrigin": "Центрально-Южная Америка",
-            "duckDescription": "Только свистит."
+            "duckDescription": "Только свистит.",
+            "duckGuise": "",
+            "duckInfo": ""
     
         },
         {
@@ -14,35 +16,45 @@
             "duckImage": "assets/img/white_duck.jpeg",
             "duckGif" : "assets/img/white_duck.jpeg",
             "duckOrigin": "Китая",
-            "duckDescription": "Обычная утка белого цвета."
+            "duckDescription": "Обычная утка белого цвета.",
+            "duckGuise": "",
+            "duckInfo": ""
         },
         {
             "duckName": "Кряква",
             "duckImage": "assets/img/mallard.jpg",
             "duckGif" : "assets/gif/yesilbas_loop.gif",
             "duckOrigin": "Европа, Азия, Северная Америка",
-            "duckDescription": "У неё голова желёного цвета."
+            "duckDescription": "У неё голова желёного цвета.",
+            "duckGuise": "",
+            "duckInfo": ""
         },
         {
             "duckName": "Широконоска",
             "duckImage": "assets/img/northern_shoveler.jpg",
             "duckGif" : "assets/img/northern_shoveler.jpg",
             "duckOrigin": "Евразия, Северная Америка",
-            "duckDescription": "Ее клюв словно похож на ложку."
+            "duckDescription": "Ее клюв словно похож на ложку.",
+            "duckGuise": "",
+            "duckInfo": ""
         },
         {
             "duckName": "Савка",
             "duckImage": "assets/img/dikkuyruk.jpeg",
             "duckGif" : "assets/img/dikkuyruk.jpeg",
             "duckOrigin": "Испания, Северная Африка, Западно-Восточная Азия",
-            "duckDescription": "Имеет прямой хвост."
+            "duckDescription": "Имеет прямой хвост.",
+            "duckGuise": "",
+            "duckInfo": ""
         },
         {
             "duckName": "Чирок-Трескунок",
             "duckImage": "assets/img/garganey.jpg",
             "duckGif" : "assets/img/garganey.jpg",
             "duckOrigin": "Северная Америка, ВБ, Индия, Юговосточная Азия, Южная Африка",
-            "duckDescription": "Имеет странное имя, не так ли?"
+            "duckDescription": "Имеет странное имя, не так ли?",
+            "duckGuise": "",
+            "duckInfo": ""
         }
     ]
     }

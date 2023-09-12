@@ -44,8 +44,8 @@ class CodegenLoader extends AssetLoader{
       "special": "Özel Ayar",
       "sureText": "Bu tuşu aktif edince ne olacak acaba?",
       "credits": "Yapımcı",
-      "whoText": "Geliştirici",
-      "whoSubText": "Uygulama geliştirme aşamasında yardımcı olanlar:\n\n papalsa: Küçük detaylar + gözden geçirme.\n nythel: Hata düzeltmeleri."
+      "whoText": "Teşekkür",
+      "whoSubText": "Uygulama geliştirme aşamasında yardımcı olanlara teşekkürler:\n\npapalsa: Küçük detaylar + gözden geçirme.\nnythel: Hata düzeltmeleri."
     }
   }
 };
@@ -63,7 +63,7 @@ static const Map<String,dynamic> ru_RU = {
   "explainText": "Есть 13 причин, почему такое приложение создано, но могу пояснить 5 самых важных причин: \n \n-Можешь узнать больше интересных фактов об утках. \n-Если тебя утки интересуют, вот тебе это приложение. \n-Утки застенчивы. В том приложении получаешь информации, не нарушая их личную жизнь. \n-Наконец, моя девушка похожа на уточку, приложение создано во имя её. ",
   "inspText": "Моё вдохновление...",
   "hereInspText": "Вот оно!",
-  "inspirationDuck": "ДА! Приложение было вдохновлено этой уткой. Сам даже совсем не знаю почему так. даже хотя она не принадлежит мне. Зато её обожаю. Нравится ли она тебе?",
+  "inspirationDuck": "ДА! Приложение было вдохновлено этой уткой. Сам даже совсем не знаю почему так. Даже хотя она не принадлежит мне. Зато её обожаю. Нравится ли она тебе?",
   "yesButton": "Да",
   "ofcButton": "Конечно же!",
   "thinkMessage": "Подумай над ответом ещё раз.",
@@ -79,8 +79,8 @@ static const Map<String,dynamic> ru_RU = {
       "special": "Специальная Кнопка",
       "sureText": "Что будет случиться если включаешь кнопку?",
       "credits": "Титры",
-      "whoText": "Разработник",
-      "whoSubText": "Помогающие при разработке приложения:\n\n papalsa: Мелкие детали + рассмот.\n nythel: Исправление ошибок."
+      "whoText": "Спасибо",
+      "whoSubText": "Большое спасибо тем при разработке приложения:\n\npapalsa: Мелкие детали + рассмот.\nnythel: Исправление мелких ошибок."
     }
   }
 };
@@ -114,8 +114,8 @@ static const Map<String,dynamic> en_US = {
       "special": "Special Button",
       "sureText": "Who knows what's going to happen when you switch this button?",
       "credits": "Credits",
-      "whoText": "Developer",
-      "whoSubText": "Those who helped me in the developing progress of the app: \n\n papalsa: smol details + reviewing the app.\n nythel: bug fixes"
+      "whoText": "Thanks",
+      "whoSubText": "Big thanks those who helped me in the developing process of the app: \n\npapalsa: smol details + reviewing the app.\nnythel: bug fixes"
     }
   }
 };

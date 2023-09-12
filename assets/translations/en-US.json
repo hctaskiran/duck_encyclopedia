@@ -29,8 +29,8 @@
             "special": "Special Button",
             "sureText": "Who knows what's going to happen when you switch this button?",
             "credits": "Credits",
-            "whoText": "Developer",
-            "whoSubText": "Those who helped me in the developing progress of the app: \n\n papalsa: smol details + reviewing the app.\n nythel: bug fixes"
+            "whoText": "Thanks",
+            "whoSubText": "Big thanks those who helped me in the developing process of the app: \n\npapalsa: smol details + reviewing the app.\nnythel: bug fixes"
         }
     }
 }

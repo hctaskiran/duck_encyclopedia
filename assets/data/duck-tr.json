@@ -5,43 +5,55 @@
             "duckImage": "assets/img/islik.jpeg",
             "duckGif" : "assets/img/islik.jpeg",
             "duckOrigin": "Orta & Güney Amerika",
-            "duckDescription": "Islık çalan ördek."
+            "duckDescription": "Islık çalan ördek.",
+            "duckGuise": "",
+            "duckInfo": ""
     
         },
         {
             "duckName": "Pekin Ördeği",
             "duckImage": "assets/img/white_duck.jpeg",
             "duckGif" : "assets/img/white_duck.jpeg",
-            "duckOrigin": "Çin",
-            "duckDescription": "Beyaz ördek."
+            "duckOrigin": "Nerede bulunur? \n Çin",
+            "duckDescription": "Tanımı: \n Beyaz ördek.",
+            "duckGuise": "",
+            "duckInfo": ""
         },
         {
             "duckName": "Yeşilbaş Ördek",
             "duckImage": "assets/img/mallard.jpg",
             "duckGif" : "assets/gif/yesilbas_loop.gif",
             "duckOrigin": "Avrupa, Asya, Kuzey Amerika",
-            "duckDescription": "Yeşil kafalı ördek."
+            "duckDescription": "Yeşil kafalı ördek.",
+            "duckGuise": "",
+            "duckInfo": ""
         },
         {
             "duckName": "Kaşıkgaga Ördek",
             "duckImage": "assets/img/northern_shoveler.jpg",
             "duckGif" : "assets/img/northern_shoveler.jpg",
             "duckOrigin": "Avrasya, Kuzey Amerika",
-			"duckDescription": "Ağzı kaşığa benziyor."
+			"duckDescription": "Ağzı kaşığa benziyor.",
+            "duckGuise": "",
+            "duckInfo": ""
         },
         {
             "duckName": "Dikkuyruk Ördek",
             "duckImage": "assets/img/dikkuyruk.jpeg",
             "duckGif" : "assets/img/dikkuyruk.jpeg",
             "duckOrigin": "İspanya, Kuzey Afrika, Batı & Doğu Asya",
-			"duckDescription": "Kuyruğu dimdik."
+			"duckDescription": "Kuyruğu dimdik.",
+            "duckGuise": "",
+            "duckInfo": ""
         },
         {
             "duckName": "Çıkrıkçın Ördeği",
             "duckImage": "assets/img/garganey.jpg",
             "duckGif" : "assets/img/garganey.jpg",
             "duckOrigin": "Kuzey Amerika, BK, Hindistan, Güneydoğu Asya, Güney Afrika",
-			"duckDescription": "Garip bir ismi var."
+			"duckDescription": "Garip bir ismi var.",
+            "duckGuise": "",
+            "duckInfo": ""
         }
     ]
     }

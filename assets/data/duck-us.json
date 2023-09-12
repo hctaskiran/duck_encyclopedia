@@ -5,44 +5,55 @@
         "duckName": "Fulvous Whistling Duck",
         "duckImage": "assets/img/islik.jpeg",
         "duckGif" : "assets/img/islik.jpeg",
-        "duckOrigin": "Central & South America",
-        "duckDescription": "Whistler duck."
+        "duckOrigin": "Can be found: \n -Central & South America",
+        "duckDescription": "Description: \n -Whistler duck.",
+        "duckGuise": "Guise: \n -Brown color with light brown head, dark beak and white neck.",
+        "duckInfo": ""
 
     },
     {
         "duckName": "Peking Duck",
         "duckImage": "assets/img/white_duck.jpeg",
         "duckGif" : "assets/img/white_duck.jpeg",
-        "duckOrigin": "China",
-        "duckDescription": "A default white duck."
+        "duckOrigin": "Can be found: \n -China",
+        "duckDescription": "Description: \n-A default white duck.",
+        "duckGuise": "Guise: \n - ",
+        "duckInfo": ""
     },
     {
         "duckName": "Mallard",
         "duckImage": "assets/img/mallard.jpg",
         "duckGif" : "assets/gif/yesilbas_loop.gif",
-        "duckOrigin": "Europe, Asia, North America",
-        "duckDescription": "Green head duck."
+        "duckOrigin": "Can be found: \n -Europe, Asia, North America",
+        "duckDescription": "Description: \n -Green head duck.",
+        "duckGuise": "Guise: \n - ",
+        "duckInfo": ""
     },
     {
         "duckName": "Northern Shoveler",
         "duckImage": "assets/img/northern_shoveler.jpg",
         "duckGif" : "assets/img/northern_shoveler.jpg",
-        "duckOrigin": "Eurasia, North America",
-        "duckDescription": "Has a mouth that looks like a spoon."
+        "duckOrigin": "Can be found: \n -Eurasia, North America",
+        "duckDescription": "Has a mouth that looks like a spoon.",
+        "duckGuise": "Guise: \n -"
     },
     {
         "duckName": "White Headed Duck",
         "duckImage": "assets/img/dikkuyruk.jpeg",
         "duckGif" : "assets/img/dikkuyruk.jpeg",
         "duckOrigin": "Spain, North Africa, West & East Asia",
-        "duckDescription": "Has a straight tail."
+        "duckDescription": "Has a straight tail.",
+        "duckGuise": "Guise: \n -",
+        "duckInfo": ""
     },
     {
         "duckName": "Garganey",
         "duckImage": "assets/img/garganey.jpg",
         "duckGif" : "assets/img/garganey.jpg",
         "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
-        "duckDescription": "IDK what kind of that duck is."
+        "duckDescription": "IDK what kind of that duck is.",
+        "duckGuise": "Guise: \n -",
+        "duckInfo": ""
     }
 ]
 }

@@ -18,6 +18,7 @@ class DuckCard extends StatefulWidget {
 }
 
 class _DuckCardState extends State<DuckCard> {
+  final centerMA = MainAxisAlignment.center;
   List _ducks = [];
   late String? currentLang;
   Future<void> readJson() async {
@@ -53,31 +54,54 @@ class _DuckCardState extends State<DuckCard> {
         itemBuilder: (context, index) {
           return Row(
             children: [
-              Card(
-                margin: _CustomPadding().leftOnly5,
-                color: transColor,
-                child: Padding(
-                  padding: _CustomPadding().all10,
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        _ducks[index]["duckName"],
-                        style: TextStyle(
-                          color: yellowColor, 
-                          fontSize: _CustomInts().size13, 
-                          fontStyle: FontStyle.italic
+              InkWell(
+                onTap: () {
+                  showDialog(
+                    context: context, 
+                    builder:(_) => Column(
+                      mainAxisAlignment: centerMA,
+                      children: <Widget>[
+                        AlertDialog(
+                          title: Text(_ducks[index]["duckName"]),
+                          content: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(_ducks[index]["duckDescription"]),
+                              Text(_ducks[index]["duckOrigin"]),
+                              Text(_ducks[index]["duckGuise"]),
+                              Text(_ducks[index]["duckInfo"]),
+                            ],
+                          ),
+                        )
+                      ],
+                    ));
+                },
+                child: Card(
+                  margin: _CustomPadding().leftOnly5,
+                  color: transColor,
+                  child: Padding(
+                    padding: _CustomPadding().all10,
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          _ducks[index]["duckName"],
+                          style: TextStyle(
+                            color: yellowColor, 
+                            fontSize: _CustomInts().size13, 
+                            fontStyle: FontStyle.italic
+                          ),
                         ),
-                      ),
-                      h10box,
-                      SizedBox(
-                          width: 150,
-                          height: 125,
-                          child: Provider.of<AppSettings>(context).isGif == true
-                              ? Image.asset(_ducks[index]["duckGif"])
-                              : ClipRRect(
-                                  borderRadius: _CustomBorderRadius().circular25,
-                                  child: Image.asset(_ducks[index]["duckImage"])))
-                    ],
+                        h10box,
+                        SizedBox(
+                            width: 150,
+                            height: 125,
+                            child: Provider.of<AppSettings>(context).isGif == true
+                                ? Image.asset(_ducks[index]["duckGif"])
+                                : ClipRRect(
+                                    borderRadius: _CustomBorderRadius().circular25,
+                                    child: Image.asset(_ducks[index]["duckImage"])))
+                      ],
+                    ),
                   ),
                 ),
               ),
