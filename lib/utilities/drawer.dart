@@ -1,9 +1,8 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
-import 'package:frontend_tutorial/init/locale_keys.g.dart';
 import 'package:frontend_tutorial/settings/app_settings.dart';
+import 'package:frontend_tutorial/utilities/localizated_texts.dart';
 import 'package:provider/provider.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -13,7 +12,11 @@ class CustomDrawer extends StatelessWidget {
 
   final _icons = [
     const Icon(Icons.question_mark_rounded, color: whiteColor),
-    const Icon(Icons.person_2_rounded, color: whiteColor),
+    const Icon(Icons.favorite, color: whiteColor),
+    const Icon(
+      Icons.person_2_rounded,
+      color: whiteColor,
+    )
   ];
 
   @override
@@ -35,7 +38,7 @@ class CustomDrawer extends StatelessWidget {
               _icons[0],
               w12box,
               customTextButton(
-                text: LocaleKeys.bottomNavigationBar_settingsPage_special.tr(),
+                text: LocalizatedTexts().specialSettingTitle,
               )
             ],
           ),
@@ -52,7 +55,24 @@ class CustomDrawer extends StatelessWidget {
               _icons[1],
               w12box,
               customTextButton(
-                text: LocaleKeys.bottomNavigationBar_settingsPage_credits.tr(),
+                text: LocalizatedTexts().creditsTitle
+              )
+            ],
+          ),
+        ),
+        h20box,
+        h20box,
+        InkWell(
+          onTap: () {
+            developerShowDialog(context);
+          },
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              _icons[2],
+              w12box,
+              customTextButton(
+                text: LocalizatedTexts().aboutDeveloperTitle,
               )
             ],
           ),
@@ -61,22 +81,40 @@ class CustomDrawer extends StatelessWidget {
     ));
   }
 
+  Future<dynamic> developerShowDialog(BuildContext context) {
+    return showDialog(
+        context: context,
+        builder: (_) => Column(
+              mainAxisAlignment: centerMA,
+              children: [
+                Column(
+                  children: [
+                    AlertDialog(
+                      title: Text(LocalizatedTexts().aboutDeveloperTitle),
+                      content: Text(LocalizatedTexts().aboutDeveloperContent),
+                    )
+                  ],
+                )
+              ],
+            ));
+  }
+
   Future<dynamic> creditShowDialog(BuildContext context) {
     return showDialog(
-              context: context,
-              builder: (_) => Column(
-                    mainAxisAlignment: centerMA,
-                    children: [
-                      Column(
-                        children: [
-                          AlertDialog(
-                            title: Text(LocaleKeys.bottomNavigationBar_settingsPage_whoText.tr()),
-                            content: Text(LocaleKeys.bottomNavigationBar_settingsPage_whoSubText.tr()),
-                          )
-                        ],
-                      )
-                    ],
-                  ));
+        context: context,
+        builder: (_) => Column(
+              mainAxisAlignment: centerMA,
+              children: [
+                Column(
+                  children: [
+                    AlertDialog(
+                      title: Text(LocalizatedTexts().creditsTitle),
+                      content: Text(LocalizatedTexts().creditsContent),
+                    )
+                  ],
+                )
+              ],
+            ));
   }
 
   Future<dynamic> specialShowDialog(BuildContext context) {
@@ -89,10 +127,10 @@ class CustomDrawer extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     AlertDialog(
-                      title: Text(LocaleKeys.bottomNavigationBar_settingsPage_special.tr()),
+                      title: Text(LocalizatedTexts().specialSettingTitle),
                       content: Column(
                         children: [
-                          Text(LocaleKeys.bottomNavigationBar_settingsPage_sureText.tr()),
+                          Text(LocalizatedTexts().activateButton),
                           Switch(
                               activeColor: blueColor,
                               value: Provider.of<AppSettings>(context).isGif,
@@ -108,8 +146,8 @@ class CustomDrawer extends StatelessWidget {
             ));
   }
 }
-class customTextButton extends StatelessWidget {
 
+class customTextButton extends StatelessWidget {
   customTextButton({super.key, required this.text});
   final String text;
 

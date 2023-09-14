@@ -8,6 +8,7 @@ import 'package:frontend_tutorial/constants/sized_boxes.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
 import 'package:frontend_tutorial/pages/page_organizer.dart';
 import 'package:frontend_tutorial/utilities/faq.dart';
+import 'package:frontend_tutorial/utilities/localizated_texts.dart';
 
 class REALHomePage extends StatefulWidget {
   const REALHomePage({
@@ -22,8 +23,9 @@ void closeApp() {
   exit(0);
 }
 
+const String realDate = "dd.MM.yyyy" " |";
+
 class _REALHomePageState extends State<REALHomePage> {
-  
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -39,10 +41,10 @@ class _REALHomePageState extends State<REALHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       h20box,
-                      Text(LocaleKeys.hiText.tr(), style: Theme.of(context).textTheme.titleSmall),
+                      Text(LocalizatedTexts().appHiText, style: Theme.of(context).textTheme.titleSmall),
                       h5box,
                       Text(
-                        DateFormat("dd.MM.yyyy"  " |")
+                        DateFormat(realDate)
                             .add_Hm()
                             .format(DateTime.now()), // Format the current date and time
                         style: const TextStyle(color: grey200color),
@@ -84,7 +86,7 @@ class _REALHomePageState extends State<REALHomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
-                      child: Text(LocaleKeys.aboutApp.tr(),
+                      child: Text(LocalizatedTexts().appQuoteText,
                           style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18))),
                 ],
               ),
@@ -106,7 +108,7 @@ class _REALHomePageState extends State<REALHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        LocaleKeys.subAboutApp.tr(),
+                        LocalizatedTexts().appAboutTitle,
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ],
@@ -118,34 +120,34 @@ class _REALHomePageState extends State<REALHomePage> {
                         InkWell(
                           onTap: () {
                             showDialog(
-                              context: context, 
+                              context: context,
                               builder: (_) => AlertDialog(
-                                title: Text(LocaleKeys.goalTitleText.tr()),
-                                content: Text(LocaleKeys.goalText.tr()),
+                                title: Text(LocalizatedTexts().appGoalContentTitle),
+                                content: Text(LocalizatedTexts().appGoalContentText),
                               ),
                             );
                           },
                           child: CustomFAQ(
                             icon: Icons.question_mark_rounded,
-                            questions: LocaleKeys.appGoal.tr(),
-                            subQuestion: LocaleKeys.subAppGoal.tr(),
+                            questions: LocalizatedTexts().appGoalTitle,
+                            subQuestion: LocalizatedTexts().appGoalSubtitle,
                             color: greenColor,
                           ),
                         ),
                         InkWell(
                           onTap: () {
                             showDialog(
-                              context: context, 
+                              context: context,
                               builder: (_) => AlertDialog(
-                                title: Text(LocaleKeys.explainTitleText.tr()),
-                                content: Text(LocaleKeys.explainText.tr()),
+                                title: Text(LocalizatedTexts().whyExistContentTitle),
+                                content: Text(LocalizatedTexts().whyExistContentText),
                               ),
                             );
                           },
                           child: CustomFAQ(
                             icon: Icons.fact_check_rounded,
-                            questions: LocaleKeys.whyText.tr(),
-                            subQuestion: LocaleKeys.subWhyText.tr(),
+                            questions: LocalizatedTexts().whyExistTitle,
+                            subQuestion: LocalizatedTexts().whyExistSubtitle,
                             color: redColor,
                           ),
                         ),
@@ -155,8 +157,8 @@ class _REALHomePageState extends State<REALHomePage> {
                           },
                           child: CustomFAQ(
                             icon: Icons.admin_panel_settings_rounded,
-                            questions: LocaleKeys.inspText.tr(),
-                            subQuestion: LocaleKeys.subInspText.tr(),
+                            questions: LocalizatedTexts().appInspirationTitle,
+                            subQuestion: LocalizatedTexts().apInspirationSubtitle, 
                             color: Colors.blue,
                           ),
                         ),
@@ -188,20 +190,20 @@ class _REALHomePageState extends State<REALHomePage> {
             ),
           ),
           AlertDialog(
-            title: Text(LocaleKeys.hereInspText.tr()),
-            content: Text(LocaleKeys.inspirationDuck.tr()),
+            title: Text(LocalizatedTexts().appInspirationContenttitle),
+            content: Text(LocalizatedTexts().appInspirationContentText),
             actions: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [ 
+                children: [
                   TextButton(
                       onPressed: () {
                         Navigator.pop(context);
-                        // Show a text for 3 seconds
+                        // Show a text for 2 seconds
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             backgroundColor: red700color,
-                            content: Text(LocaleKeys.thinkMessage.tr()),
+                            content: Text(LocalizatedTexts().thinkMessage),
                             duration: const Duration(seconds: 2),
                           ),
                         );
@@ -210,7 +212,7 @@ class _REALHomePageState extends State<REALHomePage> {
                           closeApp();
                         });
                       },
-                      child: Text(LocaleKeys.yesButton.tr())),
+                      child: Text(LocalizatedTexts().yesButton)),
                   TextButton(
                       onPressed: () {
                         Navigator.pop(context);
@@ -218,14 +220,12 @@ class _REALHomePageState extends State<REALHomePage> {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             backgroundColor: green700color,
-                            content: Text(LocaleKeys.thankMessage.tr()),
+                            content: Text(LocalizatedTexts().thankMessage),
                             duration: const Duration(seconds: 2),
                           ),
                         );
                       },
-                      child: Text(LocaleKeys.ofcButton.tr()
-                    )
-                  )
+                      child: Text(LocalizatedTexts().definitelyButton))
                 ],
               )
             ],

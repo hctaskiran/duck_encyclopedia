@@ -58,22 +58,20 @@ class _DuckCardState extends State<DuckCard> {
                 onTap: () {
                   showDialog(
                     context: context, 
-                    builder:(_) => Column(
-                      mainAxisAlignment: centerMA,
-                      children: <Widget>[
-                        AlertDialog(
-                          title: Text(_ducks[index]["duckName"]),
-                          content: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(_ducks[index]["duckDescription"]),
-                              Text(_ducks[index]["duckOrigin"]),
-                              Text(_ducks[index]["duckGuise"]),
-                              Text(_ducks[index]["duckInfo"]),
-                            ],
-                          ),
-                        )
-                      ],
+                    builder:(_) => AlertDialog(
+                      scrollable: true,
+                      title: Text(_ducks[index]["duckName"]),
+                      content: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          
+                          Text(_ducks[index]["duckDescription"]),
+                          Text(_ducks[index]["duckOrigin"]),
+                          Text(_ducks[index]["duckGuise"]),
+                          Text(_ducks[index]["duckInfo"]),
+                          Text(_ducks[index]["duckAbout"]),
+                        ],
+                      ),
                     ));
                 },
                 child: Card(

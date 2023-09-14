@@ -1,37 +1,61 @@
 {
-    "hiText": "Merhaba, Ördekcıs",
-    "aboutApp": "Ördekler hakkında daha fazlasını öğren!",
-    "subAboutApp": "Uygulama Hakkında:",
-    "appGoal": "Bu uygulamanın amacı nedir?",
-    "subAppGoal": "Uygulamanın amacı neymiş bakalım.",
-    "goalTitleText": "Ne ola ki?",
-    "goalText": "Öncelikle uygulama büyük-küçük her yaştan insana hitap etmekte. Özellikle ördekleri seviyorsan, ördekler hakkında ilginç bilgiler öğrenmek istiyorsan bu uygulamayı kullanabilirsin. Ha internette bu bilgiler yok mu, tabiki var. Fakat bu uygulamada hepsi derlendi!",
-    "whyText": "Böyle bir uygulama neden var?",
-    "subWhyText": "İşte sana 13 sebep!",
-    "explainTitleText": "İşte nedeni!",
-    "explainText": "Uygulamayı yapmamın tam 13 tane sebebi var, fakat en önemli 5 tanesini şöyle açıklayabilirim: \n \n-Ördekler hakkında genel ve ilginç bilgiler edinebilirsin.\n-Ördeklere merakın varsa bu uygulama sana göre.\n-Ördekler utangaç canlılardır. Bu uygulama onların mahremiyetini bozmadan onlar hakkında bilgi edinmeni sağlayacak.\n-Çünkü ördekler çok güzeller.\n-Son olarak; sevgilim ördeğe benzediği için bu uygulamayı yaptım.",
-    "inspText": "İlham kaynağım ise...",
-    "hereInspText": "İşte ilham kaynağım!",
-    "inspirationDuck": "EVET! İşte bu uygulamanın ilham kaynağı tam olarak bu ördek. Nedenini bilmemekle birlikte ördek benim bile değil, ama olsun yine de çok güzel. Ördeği sevdin mi?",
-    "yesButton": "Evet",
-    "ofcButton": "Kesinlikle!",
-    "thinkMessage": "Bence cevabı tekrar düşün.",
-    "thankMessage": "Doğru cevap için teşekkürler =)",
-    "subInspText": "Uygulamanın çeşitli yerlerinde bu ilham kaynağını görebilirsiniz.",
-
-    "appName": "Ördek Ansiklopedisi",
+    "appName": "Duck Encyclopedia",
+    "homePageContents": {
+        "hiText": "Merhaba, Ördekcıs",
+        "quoteApp": "Ördekler hakkında daha fazlasını öğren!",
+        "aboutApp": {
+            "aboutAppTitle": "Uygulama Hakkında:",
+            "appGoal": {
+                "appGoalTitle": "Bu uygulamanın amacı nedir?",
+                "appGoalSubtitle": "Uygulamanın amacı neymiş bakalım.",
+                "appGoalContent": {
+                    "appGoalContentTitle": "Ne ola ki?",
+                    "appGoalContentText": "Öncelikle uygulama büyük-küçük her yaştan insana hitap etmekte. Özellikle ördekleri seviyorsan, ördekler hakkında ilginç bilgiler öğrenmek istiyorsan bu uygulamayı kullanabilirsin. Ha internette bu bilgiler yok mu, tabiki var. Fakat bu uygulamada hepsi derlendi!"
+                }
+            },
+            "appExist": {
+                "whyExistTitle": "Böyle bir uygulama neden var?",
+                "whyExistSubtitle": "İşte sana 13 sebep!",
+                "whyExistContent": {
+                    "whyExistContentTitle":"İşte nedeni!",
+                    "whyExistContentText": "Uygulamayı yapmamın tam 13 tane sebebi var, fakat en önemli 5 tanesini şöyle açıklayabilirim: \n \n-Ördekler hakkında genel ve ilginç bilgiler edinebilirsin.\n-Ördeklere merakın varsa bu uygulama sana göre.\n-Ördekler utangaç canlılardır. Bu uygulama onların mahremiyetini bozmadan onlar hakkında bilgi edinmeni sağlayacak.\n-Çünkü ördekler çok güzeller.\n-Son olarak; sevgilim ördeğe benzediği için bu uygulamayı yaptım."
+                }
+            },
+            "appInspiration": {
+                "appInspirationTitle": "İlham kaynağım ise...",
+                "appInspirationSubtitle": "Uygulamanın çeşitli yerlerinde bu ilham kaynağını görebilirsiniz.",
+                "appInspirationContent": {
+                    "appInspirationContentTitle": "İşte ilham kaynağım!",
+                    "appInspirationContentText": "EVET! İşte bu uygulamanın ilham kaynağı tam olarak bu ördek. Nedenini bilmemekle birlikte ördek benim bile değil, ama olsun yine de çok güzel. Ördeği sevdin mi?",
+                    "appInspirationQuestion": {
+                        "buttons": {
+                            "yesButton":"Evet",
+                            "thinkMessage": "Bence cevabı tekrar düşün.",
+                            "definitelyButton":"Kesinlikle",
+                            "thankMessage": "Doğru cevap için teşekkürler =)"
+                        }
+                    }
+                }
+            }
+        }
+    },
     "bottomNavigationBar": {
         "realHomePage": "Anasayfa",
-        "encyclopediaPage": "Ansiklopedi",
-        "settingsPage": {
-            "settings": "Ayarlar",
-            "languages": "Dil Seçenekleri",
-            "special": "Özel Ayar",
-            "sureText": "Bu tuşu aktif edince ne olacak acaba?",
-            "credits": "Yapımcı",
-            "whoText":"Teşekkür",
-            "whoSubText": "Uygulama geliştirme aşamasında yardımcı olanlara teşekkürler:\n\npapalsa: Küçük detaylar + gözden geçirme.\nnythel: Hata düzeltmeleri."
-            
+        "encyclopediaPage": "Ansiklopedi"
+    },
+
+    "drawerContents": {
+        "specialSetting": {
+            "specialSettingTitle": "Özel Ayar",
+            "activateButtonText": "Bu tuşu aktif edince ne olacak acaba?"
+        },
+        "credits": {
+            "creditsTitle": "Emeği Geçenler",
+            "creditsContent": "Uygulama geliştirme aşamasında yardımcı olanlara teşekkürler:\n\npapalsa: Küçük detaylar + gözden geçirme.\nnythel: Hata düzeltmeleri."
+        },
+        "aboutDeveloper": {
+            "aboutDeveloperTitle": "Geliştirici Hakkında",
+            "aboutDeveloperContent": "hctaskiran"
         }
     }
 }

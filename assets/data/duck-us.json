@@ -5,20 +5,22 @@
         "duckName": "Fulvous Whistling Duck",
         "duckImage": "assets/img/islik.jpeg",
         "duckGif" : "assets/img/islik.jpeg",
-        "duckOrigin": "Can be found: \n -Central & South America",
+        "duckOrigin": "Can be found in: \n -Central & South America",
         "duckDescription": "Description: \n -Whistler duck.",
-        "duckGuise": "Guise: \n -Brown color with light brown head, dark beak and white neck.",
-        "duckInfo": ""
+        "duckGuise": "Guise: \n -Brown color with light brown head, dark beak and white neck. \n",
+        "duckInfo": "Info: \n -Length: 45-53 cm. \n -Weight: 0.720-1.000 gr. \n -Wingspan: 85 to 90 cm. \n",
+        "duckAbout" : "About the duck: \n This is a long legged duck. Mainly different shades of brown; head, neck and breast are particularly rich buff (fulvous) with a darker back.The mantle is more darker shade of brown with buff-tipped feathers, the flight feathers and tail are dark brown, and a dark brown to black stripe runs through the center of the crown down the back of the neck to the base of the mantle. It has whitish stripes on its flanks, a long grey bill and grey legs. In flight, the wings are brown above and black below, with no white markings, and a white crescent on the rump contrasts with the black tail."
 
     },
     {
-        "duckName": "Peking Duck",
+        "duckName": "White Pekin Duck",
         "duckImage": "assets/img/white_duck.jpeg",
         "duckGif" : "assets/img/white_duck.jpeg",
         "duckOrigin": "Can be found: \n -China",
         "duckDescription": "Description: \n-A default white duck.",
-        "duckGuise": "Guise: \n - ",
-        "duckInfo": ""
+        "duckGuise": "Guise: \n -Long body and neck, orange color legs and beak, overall white duck. \n",
+        "duckInfo": "Info: \n -Length: 50-65 cm. \n -Weight: 3,500-4.500 gr. \n -Wingspan: 140 cm. \n",
+        "duckAbout" : "About the duck: \n White Pekin is an American breed of domestic duck, raised primarily for meat. It derives from birds brought to the United States from China in the nineteenth century, and is now bred in many parts of the world. It is often known as the American Pekin to distinguish it from the German Pekin, a distinct and separate breed which derives from the same Chinese stock but has different breeding. Many of these ducks were reared on Long Island, New York, in the late nineteenth and early twentieth centuries, from which the breed derived its name Long Island Duck."
     },
     {
         "duckName": "Mallard",
@@ -26,8 +28,9 @@
         "duckGif" : "assets/gif/yesilbas_loop.gif",
         "duckOrigin": "Can be found: \n -Europe, Asia, North America",
         "duckDescription": "Description: \n -Green head duck.",
-        "duckGuise": "Guise: \n - ",
-        "duckInfo": ""
+        "duckGuise": "Guise: \n -Green shiny head with silverish wings, orange-red legs. \n",
+        "duckInfo": "Info: \n -Lenght: 50-65 cm. \n -Weight: 0,700-1,600 gr. \n -Wingspan: 81-98 cm. \n",
+        "duckAbout" : "About the duck: \n The mallard (or wild duck) is a dabbling duck that breeds throughout the temperate and subtropical. This duck belongs to the subfamily Anatinae of the waterfowl family Anatidae. Males have green heads, while the females (hens or ducks) have mainly brown-speckled plumage. Both sexes have an area of white-bordered black or iridescent purple or blue feathers called a speculum on their wings; males especially tend to have blue speculum feathers. It is often slightly heavier than most other dabbling ducks. Mallards live in wetlands, eat water plants and small animals, and are social animals preferring to congregate in groups or flocks of varying sizes."
     },
     {
         "duckName": "Northern Shoveler",
@@ -35,7 +38,8 @@
         "duckGif" : "assets/img/northern_shoveler.jpg",
         "duckOrigin": "Can be found: \n -Eurasia, North America",
         "duckDescription": "Has a mouth that looks like a spoon.",
-        "duckGuise": "Guise: \n -"
+        "duckGuise": "Guise: \n -",
+        "duckAbout" : ""
     },
     {
         "duckName": "White Headed Duck",
@@ -44,7 +48,8 @@
         "duckOrigin": "Spain, North Africa, West & East Asia",
         "duckDescription": "Has a straight tail.",
         "duckGuise": "Guise: \n -",
-        "duckInfo": ""
+        "duckInfo": "",
+        "duckAbout" : ""
     },
     {
         "duckName": "Garganey",
@@ -53,7 +58,8 @@
         "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
         "duckDescription": "IDK what kind of that duck is.",
         "duckGuise": "Guise: \n -",
-        "duckInfo": ""
+        "duckInfo": "",
+        "duckAbout" : ""
     }
 ]
 }
