@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/app_bar_constants.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/init/locale_keys.g.dart';
-import 'package:frontend_tutorial/utilities/drawer.dart';
-import '../utilities/pages_list.dart';
+import 'package:frontend_tutorial/components/cards/drawer.dart';
+import '../../utilities/pages_list.dart';
 
 class PageOrganizer extends StatefulWidget {
   const PageOrganizer({super.key});

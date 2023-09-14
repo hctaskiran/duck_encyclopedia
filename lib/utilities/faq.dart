@@ -2,6 +2,7 @@
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:frontend_tutorial/constants/paddings.dart';
 
 import '../constants/colors.dart';
 import '../constants/sized_boxes.dart';
@@ -17,14 +18,14 @@ class CustomFAQ extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
+      padding: only12Bot,
       child: Container(
-          padding: const EdgeInsets.all(16),
+          padding: all16,
           decoration: BoxDecoration(color: whiteColor, borderRadius: BorderRadius.circular(16)),
           child: Row(
             children: [
               Container(
-                  padding: const EdgeInsets.all(10),
+                  padding: all10,
                   decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(10)),
                   child: Icon(
                     icon,

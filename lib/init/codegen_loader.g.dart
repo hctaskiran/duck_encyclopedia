@@ -190,8 +190,8 @@ static const Map<String,dynamic> en_US = {
       "creditsContent": "Big thanks those who helped me in the developing process of the app: \n\npapalsa: smol details + reviewing the app.\nnythel: bug fixes"
     },
     "aboutDeveloper": {
-      "aboutDeveloperContent": "hctaskiran",
-      "aboutDeveloperTitle": "About Developer"
+      "aboutDeveloperTitle": "About Developer",
+      "aboutDeveloperContent": "This is the first app that created in my Flutter learning phase. \n\nGithub: /hctaskiran \nLinkedIn: /haktancantaskiran"
     }
   }
 };

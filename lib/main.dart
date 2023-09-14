@@ -5,7 +5,7 @@ import 'package:frontend_tutorial/constants/app_languages.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/text_theme_constants.dart';
 import 'package:frontend_tutorial/init/app_cache.dart';
-import 'package:frontend_tutorial/pages/page_organizer.dart';
+import 'package:frontend_tutorial/pages/tab_pages/page_organizer.dart';
 import 'package:frontend_tutorial/settings/app_settings.dart';
 import 'package:provider/provider.dart';
 import 'constants/app_bar_constants.dart';
