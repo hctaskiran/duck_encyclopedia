@@ -90,6 +90,7 @@ class _DuckCardState extends State<DuckCard> {
                           ),
                         ),
                         h10box,
+                        
                         SizedBox(
                             width: 150,
                             height: 125,
