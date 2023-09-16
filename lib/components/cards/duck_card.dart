@@ -89,8 +89,7 @@ class _DuckCardState extends State<DuckCard> {
                             fontStyle: FontStyle.italic
                           ),
                         ),
-                        h10box,
-                        
+                        h10box, 
                         SizedBox(
                             width: 150,
                             height: 125,
