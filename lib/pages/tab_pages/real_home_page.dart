@@ -115,10 +115,10 @@ class _REALHomePageState extends State<REALHomePage> {
                   h20box,
                   Expanded(
                     child: ListView(
-                      children: [
-                        const AppGoalButton(),
-                        const ExistButton(),
-                        const InspirationButton(),
+                      children: const [
+                        AppGoalButton(),
+                        ExistButton(),
+                        InspirationButton(),
                       ],
                     ),
                   ),

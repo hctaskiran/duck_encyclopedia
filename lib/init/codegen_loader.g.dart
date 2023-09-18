@@ -70,7 +70,7 @@ class CodegenLoader extends AssetLoader{
     },
     "aboutDeveloper": {
       "aboutDeveloperTitle": "Geliştirici Hakkında",
-      "aboutDeveloperContent": "hctaskiran"
+      "aboutDeveloperContent": "Bu uygulama Flutter öğrenme aşamamdaki yaptığım ilk uygulamadır. \n\nGithub: /hctaskiran \nLinkedIn: /haktancantaskiran"
     }
   }
 };
@@ -130,7 +130,7 @@ static const Map<String,dynamic> ru_RU = {
     },
     "aboutDeveloper": {
       "aboutDeveloperTitle": "О Разработчике",
-      "aboutDeveloperContent": "hctaskiran"
+      "aboutDeveloperContent": "Это приложение является первым при обучения Флуттера.n \n\nGithub: /hctaskiran \nLinkedIn: /haktancantaskiran"
     }
   }
 };

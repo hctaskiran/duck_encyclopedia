@@ -64,7 +64,6 @@ class _DuckCardState extends State<DuckCard> {
                       content: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          
                           Text(_ducks[index]["duckDescription"]),
                           Text(_ducks[index]["duckOrigin"]),
                           Text(_ducks[index]["duckGuise"]),
