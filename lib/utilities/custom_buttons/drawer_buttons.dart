@@ -1,3 +1,4 @@
+// ignore_for_file: camel_case_types
 import 'package:flutter/material.dart';
 import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:frontend_tutorial/constants/sized_boxes.dart';
@@ -5,21 +6,26 @@ import 'package:frontend_tutorial/settings/app_settings.dart';
 import 'package:frontend_tutorial/utilities/localizated_texts.dart';
 import 'package:provider/provider.dart';
 
-class SpecialButton extends StatelessWidget {
+class SpecialButton extends StatefulWidget {
   const SpecialButton({
     super.key,
     required List<Icon> icons,
   }) : _icons = icons;
 
   final List<Icon> _icons;
+  
+  @override
+  State<SpecialButton> createState() => _SpecialButtonState();
+}
 
+class _SpecialButtonState extends State<SpecialButton> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
         showDialog(
             context: context,
-            builder: (_) => Column(
+            builder: (context) => Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Column(
@@ -32,9 +38,12 @@ class SpecialButton extends StatelessWidget {
                               Text(LocalizatedTexts().activateButton),
                               Switch(
                                   activeColor: blueColor,
+                                  inactiveThumbColor: blackColor,
                                   value: Provider.of<AppSettings>(context).isGif,
-                                  onChanged: (_) {
-                                    Provider.of<AppSettings>(context, listen: false).toggleGif();
+                                  onChanged: (value) {
+                                    setState(() {
+                                      Provider.of<AppSettings>(context, listen: false).toggleGif();  
+                                    });
                                   }),
                             ],
                           ),
@@ -47,7 +56,7 @@ class SpecialButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _icons[0],
+          widget._icons[0],
           w12box,
           customTextButton(
             text: LocalizatedTexts().specialSettingTitle,

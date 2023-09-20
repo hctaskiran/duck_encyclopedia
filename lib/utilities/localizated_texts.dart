@@ -27,4 +27,6 @@ class LocalizatedTexts {
   final String creditsContent = LocaleKeys.drawerContents_credits_creditsContent.tr();
   final String specialSettingTitle = LocaleKeys.drawerContents_specialSetting_specialSettingTitle.tr();
   final String activateButton = LocaleKeys.drawerContents_specialSetting_activateButtonText.tr();
+  final String realHomePage = LocaleKeys.bottomNavigationBar_realHomePage.tr();
+  final String encyclopediaPage = LocaleKeys.bottomNavigationBar_encyclopediaPage.tr();
 }
