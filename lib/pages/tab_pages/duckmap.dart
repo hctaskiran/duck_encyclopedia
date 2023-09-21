@@ -8,6 +8,11 @@ class DuckMap extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: pinkColor,
+      body: Column(
+        children: [
+          
+        ],
+      ),
     );
   }
 }
