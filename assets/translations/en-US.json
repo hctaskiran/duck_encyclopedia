@@ -44,7 +44,10 @@
         "realHomePage": "Home",
         "encyclopediaPage": "Encyclopedia",
         "duckMapPage": {
-            "duckMapPageName": "Map"
+            "duckMapPageName": "Map",
+            "duckMapPageAlertDialogTitle": "How to Use?",
+            "duckMapPageAlertDialogContent": "In this map, you can see the other ducks around the world pinned by other people with informations such as location, duck's measure and who pinned the duck.",
+            "duckMapPageAlertDialogButton": "OK"
         }
     },
     "drawerContents": {

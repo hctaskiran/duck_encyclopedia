@@ -34,6 +34,9 @@ abstract class  LocaleKeys {
   static const bottomNavigationBar_realHomePage = 'bottomNavigationBar.realHomePage';
   static const bottomNavigationBar_encyclopediaPage = 'bottomNavigationBar.encyclopediaPage';
   static const bottomNavigationBar_duckMapPage_duckMapPageName = 'bottomNavigationBar.duckMapPage.duckMapPageName';
+  static const bottomNavigationBar_duckMapPage_duckMapPageAlertDialogTitle = 'bottomNavigationBar.duckMapPage.duckMapPageAlertDialogTitle';
+  static const bottomNavigationBar_duckMapPage_duckMapPageAlertDialogContent = 'bottomNavigationBar.duckMapPage.duckMapPageAlertDialogContent';
+  static const bottomNavigationBar_duckMapPage_duckMapPageAlertDialogButton = 'bottomNavigationBar.duckMapPage.duckMapPageAlertDialogButton';
   static const bottomNavigationBar_duckMapPage = 'bottomNavigationBar.duckMapPage';
   static const bottomNavigationBar = 'bottomNavigationBar';
   static const drawerContents_specialSetting_specialSettingTitle = 'drawerContents.specialSetting.specialSettingTitle';

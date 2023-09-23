@@ -19,15 +19,19 @@ Future<void> showAlertDialogOnce(BuildContext context) async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool dialogShown = prefs.getBool('dialogShown') ?? false;
 
-  if (!dialogShown) {
+  if (dialogShown) {
     await showDialog(
       context: context, 
       builder: (context) {
         return AlertDialog(
-          title: const Text("duck map alert dialog title"),
-          content: const Text("duck map alert dialog content"),
+          title: Text(LocalizatedTexts().duckMapAlertTitle),
+          content: Text(LocalizatedTexts().duckMapAlertContent),
           actions: <Widget>[
-            TextButton(onPressed: () {Navigator.of(context).pop();}, child: const Text("alofis"))
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              }, 
+              child: Text(LocalizatedTexts().duckMapAlertButton))
           ],
         );
       }

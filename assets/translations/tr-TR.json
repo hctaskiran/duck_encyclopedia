@@ -43,7 +43,10 @@
         "realHomePage": "Anasayfa",
         "encyclopediaPage": "Ansiklopedi",
         "duckMapPage": {
-            "duckMapPageName": "Harita"
+            "duckMapPageName": "Harita",
+            "duckMapPageAlertDialogTitle": "Nasıl Kullanılır?",
+            "duckMapPageAlertDialogContent": "Bu haritada dünya genelinde başka kişiler tarafından işaretlenen ördekleri konum, ördeğin ölçüleri ve kimin tarafından eklendiği gibi bilgilere erişebilirsin.",
+            "duckMapPageAlertDialogButton": "Tamam"
         }
     },
 

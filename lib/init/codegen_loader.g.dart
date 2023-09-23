@@ -59,7 +59,10 @@ class CodegenLoader extends AssetLoader{
     "realHomePage": "Anasayfa",
     "encyclopediaPage": "Ansiklopedi",
     "duckMapPage": {
-      "duckMapPageName": "Harita"
+      "duckMapPageName": "Harita",
+      "duckMapPageAlertDialogTitle": "Nasıl Kullanılır?",
+      "duckMapPageAlertDialogContent": "Bu haritada dünya genelinde başka kişiler tarafından işaretlenen ördekleri konum, ördeğin ölçüleri ve kimin tarafından eklendiği gibi bilgilere erişebilirsin.",
+      "duckMapPageAlertDialogButton": "Tamam"
     }
   },
   "drawerContents": {
@@ -122,7 +125,10 @@ static const Map<String,dynamic> ru_RU = {
     "realHomePage": "Главное",
     "encyclopediaPage": "Анциклопедия",
     "duckMapPage": {
-      "duckMapPageName": "Карта"
+      "duckMapPageName": "Карта",
+      "duckMapPageAlertDialogTitle": "Как Работает?",
+      "duckMapPageAlertDialogContent": "В той карте можешь глянуть на других утках по всему миру, закрепленных другими людми с такой информацией, как местоположение, размер утки и кто закрепил её.",
+      "duckMapPageAlertDialogButton": "Ладно"
     }
   },
   "drawerContents": {
@@ -186,7 +192,10 @@ static const Map<String,dynamic> en_US = {
     "realHomePage": "Home",
     "encyclopediaPage": "Encyclopedia",
     "duckMapPage": {
-      "duckMapPageName": "Map"
+      "duckMapPageName": "Map",
+      "duckMapPageAlertDialogTitle": "How to Use?",
+      "duckMapPageAlertDialogContent": "In this map, you can see the other ducks around the world pinned by other people with informations such as location, duck's measure and who pinned the duck.",
+      "duckMapPageAlertDialogButton": "OK"
     }
   },
   "drawerContents": {

@@ -46,7 +46,10 @@
         "realHomePage": "Главное",
         "encyclopediaPage": "Анциклопедия",
         "duckMapPage": {
-            "duckMapPageName": "Карта"
+            "duckMapPageName": "Карта",
+            "duckMapPageAlertDialogTitle": "Как Работает?",
+            "duckMapPageAlertDialogContent": "В той карте можешь глянуть на других утках по всему миру, закрепленных другими людми с такой информацией, как местоположение, размер утки и кто закрепил её.",
+            "duckMapPageAlertDialogButton": "Ладно"
         }
     },
     

@@ -30,4 +30,7 @@ class LocalizatedTexts {
   final String realHomePage = LocaleKeys.bottomNavigationBar_realHomePage.tr();
   final String encyclopediaPage = LocaleKeys.bottomNavigationBar_encyclopediaPage.tr();
   final String duckMap = LocaleKeys.bottomNavigationBar_duckMapPage_duckMapPageName.tr();
+  final String duckMapAlertTitle = LocaleKeys.bottomNavigationBar_duckMapPage_duckMapPageAlertDialogTitle.tr();
+  final String duckMapAlertContent = LocaleKeys.bottomNavigationBar_duckMapPage_duckMapPageAlertDialogContent.tr();
+  final String duckMapAlertButton = LocaleKeys.bottomNavigationBar_duckMapPage_duckMapPageAlertDialogButton.tr();
 }
