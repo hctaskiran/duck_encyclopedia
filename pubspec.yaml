@@ -41,8 +41,9 @@ dependencies:
   provider: ^6.0.5
   easy_localization: ^3.0.2
   auto_size_text: ^3.0.0
-  restart_app: ^1.2.1
   flutter_map: ^5.0.0
+  webview_flutter: ^4.2.4
+  
   
 
 dev_dependencies:

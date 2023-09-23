@@ -21,9 +21,9 @@ class CustomDrawer extends StatelessWidget {
         child: Column(
       children: [
         Image.asset('assets/img/duck.png'), h40box,
-        SpecialButton(icons: _icons), h40box,
+        DeveloperButton(icons: _icons), h40box,
         CreditButton(icons: _icons), h40box,
-        DeveloperButton(icons: _icons)
+        SpecialButton(icons: _icons), 
       ],
     ));
   }

@@ -44,7 +44,10 @@
 
     "bottomNavigationBar": {
         "realHomePage": "Главное",
-        "encyclopediaPage": "Анциклопедия"
+        "encyclopediaPage": "Анциклопедия",
+        "duckMapPage": {
+            "duckMapPageName": "Карта"
+        }
     },
     
     "drawerContents": {

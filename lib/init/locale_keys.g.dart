@@ -33,6 +33,8 @@ abstract class  LocaleKeys {
   static const homePageContents = 'homePageContents';
   static const bottomNavigationBar_realHomePage = 'bottomNavigationBar.realHomePage';
   static const bottomNavigationBar_encyclopediaPage = 'bottomNavigationBar.encyclopediaPage';
+  static const bottomNavigationBar_duckMapPage_duckMapPageName = 'bottomNavigationBar.duckMapPage.duckMapPageName';
+  static const bottomNavigationBar_duckMapPage = 'bottomNavigationBar.duckMapPage';
   static const bottomNavigationBar = 'bottomNavigationBar';
   static const drawerContents_specialSetting_specialSettingTitle = 'drawerContents.specialSetting.specialSettingTitle';
   static const drawerContents_specialSetting_activateButtonText = 'drawerContents.specialSetting.activateButtonText';

@@ -57,7 +57,10 @@ class CodegenLoader extends AssetLoader{
   },
   "bottomNavigationBar": {
     "realHomePage": "Anasayfa",
-    "encyclopediaPage": "Ansiklopedi"
+    "encyclopediaPage": "Ansiklopedi",
+    "duckMapPage": {
+      "duckMapPageName": "Harita"
+    }
   },
   "drawerContents": {
     "specialSetting": {
@@ -117,7 +120,10 @@ static const Map<String,dynamic> ru_RU = {
   },
   "bottomNavigationBar": {
     "realHomePage": "Главное",
-    "encyclopediaPage": "Анциклопедия"
+    "encyclopediaPage": "Анциклопедия",
+    "duckMapPage": {
+      "duckMapPageName": "Карта"
+    }
   },
   "drawerContents": {
     "specialSetting": {
@@ -130,7 +136,7 @@ static const Map<String,dynamic> ru_RU = {
     },
     "aboutDeveloper": {
       "aboutDeveloperTitle": "О Разработчике",
-      "aboutDeveloperContent": "Это приложение является первым при обучения Флуттера.n \n\nGithub: /hctaskiran \nLinkedIn: /haktancantaskiran"
+      "aboutDeveloperContent": "Это приложение является первым при обучения Флуттера. \n\nGithub: /hctaskiran \nLinkedIn: /haktancantaskiran"
     }
   }
 };
@@ -178,7 +184,10 @@ static const Map<String,dynamic> en_US = {
   "subInspText": "You can see this inspiration almost everywhere in this app.",
   "bottomNavigationBar": {
     "realHomePage": "Home",
-    "encyclopediaPage": "Encyclopedia"
+    "encyclopediaPage": "Encyclopedia",
+    "duckMapPage": {
+      "duckMapPageName": "Map"
+    }
   },
   "drawerContents": {
     "specialSetting": {

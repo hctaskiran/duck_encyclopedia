@@ -13,7 +13,7 @@ class SpecialButton extends StatefulWidget {
   }) : _icons = icons;
 
   final List<Icon> _icons;
-  
+
   @override
   State<SpecialButton> createState() => _SpecialButtonState();
 }
@@ -42,16 +42,19 @@ class _SpecialButtonState extends State<SpecialButton> {
                                   value: Provider.of<AppSettings>(context).isGif,
                                   onChanged: (value) {
                                     setState(() {
-                                      Provider.of<AppSettings>(context, listen: false).toggleGif();  
-                                    });
-                                  }),
+                                      Provider.of<AppSettings>(context, listen: false).toggleGif();
+                                    }
+                                  );
+                                }
+                              ),
                             ],
                           ),
                         ),
                       ],
                     ),
                   ],
-                ));
+                )
+              );
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -80,20 +83,20 @@ class CreditButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         showDialog(
-    context: context,
-    builder: (_) => Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Column(
-              children: [
-                AlertDialog(
-                  title: Text(LocalizatedTexts().creditsTitle),
-                  content: Text(LocalizatedTexts().creditsContent),
-                )
-              ],
-            )
-          ],
-        ));
+            context: context,
+            builder: (_) => Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      children: [
+                        AlertDialog(
+                          title: Text(LocalizatedTexts().creditsTitle),
+                          content: Text(LocalizatedTexts().creditsContent),
+                        )
+                      ],
+                    )
+                  ],
+                ));
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -116,20 +119,20 @@ class DeveloperButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         showDialog(
-    context: context,
-    builder: (_) => Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Column(
-              children: [
-                AlertDialog(
-                  title: Text(LocalizatedTexts().aboutDeveloperTitle),
-                  content: Text(LocalizatedTexts().aboutDeveloperContent),
-                )
-              ],
-            )
-          ],
-        ));
+            context: context,
+            builder: (_) => Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      children: [
+                        AlertDialog(
+                          title: Text(LocalizatedTexts().aboutDeveloperTitle),
+                          content: Text(LocalizatedTexts().aboutDeveloperContent),
+                        )
+                      ],
+                    )
+                  ],
+                ));
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,

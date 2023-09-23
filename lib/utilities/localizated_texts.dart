@@ -29,4 +29,5 @@ class LocalizatedTexts {
   final String activateButton = LocaleKeys.drawerContents_specialSetting_activateButtonText.tr();
   final String realHomePage = LocaleKeys.bottomNavigationBar_realHomePage.tr();
   final String encyclopediaPage = LocaleKeys.bottomNavigationBar_encyclopediaPage.tr();
+  final String duckMap = LocaleKeys.bottomNavigationBar_duckMapPage_duckMapPageName.tr();
 }

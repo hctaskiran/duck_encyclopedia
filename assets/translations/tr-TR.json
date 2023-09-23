@@ -41,7 +41,10 @@
     },
     "bottomNavigationBar": {
         "realHomePage": "Anasayfa",
-        "encyclopediaPage": "Ansiklopedi"
+        "encyclopediaPage": "Ansiklopedi",
+        "duckMapPage": {
+            "duckMapPageName": "Harita"
+        }
     },
 
     "drawerContents": {

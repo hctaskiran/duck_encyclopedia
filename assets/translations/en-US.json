@@ -42,7 +42,10 @@
     "subInspText": "You can see this inspiration almost everywhere in this app.",
     "bottomNavigationBar": {
         "realHomePage": "Home",
-        "encyclopediaPage": "Encyclopedia"
+        "encyclopediaPage": "Encyclopedia",
+        "duckMapPage": {
+            "duckMapPageName": "Map"
+        }
     },
     "drawerContents": {
         "specialSetting": {
