@@ -1,14 +1,14 @@
+import 'package:duck_encyclopedia/constants/app_bar_constants.dart';
+import 'package:duck_encyclopedia/constants/app_languages.dart';
+import 'package:duck_encyclopedia/constants/colors.dart';
+import 'package:duck_encyclopedia/constants/text_theme_constants.dart';
+import 'package:duck_encyclopedia/init/app_cache.dart';
+import 'package:duck_encyclopedia/pages/tab_pages/page_organizer.dart';
+import 'package:duck_encyclopedia/settings/app_settings.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:frontend_tutorial/constants/app_languages.dart';
-import 'package:frontend_tutorial/constants/colors.dart';
-import 'package:frontend_tutorial/constants/text_theme_constants.dart';
-import 'package:frontend_tutorial/init/app_cache.dart';
-import 'package:frontend_tutorial/pages/tab_pages/page_organizer.dart';
-import 'package:frontend_tutorial/settings/app_settings.dart';
 import 'package:provider/provider.dart';
-import 'constants/app_bar_constants.dart';
 
 Future <void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

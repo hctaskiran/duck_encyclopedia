@@ -1,6 +1,6 @@
+import 'package:duck_encyclopedia/components/cards/duck_card.dart';
+import 'package:duck_encyclopedia/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:frontend_tutorial/components/cards/duck_card.dart';
-import 'package:frontend_tutorial/constants/colors.dart';
 
 class EncyclopediaPage extends StatelessWidget {
   const EncyclopediaPage({super.key});

@@ -1,15 +1,15 @@
 // ignore_for_file: deprecated_member_use
 import 'dart:io';
+import 'package:duck_encyclopedia/constants/app_languages.dart';
+import 'package:duck_encyclopedia/constants/axis_aligments.dart';
+import 'package:duck_encyclopedia/constants/colors.dart';
+import 'package:duck_encyclopedia/constants/paddings.dart';
+import 'package:duck_encyclopedia/constants/sized_boxes.dart';
+import 'package:duck_encyclopedia/pages/tab_pages/page_organizer.dart';
+import 'package:duck_encyclopedia/utilities/custom_buttons/home_page_buttons.dart';
+import 'package:duck_encyclopedia/utilities/localizated_texts.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:frontend_tutorial/constants/app_languages.dart';
-import 'package:frontend_tutorial/constants/axis_aligments.dart';
-import 'package:frontend_tutorial/constants/colors.dart';
-import 'package:frontend_tutorial/constants/paddings.dart';
-import 'package:frontend_tutorial/constants/sized_boxes.dart';
-import 'package:frontend_tutorial/utilities/custom_buttons/home_page_buttons.dart';
-import 'package:frontend_tutorial/pages/tab_pages/page_organizer.dart';
-import 'package:frontend_tutorial/utilities/localizated_texts.dart';
 
 class REALHomePage extends StatefulWidget {
   const REALHomePage({

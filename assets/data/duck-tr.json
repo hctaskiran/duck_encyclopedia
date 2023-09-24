@@ -4,56 +4,62 @@
             "duckName": "Kahverengi Islıkçı Ördek",
             "duckImage": "assets/img/islik.jpeg",
             "duckGif" : "assets/img/islik.jpeg",
-            "duckOrigin": "Orta & Güney Amerika",
-            "duckDescription": "Islık çalan ördek.",
-            "duckGuise": "Görünüm: ",
-            "duckInfo": ""
+            "duckOrigin": "Nerede bulunur?: \n -Orta & Güney Amerika \n",
+            "duckDescription": "Tanımı: \n -Islık çalan ördek. \n",
+            "duckGuise": "Görünüm: \n -Kahverengi renkli göğüs, açık kahverengi kafa, koyu gaga ve beyaz boyun. \n",
+            "duckInfo": "Bilgiler: \n -Uzunluk: 45-53 cm. \n -Ağırlık: 0,720-1,000 gr. \n -Kanat Genişliği: 85-90 cm\n" ,
+            "duckAbout": "Hakkında: \n -Bu uzun bacaklı bir ördek. Temelde kahverenginin farklı tonları; baş, boyun ve göğüs özellikle zengin devetüyü (fulvous) ve daha koyu sırtlıdır. Manto, devetüyü uçlu tüylerle birlikte daha koyu kahverengi tonundadır, uçuş tüyleri ve kuyruk koyu kahverengidir ve koyu kahverengiden siyaha doğru bir şerit uzanır. tacın ortasından boynun arkasından mantonun tabanına kadar. Yanlarında beyazımsı çizgiler, uzun gri bir gagası ve gri bacakları vardır. Uçuş sırasında kanatların üstü kahverengi, altı siyahtır, beyaz lekeler yoktur ve sağrıdaki beyaz hilal, siyah kuyrukla kontrast oluşturur."
     
         },
         {
             "duckName": "Pekin Ördeği",
             "duckImage": "assets/img/white_duck.jpeg",
             "duckGif" : "assets/img/white_duck.jpeg",
-            "duckOrigin": "Nerede bulunur? \n Çin",
-            "duckDescription": "Tanımı: \n Beyaz ördek.",
-            "duckGuise": "",
-            "duckInfo": ""
+            "duckOrigin": "Nerede bulunur? \n -Çin \n",
+            "duckDescription": "Tanımı: \n -Beyaz ördek. \n",
+            "duckGuise": "Görünüm: \n -Uzun gövde ve boyun, turuncu renkli bacaklar ve gaga, genel olarak beyaz ördek. \n",
+            "duckInfo": "Bilgiler: \n -Uzunluk: 50-65 cm. \n -Ağırlık: 3,500-4,500 gr. \n -Kanat Genişliği: 140 cm. \n" ,
+            "duckAbout": "Hakkında: \n -Beyaz Pekin Ördeği, öncelikle et için yetiştirilen bir Amerikan yerli ördek türüdür. On dokuzuncu yüzyılda Çin'den Amerika Birleşik Devletleri'ne getirilen kuşlardan türemiştir ve şu anda dünyanın birçok yerinde yetiştirilmektedir. Aynı Çin soyundan türeyen ancak farklı üremeye sahip farklı ve ayrı bir cins olan Alman Pekin'den ayırmak için genellikle Amerikan Pekin olarak bilinir. Bu ördeklerin çoğu, on dokuzuncu yüzyılın sonlarında ve yirminci yüzyılın başlarında New York, Long Island'da yetiştirildi ve cins, Long Island Duck adını buradan aldı."
         },
         {
             "duckName": "Yeşilbaş Ördek",
             "duckImage": "assets/img/mallard.jpg",
             "duckGif" : "assets/gif/yesilbas_loop.gif",
-            "duckOrigin": "Avrupa, Asya, Kuzey Amerika",
-            "duckDescription": "Yeşil kafalı ördek.",
-            "duckGuise": "",
-            "duckInfo": ""
+            "duckOrigin": "Nerede bulunur?: \n -Avrupa, Asya, Kuzey Amerika \n",
+            "duckDescription": "Tanımı: \n -Yeşil kafalı ördek. \n",
+            "duckGuise": "Görünüm: \n -Gümüş rengi kanatları, turuncu-kırmızı bacakları olan parlak yeşil kafa. \n",
+            "duckInfo": "Bilgiler: \n -Uzunluk: 50-65 cm. \n -Ağırlık: 0,700-1,000 gr. \n -Kanat Genişliği: 81-98 cm\n" ,
+            "duckAbout": "Hakkında: \n -Yeşilbaş (veya yaban ördeği), ılıman ve subtropikal bölgelerde üreyen amatör bir ördektir. Bu ördek, Anatidae su kuşları familyasının Anatinae alt familyasına aittir. Erkeklerin başları yeşil, dişilerin (tavuklar veya ördekler) ise çoğunlukla kahverengi benekli tüyleri vardır. Her iki cinsiyetin de kanatlarında spekulum adı verilen, beyaz kenarlı siyah veya yanardöner mor veya mavi tüylerden oluşan bir alan vardır; erkekler özellikle mavi spekulum tüylerine sahip olma eğilimindedir. Genellikle diğer amatör ördeklerin çoğundan biraz daha ağırdır. Yeşilbaşlar sulak alanlarda yaşar, su bitkilerini ve küçük hayvanları yerler ve farklı büyüklükteki gruplar veya sürüler halinde toplanmayı tercih eden sosyal hayvanlardır."
         },
         {
             "duckName": "Kaşıkgaga Ördek",
             "duckImage": "assets/img/northern_shoveler.jpg",
             "duckGif" : "assets/img/northern_shoveler.jpg",
-            "duckOrigin": "Avrasya, Kuzey Amerika",
-			"duckDescription": "Ağzı kaşığa benziyor.",
-            "duckGuise": "",
-            "duckInfo": ""
+            "duckOrigin": "Nerede bulunur?: \n -Avrasya, Kuzey Amerika \n",
+			"duckDescription": "Tanımı: \n -Ağzı kaşığa benziyor. \n",
+            "duckGuise": "Görünüm: \n -Koyu yeşil kafa, bir kısmı yeşil renkli açık kahverengi kanatlar, beyaz göğüs, kestane rengi göbek. \n",
+            "duckInfo": "Bilgiler: \n -Uzunluk: 48-50 cm. \n -Ağırlık: 0,700 gr. \n -Kanat Genişliği: 76 cm. \n" ,
+            "duckAbout": "Hakkında: \n -Kuzey kürekçi (ya da Britanya'da kürekçi olarak da bilinir) yaygın ve yaygın bir ördektir. Kuzey kürekçiler, genellikle gagasını bir yandan diğer yana sallayarak ve sudaki yiyecekleri süzmek için gagayı kullanarak, bitki besinleriyle uğraşarak beslenirler. Suda yaşayan omurgasızları beslemek için son derece uzmanlaşmış gagalarını (adlarının türetildiği) kullanırlar. Geniş yassı gagaları, iyi gelişmiş lamellerle donatılmıştır; gaganın kenarındaki elek görevi gören küçük, tarak benzeri yapılar, kuşların kabukluları ve planktonları su yüzeyinden sıyırmasını sağlar. Kürekçilerde daha uzmanlaşmış olan bu adaptasyon, yılın büyük bölümünde yiyecek kaynakları için rekabet etmek zorunda olmadıkları diğer su birikintisi ördeklerine göre onlara bir avantaj sağlıyor. Bu nedenle, omurgasız yaşamı açısından zengin, çamur tabanlı bataklıklar onların tercih ettiği yaşam alanıdır. Kürekçi, açık sulardan uzakta, çimenlik alanlarda yuva yapmayı tercih eder. Yuvaları, bitki materyali ile kaplı ve aşağı doğru yerde sığ bir çöküntüdür. Tavuklar genellikle yaklaşık dokuz yumurta bırakır. Drake'ler üreme mevsimi boyunca oldukça bölgeseldir ve bölgelerini ve ortaklarını rakip erkeklere karşı koruyacaklardır. Drake'ler ayrıca hem suda hem de havada ayrıntılı kur yapma davranışları sergiliyor; bir düzine veya daha fazla erkeğin tek bir tavuğun peşine düşmesi alışılmadık bir durum değildir. Sağlam görünümlerine rağmen kürekçiler çevik uçuculardır."
         },
         {
             "duckName": "Dikkuyruk Ördek",
             "duckImage": "assets/img/dikkuyruk.jpeg",
             "duckGif" : "assets/img/dikkuyruk.jpeg",
-            "duckOrigin": "İspanya, Kuzey Afrika, Batı & Doğu Asya",
-			"duckDescription": "Kuyruğu dimdik.",
-            "duckGuise": "",
-            "duckInfo": ""
+            "duckOrigin": "Nerede bulunur?: \n -İspanya, Kuzey Afrika, Batı & Doğu Asya \n",
+			"duckDescription": "Tanımı: \n -Kuyruğu dimdik. \n",
+            "duckGuise": "Görünüm: \n -Üstte gri renkli bir nokta olan beyaz kafa, mavi gaga, açık kahverengi göğüs, kırmızımsı gri tüyler. \n",
+            "duckInfo": "Bilgiler: \n -Uzunluk: 45 cm. \n -Ağırlık: 0,580-0,750 gr. \n -Kanat Genişliği: 43-48 cm.\n" ,
+            "duckAbout": "Hakkında: \n -Beyaz başlı (Oxyura Leucocephala) ördek küçük bir dalış ördeğidir. Bu ördek ilk olarak 1769 yılında Giovani Antonio Scopoli tarafından Anas leucocephala olarak tanımlanmıştır. Şu anda Oxyura cinsinde yer almaktadır. Geçmişte kullanılan diğer genel eşanlamlılar arasında Erismatura, Cerconectes, Gymnura, Undina, Bythonessa, Plectrura ve Pervicauda bulunmaktadır. Kızıl ördek gibi kendi cinsindeki diğer türlerle çiftleşir. Melezler tamamen verimlidir ve her iki ebeveyn türüyle de yaşayabilecek yavrulara sahip olabilirler. Tür monotiptir. Beyaz başlı ördeğin farklı popülasyonları önemli genetik farklılıklar göstermez. Bununla birlikte, bazı araştırmalar batılı popülasyonların boyut olarak daha büyük olması, karın bölgesinin daha koyu renklenmesi ve erkeklerin sırtında daha fazla sarı tüy olması gibi morfolojik farklılıklar sergilediklerini buldu. Karanlık faz kuşları yalnızca batı popülasyonlarında bulunmuştur. Oxyura cinsi içerisinde genellikle Maccoa ördeği ile en yakın akraba olduğu düşünülmektedir. Bazı çalışmalar, bu iki türün mavi gagalı ördekle aynı dal oluşturduğunu da ortaya çıkardı, ancak bu tartışmalı ve Oxyura ördekleri arasındaki tür ilişkileri çözülmemiş durumda."
         },
         {
             "duckName": "Çıkrıkçın Ördeği",
             "duckImage": "assets/img/garganey.jpg",
             "duckGif" : "assets/img/garganey.jpg",
-            "duckOrigin": "Kuzey Amerika, BK, Hindistan, Güneydoğu Asya, Güney Afrika",
-			"duckDescription": "Garip bir ismi var.",
-            "duckGuise": "",
-            "duckInfo": ""
+            "duckOrigin": "Nerede bulunur?: \n -Kuzey Amerika, BK, Hindistan, Güneydoğu Asya, Güney Afrika \n",
+			"duckDescription": "Tanımı: \n -Garip bir ismi var \n.",
+            "duckGuise": "Görünüm: \n -Kahverengi baş ve göğüs, göz üzerinde geniş beyaz bir hilal, tamamen kahverengi tüyler. \n",
+            "duckInfo": "Bilgiler: \n -Uzunluk: 41 cm. \n -Ağırlık: 0,300-0,400 gr. \n -Kanat Genişliği: 58-69 cm. \n" ,
+            "duckAbout": "Hakkında: \n -Garganey (Spatula querquedula) küçük, amatör bir ördektir. Avrasya deniz mavisi gibi diğer küçük ördekler gibi, bu tür de hızlı bir şekilde kıvrılarak suya benzer bir uçuşla sudan kolayca yükselir. Garganey'in ilk resmi açıklaması İsveçli doğa bilimci Carl Linnaeus tarafından 1758'de Systema Naturae'nin onuncu baskısında yapıldı. Anas querquedula binom adını tanıttı. Ortak İngilizce adı 17. yüzyıldan kalmadır ve Lombard dili “gargenei”den gelmektedir. Yüzerken tertiallerinde belirgin beyaz kenarlar gösterecektir. Tacı (anatomi) koyu ve yüzü kırmızımsı kahverengidir. Bu kuşlar esas olarak yukarı doğru çıkmak yerine süzülerek beslenirler. Erkeğin kendine özgü çatırdayan bir çiftleşme çağrısı vardır; dişi bir ördeğe göre oldukça sessizdir, ancak zayıf bir vaklamayı başarabilir."
         }
     ]
     }

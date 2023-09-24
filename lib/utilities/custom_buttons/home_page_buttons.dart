@@ -1,8 +1,8 @@
+import 'package:duck_encyclopedia/constants/colors.dart';
+import 'package:duck_encyclopedia/pages/tab_pages/real_home_page.dart';
+import 'package:duck_encyclopedia/utilities/faq.dart';
+import 'package:duck_encyclopedia/utilities/localizated_texts.dart';
 import 'package:flutter/material.dart';
-import 'package:frontend_tutorial/constants/colors.dart';
-import 'package:frontend_tutorial/pages/tab_pages/real_home_page.dart';
-import 'package:frontend_tutorial/utilities/faq.dart';
-import 'package:frontend_tutorial/utilities/localizated_texts.dart';
 
 class AppGoalButton extends StatelessWidget {
   const AppGoalButton({

@@ -1,5 +1,5 @@
+import 'package:duck_encyclopedia/init/locale_keys.g.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:frontend_tutorial/init/locale_keys.g.dart';
 
 class LocalizatedTexts {
   final String appHiText = LocaleKeys.homePageContents_hiText.tr();

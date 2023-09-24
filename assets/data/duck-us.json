@@ -5,61 +5,62 @@
         "duckName": "Fulvous Whistling Duck",
         "duckImage": "assets/img/islik.jpeg",
         "duckGif" : "assets/img/islik.jpeg",
-        "duckOrigin": "Can be found in: \n -Central & South America",
-        "duckDescription": "Description: \n -Whistler duck.",
-        "duckGuise": "Guise: \n -Brown color with light brown head, dark beak and white neck. \n",
-        "duckInfo": "Info: \n -Length: 45-53 cm. \n -Weight: 0.720-1.000 gr. \n -Wingspan: 85 to 90 cm. \n",
-        "duckAbout" : "About the duck: \n This is a long legged duck. Mainly different shades of brown; head, neck and breast are particularly rich buff (fulvous) with a darker back.The mantle is more darker shade of brown with buff-tipped feathers, the flight feathers and tail are dark brown, and a dark brown to black stripe runs through the center of the crown down the back of the neck to the base of the mantle. It has whitish stripes on its flanks, a long grey bill and grey legs. In flight, the wings are brown above and black below, with no white markings, and a white crescent on the rump contrasts with the black tail."
+        "duckOrigin": "Can be found in: \n -Central & South America \n",
+        "duckDescription": "Description: \n -Whistler duck. \n",
+        "duckGuise": "Guise: \n -Brown colored chest with light brown head, dark beak and white neck. \n",
+        "duckInfo": "Info: \n -Length: 45-53 cm. \n -Weight: 0,720-1,000 gr. \n -Wingspan: 85 to 90 cm. \n",
+        "duckAbout" : "About the duck: \n -This is a long legged duck. Mainly different shades of brown; head, neck and breast are particularly rich buff (fulvous) with a darker back.The mantle is more darker shade of brown with buff-tipped feathers, the flight feathers and tail are dark brown, and a dark brown to black stripe runs through the center of the crown down the back of the neck to the base of the mantle. It has whitish stripes on its flanks, a long grey bill and grey legs. In flight, the wings are brown above and black below, with no white markings, and a white crescent on the rump contrasts with the black tail."
 
     },
     {
         "duckName": "White Pekin Duck",
         "duckImage": "assets/img/white_duck.jpeg",
         "duckGif" : "assets/img/white_duck.jpeg",
-        "duckOrigin": "Can be found: \n -China",
-        "duckDescription": "Description: \n-A default white duck.",
-        "duckGuise": "Guise: \n -Long body and neck, orange color legs and beak, overall white duck. \n",
+        "duckOrigin": "Can be found: \n -China \n",
+        "duckDescription": "Description: \n -A default white duck. \n",
+        "duckGuise": "Guise: \n -Long body and neck, orange colored legs and beak, overall white duck. \n",
         "duckInfo": "Info: \n -Length: 50-65 cm. \n -Weight: 3,500-4.500 gr. \n -Wingspan: 140 cm. \n",
-        "duckAbout" : "About the duck: \n White Pekin is an American breed of domestic duck, raised primarily for meat. It derives from birds brought to the United States from China in the nineteenth century, and is now bred in many parts of the world. It is often known as the American Pekin to distinguish it from the German Pekin, a distinct and separate breed which derives from the same Chinese stock but has different breeding. Many of these ducks were reared on Long Island, New York, in the late nineteenth and early twentieth centuries, from which the breed derived its name Long Island Duck."
+        "duckAbout" : "About the duck: \n -White Pekin is an American breed of domestic duck, raised primarily for meat. It derives from birds brought to the United States from China in the nineteenth century, and is now bred in many parts of the world. It is often known as the American Pekin to distinguish it from the German Pekin, a distinct and separate breed which derives from the same Chinese stock but has different breeding. Many of these ducks were reared on Long Island, New York, in the late nineteenth and early twentieth centuries, from which the breed derived its name Long Island Duck."
     },
     {
         "duckName": "Mallard",
         "duckImage": "assets/img/mallard.jpg",
         "duckGif" : "assets/gif/yesilbas_loop.gif",
-        "duckOrigin": "Can be found: \n -Europe, Asia, North America",
-        "duckDescription": "Description: \n -Green head duck.",
-        "duckGuise": "Guise: \n -Green shiny head with silverish wings, orange-red legs. \n",
+        "duckOrigin": "Can be found: \n -Europe, Asia, North America \n",
+        "duckDescription": "Description: \n -Green head duck. \n",
+        "duckGuise": "Guise: \n -Shiny green head with silverish wings, orange-red legs. \n",
         "duckInfo": "Info: \n -Lenght: 50-65 cm. \n -Weight: 0,700-1,600 gr. \n -Wingspan: 81-98 cm. \n",
-        "duckAbout" : "About the duck: \n The mallard (or wild duck) is a dabbling duck that breeds throughout the temperate and subtropical. This duck belongs to the subfamily Anatinae of the waterfowl family Anatidae. Males have green heads, while the females (hens or ducks) have mainly brown-speckled plumage. Both sexes have an area of white-bordered black or iridescent purple or blue feathers called a speculum on their wings; males especially tend to have blue speculum feathers. It is often slightly heavier than most other dabbling ducks. Mallards live in wetlands, eat water plants and small animals, and are social animals preferring to congregate in groups or flocks of varying sizes."
+        "duckAbout" : "About the duck: \n -The mallard (or wild duck) is a dabbling duck that breeds throughout the temperate and subtropical. This duck belongs to the subfamily Anatinae of the waterfowl family Anatidae. Males have green heads, while the females (hens or ducks) have mainly brown-speckled plumage. Both sexes have an area of white-bordered black or iridescent purple or blue feathers called a speculum on their wings; males especially tend to have blue speculum feathers. It is often slightly heavier than most other dabbling ducks. Mallards live in wetlands, eat water plants and small animals, and are social animals preferring to congregate in groups or flocks of varying sizes."
     },
     {
         "duckName": "Northern Shoveler",
         "duckImage": "assets/img/northern_shoveler.jpg",
         "duckGif" : "assets/img/northern_shoveler.jpg",
-        "duckOrigin": "Can be found: \n -Eurasia, North America",
-        "duckDescription": "Has a mouth that looks like a spoon.",
-        "duckGuise": "Guise: \n -",
-        "duckAbout" : ""
+        "duckOrigin": "Can be found: \n -Eurasia, North America, Southern Europe, Central-Southeast Asia \n",
+        "duckDescription": "Description: \n -Has a mouth that looks like a spoon. \n",
+        "duckGuise": "Guise: \n -Dark green head, light brown wings with a part of green color, white breast, chestnut belly. \n",
+        "duckInfo": "Info: \n -Lenght: 48-50 cm. \n -Weight: 0,700 gr. \n -Wingspan: 76 cm. \n",
+        "duckAbout" : "About the duck: \n -The northern shoveler (or also  known as the shoveler in Britain) is a common and widespread duck. Northern shovelers feed by dabbling for plant food, often by swinging its bill from side to side and using the bill to strain food from the water. They use their highly specialized bill (from which their name is derived) to forage for aquatic invertebrates. Their wide-flat bill is equipped with well-developed lamellae – small, comb-like structures on the edge of the bill that act like sieves, allowing the birds to skim crustaceans and plankton from the water's surface. This adaptation, more specialized in shovelers, gives them an advantage over other puddle ducks, with which they do not have to compete for food resources during most of the year. Thus, mud-bottomed marshes rich in invertebrate life are their habitat of choice. The shoveler prefers to nest in grassy areas away from open water. Their nest is a shallow depression on the ground, lined with plant material and down. Hens typically lay about nine eggs. The drakes are very territorial during breeding season and will defend their territory and partners from competing males. Drakes also engage in elaborate courtship behaviors, both on the water and in the air; it is not uncommon for a dozen or more males to pursue a single hen. Despite their stout appearance, shovelers are nimble fliers."
     },
     {
         "duckName": "White Headed Duck",
         "duckImage": "assets/img/dikkuyruk.jpeg",
         "duckGif" : "assets/img/dikkuyruk.jpeg",
-        "duckOrigin": "Spain, North Africa, West & East Asia",
-        "duckDescription": "Has a straight tail.",
-        "duckGuise": "Guise: \n -",
-        "duckInfo": "",
-        "duckAbout" : ""
+        "duckOrigin": "Can be found: \n -Spain, North Africa, West & East Asia \n",
+        "duckDescription": "Description: \n -Has a straight tail. \n",
+        "duckGuise": "Guise: \n -White head with a point of grey color on top, blue beak, light brown chest, reddish grey plumage. \n",
+        "duckInfo": "Info: \n -Lenght: 45 cm. \n -Weight: 0,580-0,750 gr. \n -Wingspan: 43-48 cm. \n",
+        "duckAbout" : "About the duck: \n -The white-headed (Oxyura Leucocephala) duck is a small diving duck. This duck was originally described as Anas leucocephala by Giovani Antonio Scopoli in 1769. It is currently in the genus Oxyura. Other generic synonyms used in the past include Erismatura, Cerconectes, Gymnura, Undina, Bythonessa, Plectrura, and Pervicauda. It interbreeds with other species in its genus, such as the ruddy duck. The hybrids are fully fertile and capable of having viable offspring with both parent species. The species is monotypic. Different populations of the white-headed duck do not display significant genetic differences. However, some studies have found that they do display morphological differences, with western populations being larger in size, having darker ventral coloration, and males having more yellow feathers on their back. Dark phase birds have only been found in the western populations. In the genus Oxyura, it is generally thought to be related most closely to Maccoa duck. Some studies have also found that these two species form a clade with the blue-billed duck, although this is disputed and species relations between Oxyura ducks are unresolved."
     },
     {
         "duckName": "Garganey",
         "duckImage": "assets/img/garganey.jpg",
         "duckGif" : "assets/img/garganey.jpg",
-        "duckOrigin": "North America, UK, India, Southern Asia, South Africa",
-        "duckDescription": "IDK what kind of that duck is.",
-        "duckGuise": "Guise: \n -",
-        "duckInfo": "",
-        "duckAbout" : ""
+        "duckOrigin": "Can be found: \n -North America, UK, India, Southern Asia, South Africa \n",
+        "duckDescription": "Description: \n -IDK what kind of that duck is. \n",
+        "duckGuise": "Guise: \n -Brown head and breast with a broad white crescent over the eye, completely brown plumage. \n",
+        "duckInfo": "Info: \n -Lenght: 41 cm.\n -Weight: 0,300-0,400 gr.\n -Wingspan: 58-69 cm. \n",
+        "duckAbout" : "About the duck: \n -The garganey (Spatula querquedula) is a small dabbling duck. Like other small ducks such as the Eurasian teal, this species rises easily from the water with a fast twisting wader-like flight. The first formal description of the garganey was by the Swedish naturalist Carl Linnaeus in 1758 in the tenth edition of his Systema Naturae. He introduced the binomial name Anas querquedula. The common English name dates from the 17th century and comes from Lombard language “gargenei”. When swimming it will show prominent white edges on its tertials. His crown (anatomy) is dark and his face is reddish brown. These birds feed mainly by skimming rather than upending. The male has a distinctive crackling mating call; the female is rather silent for a female duck, but can manage a feeble quack."
     }
 ]
 }

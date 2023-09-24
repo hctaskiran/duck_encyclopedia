@@ -1,10 +1,10 @@
-import 'package:easy_localization/easy_localization.dart';
+// ignore_for_file: use_build_context_synchronously
+
+import 'package:duck_encyclopedia/components/cards/drawer.dart';
+import 'package:duck_encyclopedia/constants/app_bar_constants.dart';
+import 'package:duck_encyclopedia/constants/colors.dart';
+import 'package:duck_encyclopedia/utilities/localizated_texts.dart';
 import 'package:flutter/material.dart';
-import 'package:frontend_tutorial/constants/app_bar_constants.dart';
-import 'package:frontend_tutorial/constants/colors.dart';
-import 'package:frontend_tutorial/components/cards/drawer.dart';
-import 'package:frontend_tutorial/init/locale_keys.g.dart';
-import 'package:frontend_tutorial/utilities/localizated_texts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../utilities/pages_list.dart';
 

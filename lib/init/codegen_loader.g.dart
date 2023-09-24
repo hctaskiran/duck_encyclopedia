@@ -133,8 +133,8 @@ static const Map<String,dynamic> ru_RU = {
   },
   "drawerContents": {
     "specialSetting": {
-      "specialSettingTitle": "Специальная Кнопка",
-      "activateButtonText": "Что будет случиться если включаешь кнопку?"
+      "specialSettingTitle": "Скрытая Кнопка",
+      "activateButtonText": "Что будет если включить кнопку?"
     },
     "credits": {
       "creditsTitle": "Титры",
@@ -142,7 +142,7 @@ static const Map<String,dynamic> ru_RU = {
     },
     "aboutDeveloper": {
       "aboutDeveloperTitle": "О Разработчике",
-      "aboutDeveloperContent": "Это приложение является первым при обучения Флуттера. \n\nGithub: /hctaskiran \nLinkedIn: /haktancantaskiran"
+      "aboutDeveloperContent": "Это приложение является моим первым при обучения Флуттера. \n\nGithub: /hctaskiran \nLinkedIn: /haktancantaskiran"
     }
   }
 };

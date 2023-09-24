@@ -1,5 +1,5 @@
+import 'package:duck_encyclopedia/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:frontend_tutorial/constants/colors.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class DuckMap extends StatefulWidget {

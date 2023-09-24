@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:duck_encyclopedia/constants/colors.dart';
+import 'package:duck_encyclopedia/constants/sized_boxes.dart';
+import 'package:duck_encyclopedia/settings/app_settings.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:frontend_tutorial/constants/colors.dart';
-import 'package:frontend_tutorial/constants/sized_boxes.dart';
-import 'package:frontend_tutorial/settings/app_settings.dart';
 import 'package:provider/provider.dart';
 
 class DuckCard extends StatefulWidget {
