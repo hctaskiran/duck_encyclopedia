@@ -1,7 +1,7 @@
 {
     "appName": "Duck Encyclopedia",
     "homePageContents": {
-        "hiText": "Merhaba, Ördekcıs",
+        "hiText": "Merhaba!",
         "quoteApp": "Ördekler hakkında daha fazlasını öğren!",
         "aboutApp": {
             "aboutAppTitle": "Uygulama Hakkında:",
@@ -52,7 +52,7 @@
 
     "drawerContents": {
         "specialSetting": {
-            "specialSettingTitle": "Özel Ayar",
+            "specialSettingTitle": "Özel Tuş",
             "activateButtonText": "Bu tuşu aktif edince ne olacak acaba?"
         },
         "credits": {

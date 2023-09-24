@@ -27,6 +27,7 @@ void closeApp() {
 const String realDate = "dd.MM.yyyy" " |";
 
 class _REALHomePageState extends State<REALHomePage> {
+  
   @override
   Widget build(BuildContext context) {
     return Column(

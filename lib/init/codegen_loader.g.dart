@@ -17,7 +17,7 @@ class CodegenLoader extends AssetLoader{
   static const Map<String,dynamic> tr_TR = {
   "appName": "Duck Encyclopedia",
   "homePageContents": {
-    "hiText": "Merhaba, Ördekcıs",
+    "hiText": "Merhaba!",
     "quoteApp": "Ördekler hakkında daha fazlasını öğren!",
     "aboutApp": {
       "aboutAppTitle": "Uygulama Hakkında:",
@@ -67,7 +67,7 @@ class CodegenLoader extends AssetLoader{
   },
   "drawerContents": {
     "specialSetting": {
-      "specialSettingTitle": "Özel Ayar",
+      "specialSettingTitle": "Özel Tuş",
       "activateButtonText": "Bu tuşu aktif edince ne olacak acaba?"
     },
     "credits": {
@@ -83,7 +83,7 @@ class CodegenLoader extends AssetLoader{
 static const Map<String,dynamic> ru_RU = {
   "appName": "Duck Encyclopedia",
   "homePageContents": {
-    "hiText": "Приветик, Ördekcıs",
+    "hiText": "Приветик!",
     "quoteApp": "Давай узнаем больше об утках!",
     "aboutApp": {
       "aboutAppTitle": "Про Приложение:",
@@ -149,7 +149,7 @@ static const Map<String,dynamic> ru_RU = {
 static const Map<String,dynamic> en_US = {
   "appName": "Duck Encyclopedia",
   "homePageContents": {
-    "hiText": "Hi, Ördekcıs",
+    "hiText": "Hi There! ",
     "quoteApp": "Time to learn much about ducks!",
     "aboutApp": {
       "aboutAppTitle": "About the App:",
