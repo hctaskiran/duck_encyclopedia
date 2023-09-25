@@ -20,32 +20,45 @@ class CustomFAQ extends StatelessWidget {
       padding: only12Bot,
       child: Container(
           padding: all16,
-          decoration: BoxDecoration(color: whiteColor, borderRadius: BorderRadius.circular(16)),
+          decoration: _boxDec(),
           child: Row(
             children: [
-              Container(
-                  padding: all10,
-                  decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(10)),
-                  child: Icon(
-                    icon,
-                    size: 30,
-                    color: grey200color,
-                  )),
+              _container(),
               w12box,
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    AutoSizeText(questions,
-                        style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16, color: blackColor)),
-                    Text(subQuestion,
-                        maxLines: 4,
-                        style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 12, color: grey400color)),
+                    _questions(context),
+                    _subquestion(context),
                   ],
                 ),
               ),
             ],
           )),
     );
+  }
+
+  BoxDecoration _boxDec() => BoxDecoration(color: whiteColor, borderRadius: BorderRadius.circular(16));
+
+  Container _container() {
+    return Container(
+        padding: all10,
+        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(10)),
+        child: Icon(
+          icon,
+          size: 30,
+          color: grey200color,
+        ));
+  }
+
+  Text _subquestion(BuildContext context) {
+    return Text(subQuestion,
+        maxLines: 4, style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 12, color: grey400color));
+  }
+
+  AutoSizeText _questions(BuildContext context) {
+    return AutoSizeText(questions,
+        style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16, color: blackColor));
   }
 }

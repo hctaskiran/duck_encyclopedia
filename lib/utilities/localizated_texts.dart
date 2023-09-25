@@ -2,6 +2,7 @@ import 'package:duck_encyclopedia/init/locale_keys.g.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class LocalizatedTexts {
+  
   final String appHiText = LocaleKeys.homePageContents_hiText.tr();
   final String appQuoteText = LocaleKeys.homePageContents_quoteApp.tr();
   final String appAboutTitle = LocaleKeys.homePageContents_aboutApp_aboutAppTitle.tr();

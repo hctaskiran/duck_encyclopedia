@@ -33,39 +33,44 @@ class _SpecialButtonState extends State<SpecialButton> {
                       children: [
                         AlertDialog(
                           title: Text(LocalizatedTexts().specialSettingTitle),
-                          content: Column(
-                            children: [
-                              Text(LocalizatedTexts().activateButton),
-                              Switch(
-                                  activeColor: blueColor,
-                                  inactiveThumbColor: blackColor,
-                                  value: Provider.of<AppSettings>(context).isGif,
-                                  onChanged: (value) {
-                                    setState(() {
-                                      Provider.of<AppSettings>(context, listen: false).toggleGif();
-                                    }
-                                  );
-                                }
-                              ),
-                            ],
-                          ),
+                          content: _content(context),
                         ),
                       ],
                     ),
                   ],
-                )
-              );
+                ));
       },
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          widget._icons[0],
-          w12box,
-          customTextButton(
-            text: LocalizatedTexts().specialSettingTitle,
-          )
-        ],
-      ),
+      child: _specialSetting(),
+    );
+  }
+
+  Column _content(BuildContext context) {
+    return Column(
+      children: [
+        Text(LocalizatedTexts().activateButton),
+        Switch(
+            activeColor: blueColor,
+            inactiveThumbColor: blackColor,
+            value: Provider.of<AppSettings>(context).isGif,
+            onChanged: (value) {
+              setState(() {
+                Provider.of<AppSettings>(context, listen: false).toggleGif();
+              });
+            }),
+      ],
+    );
+  }
+
+  Row _specialSetting() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        widget._icons[0],
+        w12box,
+        customTextButton(
+          text: LocalizatedTexts().specialSettingTitle,
+        )
+      ],
     );
   }
 }

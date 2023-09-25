@@ -34,6 +34,10 @@ class MyApp extends StatefulWidget {
 
 
 class _MyAppState extends State<MyApp> {
+
+bool useM3 = true;
+bool dbgf = false;
+
 @override
   @override
   Widget build(BuildContext context) {
@@ -43,44 +47,57 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: context.supportedLocales,
       localizationsDelegates: context.localizationDelegates,
       theme: ThemeData(
-        drawerTheme: const DrawerThemeData(
-          backgroundColor: pinkColor,
-          shadowColor: whiteColor
-        ),
-        textButtonTheme: TextButtonThemeData(
-          style: ButtonStyle(
-            padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 20)))
-        ),
-        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-          backgroundColor: grey200color,
-          selectedIconTheme: IconThemeData(color: pinkColor),
-          unselectedIconTheme: IconThemeData(color: grey600color)
-        ),
-        /*textButtonTheme: TextButtonThemeData(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(grey400color),
-            padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 70, vertical: 10)
-            ),
-          )
-        ),*/
-        textTheme: TextTheme(
-          titleSmall: CustomTextStyles().titleSmall(),
-          bodySmall: CustomTextStyles().bodySmall()
-        ),
+        drawerTheme: _customDrawerTheme(),
+        textButtonTheme: _customTextButtonTheme(),
+        bottomNavigationBarTheme: _customBNBtheme(),
+        textTheme: _customTextTheme(),
         appBarTheme: _customAppBar(),
-        useMaterial3: true,
+        useMaterial3: useM3,
       ),
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: dbgf,
       home: const PageOrganizer(),
-      
     );
   }
 
-  AppBarTheme _customAppBar() {
-    return AppBarTheme(
-      iconTheme: const IconThemeData(color: whiteColor),
+// drawer
+DrawerThemeData _customDrawerTheme() {
+  return const DrawerThemeData(
+        backgroundColor: pinkColor,
+        shadowColor: whiteColor
+      );
+}
+
+// bottom navigation bar
+BottomNavigationBarThemeData _customBNBtheme() {
+  return const BottomNavigationBarThemeData(
+        backgroundColor: grey200color,
+        selectedIconTheme: IconThemeData(color: pinkColor),
+        unselectedIconTheme: IconThemeData(color: grey600color)
+      );
+}
+
+// text theme
+TextTheme _customTextTheme() {
+  return TextTheme(
+        titleSmall: CustomTextStyles().titleSmall(),
+        bodySmall: CustomTextStyles().bodySmall()
+      );
+}
+
+// text button theme
+TextButtonThemeData _customTextButtonTheme() {
+  return TextButtonThemeData(
+        style: ButtonStyle(
+          padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 20)))
+      );
+}
+
+// app bar theme
+AppBarTheme _customAppBar() {
+    return  const AppBarTheme(
+      iconTheme: IconThemeData(color: whiteColor),
         centerTitle: true,
-        shape: abShape,
+        // shape: abShape,
         backgroundColor: abPinkColor,
         elevation: abElevation,
       );

@@ -4,18 +4,15 @@ import 'package:flutter/material.dart';
 
 class EncyclopediaPage extends StatelessWidget {
   const EncyclopediaPage({super.key});
+  final cardPadding = const EdgeInsets.only(top: 15, left: 4);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: pinkColor,
         body: Padding(
-          padding: _CardPadding().cardPadding,
+          padding: cardPadding,
           child: const DuckCard(),
         ));
   }
-}
-
-class _CardPadding {
-  final cardPadding = const EdgeInsets.only(top: 15, left: 4);
 }

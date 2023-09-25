@@ -47,31 +47,16 @@ class _PageOrganizerState extends State<PageOrganizer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        titleTextStyle: abttStyle,
-        title: Text(abTitle, style: abStyle),
-      ),
+      appBar: _appBar(),
       body: pages[activeIndex],
       drawer: CustomDrawer(),
       backgroundColor: pinkColor,
       bottomNavigationBar: BottomNavigationBar(
         fixedColor: pinkColor,
         items: [
-          BottomNavigationBarItem(
-            icon: Icon(bnbicons[0]),
-            activeIcon: Icon(bnbicons[1]), 
-            label: LocalizatedTexts().realHomePage
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(bnbicons[2]),
-            activeIcon: Icon(bnbicons[3]), 
-            label: LocalizatedTexts().encyclopediaPage
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(bnbicons[4]), 
-            activeIcon: Icon(bnbicons[5]),
-            label: LocalizatedTexts().duckMap
-          )
+          bnbPages[0],
+          bnbPages[1],
+          bnbPages[2],
         ],
         currentIndex: activeIndex,
         onTap: (index) {
@@ -83,6 +68,13 @@ class _PageOrganizerState extends State<PageOrganizer> {
           });
         },
       ),
+    );
+  }
+
+  AppBar _appBar() {
+    return AppBar(
+      titleTextStyle: abttStyle,
+      title: Text(abTitle, style: abStyle),
     );
   }
 }
